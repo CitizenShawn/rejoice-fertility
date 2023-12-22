@@ -1,0 +1,128 @@
+const path = require('path');
+
+/**
+ *  adding import alias for most used modules
+ */
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        '@components': path.resolve(__dirname, 'src/components'),
+      },
+    },
+  });
+};
+
+// These templates are only data-fetching wrappers that import components
+
+const postTemplate = require.resolve('./src/templates/post-template.js');
+
+const categoryTemplate = require.resolve('./src/templates/category-template.js');
+
+const tagTemplate = require.resolve('./src/templates/tag-template.js');
+
+const authorTemplate = require.resolve('./src/templates/author-template.js');
+
+/*
+exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId }) => {
+  const { createPage } = actions;
+
+  const categories = await graphql(`
+    query CategoriesQuery {
+      allDegaCategory {
+        nodes {
+          degaId
+          slug
+        }
+      }
+    }
+  `);
+  const tags = await graphql(`
+    query TagsQuery {
+      allDegaTag {
+        nodes {
+          degaId
+          slug
+        }
+      }
+    }
+  `);
+  const authors = await graphql(`
+    query AuthorsQuery {
+      allDegaUser {
+        nodes {
+          degaId
+          slug
+        }
+      }
+    }
+  `);
+
+  const posts = await graphql(`
+    query PostsQuery {
+      allDegaPost {
+        nodes {
+          degaId
+          published_date
+          slug
+        }
+      }
+    }
+  `);
+
+  // create post details page
+
+  posts.data.allDegaPost.nodes.forEach((post) => {
+    if (post.published_date) {
+      createPage({
+        path: `/blog/${post.slug}/`,
+        component: postTemplate,
+        context: {
+          id: post.degaId,
+          slug: post.slug,
+        },
+      });
+    }
+  });
+  //create category list page
+
+  categories.data.allDegaCategory.nodes.forEach((category) => {
+    createPage({
+      path: `/blog/category/${category.slug}/`,
+      component: categoryTemplate,
+      context: {
+        id: category.degaId,
+        slug: category.slug,
+      },
+    });
+  });
+
+  //create tag list page
+
+  tags.data.allDegaTag.nodes.forEach((tag) => {
+    createPage({
+      path: `/blog/tag/${tag.slug}/`,
+      component: tagTemplate,
+      context: {
+        id: tag.degaId,
+        slug: tag.slug,
+      },
+    });
+  });
+
+  //create author page
+
+  authors.data.allDegaUser.nodes.forEach((author) => {
+    createPage({
+      path: `/blog/author/${author.slug}/`,
+      component: authorTemplate,
+      context: {
+        id: author.degaId,
+        slug: author.slug,
+      },
+    });
+  });
+};
+
+*/
