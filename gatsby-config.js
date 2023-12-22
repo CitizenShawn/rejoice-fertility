@@ -33,7 +33,6 @@ module.exports = {
     //     icon: `static/images/gatsby-icon.png`, // This path is relative to the root of the site.
     //   },
     // },
-    /*
     {
       resolve: `@factly/gatsby-source-dega`,
       options: {
@@ -42,7 +41,6 @@ module.exports = {
         uri: process.env.API_ENDPOINT,
       },
     },
-    */
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {

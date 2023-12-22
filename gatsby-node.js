@@ -24,7 +24,6 @@ const tagTemplate = require.resolve('./src/templates/tag-template.js');
 
 const authorTemplate = require.resolve('./src/templates/author-template.js');
 
-/*
 exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId }) => {
   const { createPage } = actions;
 
@@ -124,5 +123,3 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     });
   });
 };
-
-*/
