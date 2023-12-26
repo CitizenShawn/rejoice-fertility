@@ -22,62 +22,74 @@ const FeaturedContent = () => {
       }}
     >
       <p>
-        For over 25 years, Rejoice Fertility has been East Tennessee’s most trusted clinic for
-        the treatment of infertility, recurrent pregnancy loss, PCOS and endometriosis.
+        Welcome to Rejoice Fertility. I am Dr. John David Gordon, and I am so excited about what God has in store for me and my fantastic staff here.
       </p>
       <p>
-      Rejoice Fertility pursues a holistic approach to treatment. It’s our honor to help you
-        make your dreams of achieving pregnancy and parenthood come true. We’ll get to know you and
-        your story, then consider the best personalized path for YOU. No cookie cutter approaches-
-        HOPE starts with a conversation, and we’re here to listen. 
+        After practicing fertility medicine in the Metropolitan DC area for 20 years, 
+        my wife and I were encouraged by Dr. Jeffrey Keenan to take a leap of faith in 2019 and relocate here to beautiful East Tennessee. 
+        I left behind a large fertility practice performing over 1500 IVF cycles a year to take over the reins at Southeastern Center for Fertility.
       </p>
       <p>
-        Our two physicians, Medical Director Dr. John David Gordon and Dr. Jeffrey Keenan, have over
-        50 years of combined expertise in the evaluation and treatment of the infertile couple. Dr.
-        Gordon began his leadership of Rejoice Fertility in 2019, moving to Knoxville after
-        practicing for 20 years outside of Washington D.C.   
+        My vision was to provide an unparalleled patient experience while making sure patients knew they could discuss their concerns 
+        about the practice of reproductive medicine. To that end, we have succeeded beyond all expectations (and in spite of a world-wide pandemic)!
       </p>
       <p>
-        Dr. Gordon introduced Natural Cycle IVF to East Tennessee in 2019. Natural Cycle IVF is a
-        simpler, less expensive form of IVF preferred by many couples who are unable or unwilling to
-        pursue traditional IVF.  He has also championed Mini-Stim IVF, which uses both oral and low
-        doses of injectable fertility medications to produce an average of 3-8 eggs. Mini-Stim IVF
-        costs much less than traditional Stimulated Cycle IVF and also reduces the risk of excessive
-        numbers of embryos being created. Most patients pursuing Mini-Stim IVF will have 1-2 embryos
-        for transfer and 1-2 additional embryos to freeze. Stimulated Cycle IVF may represent the
-        best option for older patients and those who fail to respond well to the medication protocol
-        utilized for Mini-Stim IVF. All 3 options (Natural Cycle IVF, Mini-Stim IVF and Stimulated
-        Cycle IVF) are offered here at Rejoice Fertility!
+        Since August 2019, we have experienced unprecedented growth. This growth has resulted in the hiring of a multitude of new team members, 
+        increasing both the nursing and the IVF laboratory staff. More and more now, local patients realize they don’t have to travel 
+        beyond Knoxville to receive excellent fertility care.
       </p>
       <p>
-      Rejoice Fertility does not offer any treatments that utilize donor egg, donor sperm or
-        the use of a gestational carrier (surrogate). Rejoice Fertility does not offer genetic
-        testing of embryos created by IVF. 
+        In addition, patients are now coming here to Knoxville from a multitude of states because they are seeking something 
+        rarely found in reproductive medicine: a clinic that provides excellent technical fertility care while also discussing 
+        the moral, ethical, spiritual and religious concerns raised by IVF. We take care of patients of all faiths and those 
+        with no particular faith or belief in God, but our practice of reproductive medicine is guided by our faith and our understanding
+        of how we are to live out that faith on a day-to-day basis.
       </p>
       <p>
-        Dr. Jeffrey Keenan founded Rejoice Fertility almost three decades ago and remains
-        clinically active, seeing patients 3 days a week in our Knoxville office. Dr. Keenan is
-        widely renowned for his clinical expertise treating infertile couples. He is also well known
-        for co-founding the National Embryo Donation Center (NEDC), a non-profit that provides
-        matching services to those patients with left-over IVF embryos that they are willing to
-        relinquish to couples pursuing Embryo Adoption. Dr. Keenan is the president and medical
-        director of the NEDC. 
+        So what does that mean when it comes to taking care of patients? Here are 4 major differences:
       </p>
       <p>
-        Rejoice Fertility performs more cycles of Embryo Adoption than any other fertility
-        clinic in the world. Millions of people were captivated by the birth of Molly Everette
-        Gibson in 2020. Molly was born after a successful frozen embryo transfer performed at
-        Rejoice Fertility.  Her parents adopted her through the NEDC, and she joins her older
-        sister Emma, who was also the result of a successful frozen embryo transfer. Both of these
-        girls were frozen as early-stage embryos from the same IVF cycle performed over 2 decades
-        ago!
+        1) We are a “no-discard” IVF program.
+        Any embryos created by a couple are either available for fresh embryo transfer or later frozen embryo transfer, but no viable embryos 
+        will be discarded. As a result, we practice in a very different way than the majority of IVF clinics in the United States. 
+        The only embryo that can never result in a healthy baby is the one you fail to transfer.
       </p>
       <p>
-        At Rejoice Fertility we believe in a personalized, patient-centered approach, asking
-        for your input on treatment based upon your personal physical, emotional, spiritual, and
-        certainly financial needs. Whatever your next step is, we look forward to serving and caring
-        for you. Why not reach out to schedule an appointment and begin your journey with
-        Rejoice Fertility today?
+        2) We offer couples the option to strictly limit the number of eggs fertilized in IVF.
+        Since we are a “no-discard” IVF program, it is important to discuss, prior to any IVF cycle, the plan regarding how many eggs to fertilize. 
+        If a couple really wants to avoid freezing ANY embryos, then we need to limit the number of eggs fertilized to just 1 or 2 Unfertilized eggs 
+        can be frozen if desired, but we can certainly decide to transfer all embryos created in an IVF cycle (as long as we fertilize only 1 to 2 eggs).
+      </p>
+      <p>
+        3) We are trying to put the brakes on the creation of an excessive number of embryos.
+        We perform over 85% of our IVF in natural (unstimulated) cycles or as Mini Stim IVF using oral medications (Clomid or Letrozole) 
+        and low doses of fertility shots, with the goal of retrieving 3-8 mature eggs.
+      </p>
+      <p>
+        4) We are doing what we can to encourage couples to pursue embryo adoption.
+        We have received national and international attention for our work with the National Embryo Donation Center (NEDC). 
+        The births of Molly & Emma Gibson (sisters frozen as embryos for over 20 years) and Timothy & Lydia Ridgeway 
+        (twins frozen as embryos for 30 years) captured the hearts and minds of people across the globe.
+        For many couples thinking their embryos would never be adopted if they had been frozen for more than a few years, 
+        and for those couples who had never heard of embryo adoption, these news stories were eye-opening.
+      </p>
+      <p>
+        In 2024 we will be moving into a brand new, state-of-the-art facility built just behind our current office. 
+        I am looking forward to serving the needs of our patients in this beautiful new office while holding fast to the vision 
+        that brought us to East Tennessee in 2019: the ability to provide outstanding medical care to couples experiencing infertility 
+        while remaining true to what we are told in the Scriptures.
+      </p>
+      <p>
+      Come experience a different type of fertility practice…We rejoice in that difference!
+      John David Gordon, MD
+      January 2024
+      </p>
+      <p>
+      "Rejoice in the Lord always; again, I will say, rejoice. Let your reasonableness be known to everyone. 
+      The Lord is at hand; do not be anxious about anything, but in everything, by prayer and supplication with thanksgiving, 
+      let your requests be made known to God. And the peace of God, which surpasses all understanding, 
+      will guard your hearts and your minds in Christ Jesus."
+      Philippians 4:4-7
       </p>
     </div>
   );

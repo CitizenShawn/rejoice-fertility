@@ -174,7 +174,7 @@ const ContactForm = () => {
           }}
         >
           <a
-            href="https://twitter.com/SEFertility"
+            href="https://twitter.com/RejoiceIVF"
             target="_blank"
             rel="noopener noreferrer"
             title="Follow us on Twitter"
@@ -182,7 +182,7 @@ const ContactForm = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://www.facebook.com/SoutheasternFertility/"
+            href="https://www.facebook.com/RejoiceFertility/"
             target="_blank"
             rel="noopener noreferrer"
             title="Follow us on Facebook"
@@ -190,7 +190,7 @@ const ContactForm = () => {
             <FaFacebook />
           </a>
           <a
-            href="https://www.instagram.com/southeasternfertility/"
+            href="https://www.instagram.com/rejoiceivf/"
             target="_blank"
             rel="noopener noreferrer"
             title="Follow us on Instagram"
@@ -198,7 +198,7 @@ const ContactForm = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://www.youtube.com/channel/UC3OSOJddlyLs1OXk3yidRkw"
+            href="https://www.youtube.com/@rejoicefertility"
             target="_blank"
             rel="noopener noreferrer"
             title="Follow us on Youtube"
