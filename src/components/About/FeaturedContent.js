@@ -68,8 +68,9 @@ const FeaturedContent = () => {
       <p>
         4) We are doing what we can to encourage couples to pursue embryo adoption.
         We have received national and international attention for our work with the National Embryo Donation Center (NEDC). 
-        The births of Molly & Emma Gibson (sisters frozen as embryos for over 20 years) and Timothy & Lydia Ridgeway 
-        (twins frozen as embryos for 30 years) captured the hearts and minds of people across the globe.
+        <a href="https://www.goodmorningamerica.com/wellness/story/baby-born-27-year-frozen-embryo-breaks-record-74469304"> The births of Molly & Emma Gibson (sisters frozen as embryos for over 20 years) </a>
+        and <a href="https://edition.cnn.com/2022/11/21/health/30-year-old-embryos-twins/index.html">Timothy & Lydia Ridgeway (twins frozen as embryos for 30 years) </a>
+        captured the hearts and minds of people across the globe.
         For many couples thinking their embryos would never be adopted if they had been frozen for more than a few years, 
         and for those couples who had never heard of embryo adoption, these news stories were eye-opening.
       </p>
@@ -81,15 +82,15 @@ const FeaturedContent = () => {
       </p>
       <p>
       Come experience a different type of fertility practice…We rejoice in that difference!
-      John David Gordon, MD
+      - John David Gordon, MD
       January 2024
       </p>
       <p>
-      "Rejoice in the Lord always; again, I will say, rejoice. Let your reasonableness be known to everyone. 
+      <i>"Rejoice in the Lord always; again, I will say, rejoice. Let your reasonableness be known to everyone. 
       The Lord is at hand; do not be anxious about anything, but in everything, by prayer and supplication with thanksgiving, 
       let your requests be made known to God. And the peace of God, which surpasses all understanding, 
-      will guard your hearts and your minds in Christ Jesus."
-      Philippians 4:4-7
+      will guard your hearts and your minds in Christ Jesus."</i>
+      &nbsp;&nbsp;Philippians 4:4-7
       </p>
     </div>
   );
