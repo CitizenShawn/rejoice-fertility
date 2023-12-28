@@ -233,7 +233,7 @@ const IVFPage = () => {
               variant: 'text.xs',
             },
             img: {
-              bg: '#FFE664',
+              bg: '#61A19E',
               width: '108px',
               height: '109px',
               border: '5px solid #F4EDED',
