@@ -37,7 +37,7 @@ const Footer = () => {
             color: '#FFFFFF',
             textAlign: ['center', null, null, 'left'],
             '&:hover': {
-              color: '#FFE664',
+              color: '#61A19E',
             },
           },
         }}
@@ -66,7 +66,7 @@ const Footer = () => {
               justifyContent: ['center', null, null, 'flex-start'],
               gap: '8px',
               '&:hover': {
-                color: '#FFE664',
+                color: '#61A19E',
               },
             },
           }}
@@ -137,7 +137,7 @@ const Footer = () => {
             a: {
               color: '#FFFFFF',
               '&:hover': {
-                color: '#FFE664',
+                color: '#61A19E',
               },
             },
           }}
