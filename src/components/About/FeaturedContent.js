@@ -81,7 +81,9 @@ const FeaturedContent = () => {
       </p>
       <p>
       Come experience a different type of fertility practice…We rejoice in that difference!
+      <br></br>
       - John David Gordon, MD
+      <br></br>
       January 2024
       </p>
       <p>

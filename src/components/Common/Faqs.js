@@ -6,7 +6,7 @@ const Faqs = ({ data }) => {
   return (
     <section
       sx={{
-        background: '#61A19E',
+        background: '#008080',
         py: '32px',
         display: 'flex',
         flexDirection: 'column',

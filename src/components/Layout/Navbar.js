@@ -122,7 +122,7 @@ const Navbar = () => {
         <div
           sx={{
             color: '#343754',
-            bg: '#61A19E',
+            bg: '#008080',
             px: '1rem',
             a: {
               color: '#343753',
