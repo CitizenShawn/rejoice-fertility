@@ -22,7 +22,7 @@ const Faq = ({ data }) => {
           gap: '1rem',
           alignItems: 'center',
           cursor: 'pointer',
-          color: '#343753',
+          color: 'black',
         }}
         onClick={() => {
           setIsOpen((prev) => !prev);
@@ -43,7 +43,7 @@ const Faq = ({ data }) => {
           >
             <h4
               sx={{
-                color: '#343753',
+                color: 'black',
                 fontWeight: 500,
                 variant: 'text.lg',
               }}
@@ -57,7 +57,7 @@ const Faq = ({ data }) => {
       <div
         sx={{
           pt: '0.5rem',
-          color: '#343753',
+          color: 'black',
           borderRadius: '0 0 0.25rem 0.25rem',
           variant: 'text.normal',
           li: {
@@ -69,13 +69,13 @@ const Faq = ({ data }) => {
           ? data.answer && (
               <div
                 sx={{
-                  color: '#4D4F60',
+                  color: 'black',
                   fontWeight: 400,
                   variant: 'text.normal',
                   pb: '1rem',
                   p: {},
                   a: {
-                    color: '#2E6D6A',
+                    color: 'black',
                   },
                 }}
                 dangerouslySetInnerHTML={{ __html: data.answer }}

@@ -29,7 +29,7 @@ const ContactForm = () => {
           flex: ['1 0 100%', null, null, '1 0 calc(40% - 1rem)'],
           maxWidth: ['100%', null, null, 'calc(40% - 1rem)'],
           flexWrap: 'wrap',
-          bg: '#FFE664',
+          bg: '#61A19E',
           padding: ['20px', null, null, '48px'],
         }}
       >
@@ -88,7 +88,7 @@ const ContactForm = () => {
               Connect with us
             </h3>
             <p>Our friendly team is here to help.</p>
-            <a href="mailto:taylor@rejoiceivf.com">taylor@rejoiceivf.com</a>
+            <a class="link" href="mailto:taylor@rejoiceivf.com">taylor@rejoiceivf.com</a>
           </div>
         </div>
         <div
@@ -154,7 +154,7 @@ const ContactForm = () => {
               Phone
             </h3>
             <p>M - F : 8AM - 4:30PM</p>
-            <a href="tel:865.777.0088">865.777.0088</a>
+            <a class="link" href="tel:865.777.0088">865.777.0088</a>
           </div>
         </div>
         <div

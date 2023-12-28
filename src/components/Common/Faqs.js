@@ -6,7 +6,7 @@ const Faqs = ({ data }) => {
   return (
     <section
       sx={{
-        background: '#FFE664',
+        background: '#61A19E',
         py: '32px',
         display: 'flex',
         flexDirection: 'column',
@@ -21,7 +21,7 @@ const Faqs = ({ data }) => {
           fontWeight: 600,
           textAlign: 'center',
           variant: 'text.xl',
-          color: '#343753',
+          color: 'black',
           my: '1.5rem',
         }}
       >

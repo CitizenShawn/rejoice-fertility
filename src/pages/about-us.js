@@ -19,7 +19,7 @@ const AboutUsPage = () => {
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <div>
-        <Header title={'About Us'} image={'/images/aboutpage.png'} />
+        <Header title={'About Us'} image={'/images/aboutusheropic.png'} />
         <Vision />
         <Values />
         <FeaturedContent />

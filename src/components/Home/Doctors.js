@@ -9,7 +9,7 @@ const Doctors = () => {
   return (
     <section
       sx={{
-        bg: '#FFE664',
+        bg: '#61A19E',
         px: ['1rem', null, null, '2rem'],
         py: '3rem',
       }}
@@ -49,7 +49,7 @@ const Doctors = () => {
             sx={{
               variant: 'text.normal',
               fontWeight: '400',
-              color: '#4D4F60',
+              color: 'black',
             }}
           >
             Dr. John David Gordon and Dr. Jeffrey Keenan bring nearly 50 years of combined
