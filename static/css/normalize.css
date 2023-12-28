@@ -223,6 +223,10 @@ a {
   text-decoration: inherit;
   font-weight: 500;
 }
+
+.link { color: black; } /* CSS link color (red) */
+.link:hover { color: #2e6d6a; } /* CSS link hover (green) */
+
 button,
 input,
 optgroup,
