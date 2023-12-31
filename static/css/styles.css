@@ -129,6 +129,7 @@
 }
 body {
   font-family: 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', Times, serif;
+  /*font-family: 'sans-serif';*/
 }
 .content {
   max-width: 1400px;

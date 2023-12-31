@@ -29,7 +29,7 @@ const ContactForm = () => {
           flex: ['1 0 100%', null, null, '1 0 calc(40% - 1rem)'],
           maxWidth: ['100%', null, null, 'calc(40% - 1rem)'],
           flexWrap: 'wrap',
-          bg: '#97C4B8',
+          bg: '#47E4E0',
           padding: ['20px', null, null, '48px'],
         }}
       >

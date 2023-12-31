@@ -6,7 +6,7 @@ const Faqs = ({ data }) => {
   return (
     <section
     sx={{
-      background: '#97C4B8',
+      background: '#47E4E0',
       //backgroundImage: `url('/images/background2.png')`,
       mt: '3rem',
       py: '32px',

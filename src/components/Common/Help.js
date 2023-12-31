@@ -67,7 +67,7 @@ const Help = () => {
             to="/contact-us"
             sx={{
               color: '#343754',
-              background: '#97C4B8',
+              background: '#47E4E0',
               boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)',
               // px: ['96px', null, null, '12px'],
               // py: '20px',
@@ -96,7 +96,7 @@ const Help = () => {
               justifyContent: 'center',
               transition: 'all 0.3s',
               '&:hover': {
-                bg: '#97C4B8',
+                bg: '#47E4E0',
               },
             }}
           >

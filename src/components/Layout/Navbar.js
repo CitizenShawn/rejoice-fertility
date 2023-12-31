@@ -123,7 +123,7 @@ const Navbar = () => {
           class="dualcol-test"
           /*sx={{
             color: '#343754',
-            bg: '#97C4B8',
+            bg: '#47E4E0',
             px: '1rem',
             a: {
               color: '#343753',

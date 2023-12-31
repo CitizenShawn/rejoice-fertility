@@ -7,7 +7,7 @@ const Doctors = () => {
   return (
     <section
       sx={{
-        bg: '#97C4B8',
+        bg: '#47E4E0',
         px: ['1rem', null, null, '3.75rem'],
         py: '3rem',
       }}

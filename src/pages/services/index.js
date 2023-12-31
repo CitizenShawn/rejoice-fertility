@@ -61,7 +61,7 @@ const Services = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 textAlign: 'center',
-                backgroundColor: '#97C4B8CC',
+                backgroundColor: '#47E4E0CC',
               },
               img: {
                 opacity: 1,
