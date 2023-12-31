@@ -6,15 +6,7 @@ import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
 const Faq = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div
-      sx={{
-        width: '100%',
-        mx: 'auto',
-        borderRadius: '0.25rem 0.25rem 0 0',
-        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-        p: '1.25rem',
-      }}
-    >
+    <div sx={{ width: '100%', mx: 'auto' }}>
       <div
         sx={{
           display: 'flex',
@@ -22,7 +14,11 @@ const Faq = ({ data }) => {
           gap: '1rem',
           alignItems: 'center',
           cursor: 'pointer',
-          color: 'black',
+          bg: '#fff',
+          color: '#666',
+          p: '1.25rem',
+          borderRadius: '0.25rem 0.25rem 0 0',
+          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
         }}
         onClick={() => {
           setIsOpen((prev) => !prev);
@@ -57,6 +53,8 @@ const Faq = ({ data }) => {
       <div
         sx={{
           pt: '0.5rem',
+          px: '2.5rem',
+          bg: '#fff',
           color: 'black',
           borderRadius: '0 0 0.25rem 0.25rem',
           variant: 'text.normal',
@@ -69,13 +67,16 @@ const Faq = ({ data }) => {
           ? data.answer && (
               <div
                 sx={{
-                  color: 'black',
                   fontWeight: 400,
-                  variant: 'text.normal',
                   pb: '1rem',
-                  p: {},
+                  p: {
+                    mb: '0rem',
+                  },
+                  ul: {
+                    mb: '0rem'
+                  },
                   a: {
-                    color: 'black',
+                    color: '#2E6D6A',
                   },
                 }}
                 dangerouslySetInnerHTML={{ __html: data.answer }}

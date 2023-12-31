@@ -67,7 +67,7 @@ const HowCanWeHelp = () => {
               justifyContent: 'center',
               alignItems: 'center',
               textAlign: 'center',
-              backgroundColor: '#008080CC',
+              backgroundColor: '#97C4B8CC',
             },
             a: {
               maxWidth: '350px',

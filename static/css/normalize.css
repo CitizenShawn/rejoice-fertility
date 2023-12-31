@@ -227,6 +227,12 @@ a {
 .link { color: black; } /* CSS link color (red) */
 .link:hover { color: #2e6d6a; } /* CSS link hover (green) */
 
+.dualcol-test {
+  background: linear-gradient(to right,#11269c 0%, #BD59A2 50%, #97C4B8 70%);
+  /*background: linear-gradient(to right,#404EA1 0%, #BD59A2 60%, #0B9CC3 100%*/
+  /*background: linear-gradient(to right,#256d91 0%, #E4ABCA 50%, #D57BAB 70%, #49b4b1 100% );*/
+}
+
 button,
 input,
 optgroup,

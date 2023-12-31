@@ -34,7 +34,7 @@ const Values = () => {
         bg: '#343753',
         py: '4rem',
         img: {
-          background: '#008080',
+          background: '#97C4B8',
           borderRadius: '10px',
           width: '2.75rem',
           height: '2.75rem',

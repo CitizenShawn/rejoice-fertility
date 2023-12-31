@@ -5,16 +5,17 @@ import Faq from './Faq';
 const Faqs = ({ data }) => {
   return (
     <section
-      sx={{
-        background: '#008080',
-        py: '32px',
-        display: 'flex',
-        flexDirection: 'column',
-        flexWrap: 'wrap',
-        gap: '1rem',
-        px: '1rem',
-        mt: '0rem',
-      }}
+    sx={{
+      background: '#97C4B8',
+      //backgroundImage: `url('/images/background2.png')`,
+      mt: '3rem',
+      py: '32px',
+      display: 'flex',
+      flexDirection: 'column',
+      flexWrap: 'wrap',
+      gap: '1rem',
+      px: '1rem',
+    }}
     >
       <h3
         sx={{

@@ -120,15 +120,16 @@ const Navbar = () => {
         }}> <a sx={{ color: '#666' }} href='https://southeasternfertility.org/FINAL-V2-out-of-town-patients.pdf'> Information for out-of-town patients</a>
         </div> */}
         <div
-          sx={{
+          class="dualcol-test"
+          /*sx={{
             color: '#343754',
-            bg: '#008080',
+            bg: '#97C4B8',
             px: '1rem',
             a: {
               color: '#343753',
               fontWeight: '700',
             },
-          }}
+          }}*/
         >
           <div
             sx={{

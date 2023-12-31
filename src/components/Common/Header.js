@@ -116,7 +116,7 @@ const Header = ({
                 <Link
                   to={ctaPrimaryLink}
                   sx={{
-                    background: '#008080',
+                    background: '#97C4B8',
                     color: '#000',
                     '&:hover': {
                       opacity: 0.75,
@@ -130,7 +130,7 @@ const Header = ({
                 <a
                   href={ctaPrimaryLink}
                   sx={{
-                    background: '#008080',
+                    background: '#97C4B8',
                     color: '#000',
                     '&:hover': {
                       opacity: 0.75,
@@ -149,8 +149,8 @@ const Header = ({
                     color: ' #FFFFFF',
                     border: '1px solid #fff',
                     '&:hover': {
-                      color: '#008080',
-                      borderColor: '#008080',
+                      color: '#97C4B8',
+                      borderColor: '#97C4B8',
                     },
                   }}
                   title={ctaSecondary}
@@ -164,8 +164,8 @@ const Header = ({
                     color: ' #FFFFFF',
                     border: '1px solid #fff',
                     '&:hover': {
-                      color: '#008080',
-                      borderColor: '#008080',
+                      color: '#97C4B8',
+                      borderColor: '#97C4B8',
                     },
                   }}
                   title={ctaSecondary}

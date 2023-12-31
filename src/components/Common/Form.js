@@ -38,7 +38,7 @@ const Form = ({ formUrl = 'https://usebasin.com/f/f95fb9d7171b' }) => {
   return (
     <section
       sx={{
-        bg: '#008080',
+        bg: '#97C4B8',
         py: '4rem',
         scrollMarginTop: 100,
       }}

@@ -37,7 +37,7 @@ const Post = ({ data, nextPost, previousPost }) => {
                       padding: '0.375rem 0.75rem',
                       color: '#fff',
                       borderRadius: '9999px',
-                      '&:hover': { color: '#008080' },
+                      '&:hover': { color: '#97C4B8' },
                     }}
                   >
                     {category.name}

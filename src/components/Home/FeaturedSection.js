@@ -74,7 +74,7 @@ const FeaturedSection = () => {
                   display: 'flex',
                   width: '64px',
                   height: '64px',
-                  background: '#008080',
+                  background: '#97C4B8',
                   borderRadius: '50px',
                   padding: '0.75rem',
                   mb: '1rem',
