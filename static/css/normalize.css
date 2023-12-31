@@ -228,7 +228,7 @@ a {
 .link:hover { color: #2e6d6a; } /* CSS link hover (green) */
 
 .dualcol-test {
-  background: linear-gradient(to right,#11269c 0%, #BD59A2 50%, #97C4B8 80%);
+  background: linear-gradient(to right,#47E4E0 0%, #47E4E0 100%);
   /*background: linear-gradient(to right, #739072 0%,  #4F6F52 100%);
   /*background: linear-gradient(to right,#11269c 0%, #BD59A2 50%, #97C4B8 70%);*/
   /*background: linear-gradient(to right,#404EA1 0%, #BD59A2 60%, #0B9CC3 100%*/
