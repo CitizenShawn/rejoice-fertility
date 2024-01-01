@@ -21,7 +21,7 @@ const QuoteSection = () => {
           px: ['1rem', null, null, '96px'],
         }}
       >
-        <img src="/images/quote.png" alt="" />
+        <img src="/images/quote_new.png" alt="" />
         <p
           sx={{
             variant: 'text.lg',
