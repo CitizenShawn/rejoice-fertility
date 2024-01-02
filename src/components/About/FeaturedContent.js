@@ -55,7 +55,7 @@ const FeaturedContent = () => {
         The only embryo that can never result in a healthy baby is the one you fail to transfer.
       </p>
       <p>
-        2) We offer couples the option to strictly limit the number of eggs fertilized in IVF. Since we are a “no-discard” IVF program, it is important to discuss, prior to any IVF cycle, the plan regarding how many eggs to fertilize. If a couple really wants to avoid freezing ANY embryos, then we need to limit the number of eggs fertilized to just 1 or 2 Unfertilized eggs can be frozen if desired, but we can certainly decide to transfer all embryos created in an IVF cycle (as long as we fertilize only 1 to 2 eggs)
+        2) We offer couples the option to strictly limit the number of eggs fertilized in IVF. Since we are a “no-discard” IVF program, it is important to discuss, prior to any IVF cycle, the plan regarding how many eggs to fertilize. If a couple really wants to avoid freezing ANY embryos, then we need to limit the number of eggs fertilized to just 1 or 2. Unfertilized eggs can be frozen if desired, but we can certainly decide to transfer all embryos created in an IVF cycle (as long as we fertilize only 1 to 2 eggs).
       </p>
       <p>
       3) We are trying to put the brakes on the creation of an excessive number of embryos. We perform over 85% of our IVF in natural (unstimulated) cycles or as Mini Stim IVF using oral medications (Clomid or Letrozole) and low doses of fertility shots, with the goal of retrieving 3-8 mature eggs.
@@ -68,7 +68,7 @@ const FeaturedContent = () => {
       For many couples thinking their embryos would never be adopted if they had been frozen for more than a few years, and for those couples who had never heard of embryo adoption, these news stories were eye-opening.
       </p>
       <p>
-      In 2024 we will be moving into a brand new, state-of-the-art facility built just behind our current office.With the upcoming move to the new office I thought that the time was right for a rebranding; hence, the decision to change the name of the practice from Southeastern Fertility to Rejoice Fertility.
+      In 2024 we will be moving into a brand new, state-of-the-art facility built just behind our current office. With the upcoming move to the new office I thought that the time was right for a rebranding; hence, the decision to change the name of the practice from Southeastern Fertility to Rejoice Fertility.
       </p>
       <p>
       I am looking forward to serving the needs of our patients in this beautiful new office while holding fast to the vision that brought us to East Tennessee in 2019: the ability to provide outstanding medical care to couples experiencing infertility while remaining true to what we are told in the Scriptures.
