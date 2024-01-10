@@ -66,39 +66,6 @@ const ContactForm = () => {
             alignItems: 'baseline',
           }}
         >
-          <FaEnvelope
-            sx={{
-              flex: '0 0 1.5rem',
-              fontSize: '1.5rem',
-            }}
-          />
-          <div
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '10px',
-            }}
-          >
-            <h3
-              sx={{
-                variant: 'text.lg',
-                fontWeight: '500',
-              }}
-            >
-              Connect with us
-            </h3>
-            <p>Our friendly team is here to help.</p>
-            <a class="link" href="mailto:taylor@rejoiceivf.com">taylor@rejoiceivf.com</a>
-          </div>
-        </div>
-        <div
-          sx={{
-            display: 'flex',
-            gap: '1rem',
-            mb: '2rem',
-            alignItems: 'baseline',
-          }}
-        >
           <FaMapMarkerAlt
             sx={{
               flex: '0 0 1.5rem',
