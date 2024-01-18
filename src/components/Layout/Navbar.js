@@ -151,14 +151,6 @@ const Navbar = () => {
               },
             }}
           >
-            <p 
-            sx={{
-                color: '#C71585',
-                textAlign: ['left'],
-                lineHeight: '2',
-                fontSize: '1.125rem;', /* 18px */
-                lineHeight:'1.75rem;' /* 28px */
-              }}> <b>Due to inclement weather, Rejoice Fertility will be closed all day Wednesday, January 17.</b></p>
             <a
               href="https://www.facebook.com/RejoiceFertility/"
               target="_blank"
