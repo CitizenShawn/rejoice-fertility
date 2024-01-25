@@ -264,12 +264,6 @@ const Staff = () => {
       description: `Julia Rowinski, MSc., received a Bachelor’s Degree in Animal Science from the University of Kentucky and a Master of Science in Reproductive Physiology from the University of Tennessee. She is the andrologist and performs male fertility testing, including complex semen analysis testing, antisperm antibody testing, and sperm cryopreservation. She always has desired to work in the human field of reproduction, and following an animal science path allowed her to obtain lots of hands-on experience in the lab with a high volume of samples. She looks forward to assisting the embryologist in the IVF lab as well. When not at Rejoice Fertility, you’ll find Julia out at the barn, so feel free to talk to her about what fun animals and livestock you have. She is looking forward to meeting patients and being part of a great team!`,
       image: '/images/staff/julia.png',
     },
-    {
-      name: 'Anna Seiber',
-      position: 'B.S., Andrologist',
-      description: `Anna Seiber, a Knoxville native, received her Bachelor’s Degree in Biology with a concentration in Health Sciences from Tennessee Technological University. Her background consists of both clinical and laboratory work, finding the best of both worlds in andrology. Anna spends her free time at the gym and relaxing with her two cats.`,
-      image: '/images/staff/anna.jpeg',
-    },
   ];
 
   return (
