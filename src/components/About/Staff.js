@@ -216,12 +216,6 @@ const Staff = () => {
       Brittany Hegseth was born and raised on the Gulf Coast of Mississippi before moving to Knoxville in 2014. She received her degree in psychology from The University of Tennessee before attending Lincoln Memorial University for her Bachelor’s of Science in Nursing. Her background is in inpatient antepartum, postpartum, and gynecology, as well as the Neonatal ICU. Outside of the office, she and her husband enjoy traveling, attending sporting events, and spending time with their two dogs`,
       image: '/images/staff/brittany.jpg',
     },
-    {
-      name: 'Penny Gaines',
-      position: 'RN',
-      description: `Penny Gaines is a RN with over 28 years of experience. She worked in Labor and Delivery at Kaiser in Southern California for the majority of her career. In 2020, she made the decision to move to East TN to be closer to her family. She quickly fell in love with the natural beauty of the area and she spends much of her free time hiking and exploring the many waterfalls that dot the landscape. Penny also has a passion for baseball, and she enjoys following her favorite teams and attending games whenever she can.`,
-      image: '/images/staff/penny.jpg',
-    },
   ];
 
   const frontOfficeStaff = [
