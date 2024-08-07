@@ -47,7 +47,7 @@ const Doctors = () => {
               variant: 'text.normal',
             }}
           >
-            Dr. John Gordon and Dr. Jeffrey Keenan lead our caring, committed team.
+            Dr. John Gordon lead our caring, committed team.
           </p>
         </div>
         <div
@@ -104,16 +104,6 @@ const Doctors = () => {
                 Dr. John Gordon
               </h4>
               <p>M.D.</p>
-            </div>
-          </div>
-
-          <div className="doctor-container">
-            <img src="/images/keenan.jpg" alt="" />
-            <div className="member-info-container">
-              <h4>
-                Dr. Jeffrey Keenan
-              </h4>
-              <p>M.D., HCLD</p>
             </div>
           </div>
         </div>
