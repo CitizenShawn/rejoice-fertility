@@ -28,8 +28,10 @@ const QuoteSection = () => {
             padding: ['3rem', null, null, '2.5rem'],
           }}
         >
-          Very Supportive! Dr Keenan and nurse Mari were kind and supportive during this time in our
-          journey. We have highly recommended this team to others struggling with fertility.
+          I can’t say enough good things about Rejoice Fertility. We feel right at home here & trust
+          Dr.Gordon and his team fully. Dr.Gordon has been so informative, and helped guide us through
+          each step and what we need to do next. Nurse Brittany always answers my hundreds of questions.
+          All of the nurses and embryologists are SO kind. 
         </p>
         <p
           sx={{
@@ -37,7 +39,7 @@ const QuoteSection = () => {
             mt: '1rem',
           }}
         >
-          — Mia S.
+          — Kelsey H.
         </p>
       </div>
     </section>
