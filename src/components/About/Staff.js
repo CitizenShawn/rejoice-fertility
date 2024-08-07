@@ -146,43 +146,41 @@ const Staff = () => {
       <p>Keenan JA, Williams-Boyce PK, Massey PJ, Chen TT, Caudle MR, Bukovsky A. Regression of Endometrial Explants in a Rat Model of Endometriosis Treated with the Immune Modulators Loxoribine and Levamisole. Fertil Steril. 1999 Jul;72(1):135-41</p>`,
     },
   ];
-
-  const clinicalStaff = [
+  const allyn = [
     {
       name: 'Allyn Ann Simpson, WHNP-BC',
       position: 'Nurse Practitioner',
-      description: `Allyn Ann is a Board-Certified Women’s Health Nurse Practitioner. She has been working in the field of Reproductive Endocrinology since 2007. She received her Bachelor of Nursing degree from Mississippi College in 2005 and her Master’s Degree from San Diego State University in 2012. She has a unique perspective in treating patients since she went through her own 13-year battle with infertility. She is the proud mom of two IVF babies. In her spare time, she enjoys reading, playing with her kids, and running her non-profit organization, which helps fund IVF cycles for couples who cannot afford it. She was born and raised in the South but spent 14 years in California. She is excited to be back South and making her home in East Tennessee.`,
       image: '/images/staff/AllynAnnNew.png',
+      description: `Allyn Ann is a Board-Certified Women’s Health Nurse Practitioner. She has been working in the field of Reproductive Endocrinology since 2007. She received her Bachelor of Nursing degree from Mississippi College in 2005 and her Master’s Degree from San Diego State University in 2012. She has a unique perspective in treating patients since she went through her own 13-year battle with infertility. She is the proud mom of two IVF babies. In her spare time, she enjoys reading, playing with her kids, and running her non-profit organization, which helps fund IVF cycles for couples who cannot afford it. She was born and raised in the South but spent 14 years in California. She is excited to be back South and making her home in East Tennessee.`,
+    },
+  ];
+
+  const clinicalStaff = [
+    {
+      name: 'Brittany Hegseth',
+      position: 'IVF Nurse Coordinator',
+      description: `
+      Brittany Hegseth was born and raised on the Gulf Coast of Mississippi before moving to Knoxville in 2014. She received her degree in psychology from The University of Tennessee before attending Lincoln Memorial University for her Bachelor’s of Science in Nursing. Her background is in inpatient antepartum, postpartum, and gynecology, as well as the Neonatal ICU. Outside of the office, she and her husband enjoy traveling, attending sporting events, and spending time with their two dogs`,
+      image: '/images/staff/brittany.jpg',
     },
     {
-      name: 'Lynda McCollum',
-      position: 'RN, IVF Nurse Coordinator',
-      description: `Lynda McCollum is our IVF Nurse Coordinator. She assists our IVF patients and NEDC patients with medication protocols, lab results, and embryo transfer procedures. She is originally from Townsend and currently lives in Maryville. She is married and has two sons and two grandchildren. She has a compassionate heart, is always welcoming, and would be happy to answer any of your questions with a smile.`,
-      image: '/images/staff/lynda.png',
-    },
-    {
-      name: 'Mari Campbell',
-      position: 'LPN',
-      description: `Mari Campbell is a Licensed Practical Nurse who serves as our OB/GYN Nurse. She is a Knoxville native and has made nursing a lifetime career. Mari has great experience in the area of women's healthcare and has assisted hundreds of patients with all of their medical needs from achieving pregnancy to providing general women's healthcare.`,
-      image: '/images/staff/campbell.png',
+      name: 'Susan Lake',
+      position: 'Clinic Coordinator',
+      description: `Susan is a Registered Medical Assistant with a long history in patient care. She has served in the medical
+      field for 15 years, with most of her experience in OB/GYN. She joined Rejoice Fertility in 2022.`,
+      image: '/images/staff/susan.png',
     },
     {
       name: 'Brooke Huguenard',
-      position: 'RN, NEDC IVF Nurse',
+      position: 'IVF Nurse',
       description: `Brooke Huguenard is ecstatic to be a part of the Rejoice Fertility family as Dr. Gordon's NEDC IVF nurse. She is originally from Alabama and graduated from the University of Alabama-Huntsville in 2014 with her Bachelor of Science in Nursing. Since then, she has worked as a Labor and Delivery nurse for the last 8 years, and is eager to use this knowledge to bring excellent care to her patients. For 3 years of her career, Brooke was a travel L&D nurse across the U.S. working at hospitals from Kaiser in California to Yale in Connecticut. East TN is a sentimental place to Brooke and her husband because they got engaged here and were married in the breathtaking Cade's Cove. In her spare time, Brooke enjoys taking the puppers hiking, ballroom dancing, and camping with her husband.`,
       image: '/images/staff/brooke.png',
     },
     {
-      name: 'Melanie Duncan',
-      position: 'Certified Surgical Tech',
-      description: `Melanie was born and raised in Oak Ridge, where she graduated from high school in 1983. She now lives in Morgan County with Rex, her husband of three decades. She also has a daughter, Ashleigh, and a son, Todd. Melanie has a colorful work background that includes stints as a waitress, senior office assistant, assistant manager, driver's license examiner and home inspector. She has now been a Certified Surgical Tech for more than 15 years.`,
-      image: '/images/staff/melanie.png',
-    },
-    {
-      name: 'Sherry Schoolfield',
-      position: 'Phlebotomist',
-      description: `Sherry Schoolfield is our on-site laboratory phlebotomist, provided by AEL Laboratories. Sherry provides our patients with gentle venipuncture and prepares specimens for testing. Sherry has been practicing phlebotomy since 1999.`,
-      image: '/images/staff/sherry.png',
+      name: 'Lauren Dyckman',
+      position: 'RN, IVF Nurse',
+      description: `Lauren Dyckman has spent more than 25 years serving patients struggling with infertility. A New York native, she enjoys the slower pace of life in East Tennessee and began caring for Rejoice Fertility families in 2022.`,
+      image: '/images/staff/lauren.png',
     },
     {
       name: 'Stephanie Smith',
@@ -197,25 +195,29 @@ const Staff = () => {
       image: '/images/staff/stephanie.png',
     },
     {
-      name: 'Susan Lake',
-      position: 'RMA, Clinic Coordinator',
-      description: `Susan is a Registered Medical Assistant with a long history in patient care. She has served in the medical
-      field for 15 years, with most of her experience in OB/GYN. She joined Rejoice Fertility in 2022.`,
-      image: '/images/staff/susan.png',
+      name: 'Melanie Duncan',
+      position: 'Certified Surgical Tech',
+      description: `Melanie was born and raised in Oak Ridge, where she graduated from high school in 1983. She now lives in Morgan County with Rex, her husband of three decades. She also has a daughter, Ashleigh, and a son, Todd. Melanie has a colorful work background that includes stints as a waitress, senior office assistant, assistant manager, driver's license examiner and home inspector. She has now been a Certified Surgical Tech for more than 15 years.`,
+      image: '/images/staff/melanie.png',
     },
     {
-      name: 'Lauren Dyckman',
-      position: 'RN, IVF Nurse',
-      description: `Lauren Dyckman has spent more than 25 years serving patients struggling with infertility. A New York native, she enjoys the slower pace of life in East Tennessee and began caring for Rejoice Fertility families in 2022.`,
-      image: '/images/staff/lauren.png',
+      name: 'Sherry Schoolfield',
+      position: 'Phlebotomist',
+      description: `Sherry Schoolfield is our on-site laboratory phlebotomist, provided by AEL Laboratories. Sherry provides our patients with gentle venipuncture and prepares specimens for testing. Sherry has been practicing phlebotomy since 1999.`,
+      image: '/images/staff/sherry.png',
     },
-    {
-      name: 'Brittany Hegseth',
-      position: 'RN, IVF Nurse',
-      description: `
-      Brittany Hegseth was born and raised on the Gulf Coast of Mississippi before moving to Knoxville in 2014. She received her degree in psychology from The University of Tennessee before attending Lincoln Memorial University for her Bachelor’s of Science in Nursing. Her background is in inpatient antepartum, postpartum, and gynecology, as well as the Neonatal ICU. Outside of the office, she and her husband enjoy traveling, attending sporting events, and spending time with their two dogs`,
-      image: '/images/staff/brittany.jpg',
-    },
+    //{
+    //  name: 'Lynda McCollum',
+    //  position: 'RN, IVF Nurse Coordinator',
+    //  description: `Lynda McCollum is our IVF Nurse Coordinator. She assists our IVF patients and NEDC patients with medication protocols, lab results, and embryo transfer procedures. She is originally from Townsend and currently lives in Maryville. She is married and has two sons and two grandchildren. She has a compassionate heart, is always welcoming, and would be happy to answer any of your questions with a smile.`,
+    //  image: '/images/staff/lynda.png',
+    //},
+    //{
+    //  name: 'Mari Campbell',
+    //  position: 'LPN',
+    //  description: `Mari Campbell is a Licensed Practical Nurse who serves as our OB/GYN Nurse. She is a Knoxville native and has made nursing a lifetime career. Mari has great experience in the area of women's healthcare and has assisted hundreds of patients with all of their medical needs from achieving pregnancy to providing general women's healthcare.`,
+    //  image: '/images/staff/campbell.png',
+    //},
   ];
 
   const frontOfficeStaff = [
@@ -254,9 +256,21 @@ const Staff = () => {
     },
     {
       name: 'Julia DuBois',
-      position: 'MSc., Junior Embryologist, Andrologist',
+      position: 'MSc., Embryologist, Andrologist',
       description: `Julia Rowinski, MSc., received a Bachelor’s Degree in Animal Science from the University of Kentucky and a Master of Science in Reproductive Physiology from the University of Tennessee. She is the andrologist and performs male fertility testing, including complex semen analysis testing, antisperm antibody testing, and sperm cryopreservation. She always has desired to work in the human field of reproduction, and following an animal science path allowed her to obtain lots of hands-on experience in the lab with a high volume of samples. She looks forward to assisting the embryologist in the IVF lab as well. When not at Rejoice Fertility, you’ll find Julia out at the barn, so feel free to talk to her about what fun animals and livestock you have. She is looking forward to meeting patients and being part of a great team!`,
       image: '/images/staff/julia.png',
+    },
+    {
+      name: 'Stephanie Smith',
+      position: 'CRNA',
+      description: `Stephanie was born and raised here in Knoxville, TN. She left briefly to earn a Bachelor’s of Science in
+      Biology from New Mexico State University in 2002. After some traveling adventures, she returned to
+      Knoxville and pursued a nursing career, completing an Associates Degree in Nursing from Roane State
+      Community College in 2008 followed by a Bachelor’s Degree in Nursing from the University of TN in
+      2011.  After working in nephrology, dialysis and ICU, she returned to school once again, earning a
+      Master’s of Science in Nursing to become a Certified Registered Nurse Anesthetist. She has practiced
+      anesthesia in Knoxville and rural KY since 2014 and joined Rejoice Fertility in 2020.`,
+      image: '/images/staff/stephanie.png',
     },
   ];
 
@@ -289,7 +303,7 @@ const Staff = () => {
             {gordon.map((member, index) => (
               <Member key={index} data={{ ...member, index }} mode="dark" />
             ))}
-            {keenan.map((member, index) => (
+            {allyn.map((member, index) => (
               <Member key={index} data={{ ...member, index }} mode="dark" />
             ))}
           </div>
