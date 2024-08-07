@@ -59,8 +59,9 @@ const DiagnosisAndTestingPage = () => {
       >
         <p>
           Sometimes it is hard to know where to start! Rest assured that by choosing Rejoice
-          Fertility you have picked the right place. Dr. Gordon have over 50 years of
-          combined experience in treating the infertile couple.
+          Fertility you have picked the right place. Dr. Gordon has been practicing since 1997
+          in the field of Reproductive Endocrinology and Infertility and has a wealth of
+          clinical experience in the treatment of the infertile couple.
         </p>
         <p>
           Whether it is a history of irregular periods or a known diagnosis of endometriosis, we will
