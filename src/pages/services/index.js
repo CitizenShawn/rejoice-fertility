@@ -13,7 +13,7 @@ const Services = () => {
         title="Services | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Services'} image={'/images/services-page-crop.jpeg'} />
+      <Header title={'Services'} image={'/images/services-page-2024.jpg'} />
       <section>
         <h2
           sx={{
