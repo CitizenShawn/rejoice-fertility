@@ -43,7 +43,7 @@ const Doctors = () => {
               fontWeight: '600',
             }}
           >
-            Our Doctors
+            Our Doctor
           </h3>
           <p
             sx={{
@@ -52,8 +52,8 @@ const Doctors = () => {
               color: 'black',
             }}
           >
-            Dr. John David Gordon and Dr. Jeffrey Keenan bring nearly 50 years of combined
-            experience caring for patients struggling with reproductive health issues.
+            Dr. John David Gordon brings nearly 50 years of experience
+            caring for patients struggling with reproductive health issues.
           </p>
         </div>
         <div
@@ -113,18 +113,6 @@ const Doctors = () => {
                 </span>
               </h4>
               <p>MD</p>
-            </div>
-          </Link>
-          <Link to="/about-us">
-            <img src="/images/keenan.jpg" alt="" />
-            <div className="member-info-container">
-              <h4>
-                Dr. Jeffrey Keenan
-                <span>
-                  <BsArrowUpRight />
-                </span>
-              </h4>
-              <p>MD, HCLD</p>
             </div>
           </Link>
         </div>
