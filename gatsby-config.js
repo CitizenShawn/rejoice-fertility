@@ -33,14 +33,14 @@ module.exports = {
     //     icon: `static/images/gatsby-icon.png`, // This path is relative to the root of the site.
     //   },
     // },
-    //{
-    //  resolve: `@factly/gatsby-source-dega`,
-    // options: {
-    //    spaceId: process.env.SPACE_ID,
-    //    accessToken: process.env.ACCESS_TOKEN,
-    //    uri: process.env.API_ENDPOINT,
-    //  },
-    //},
+    {
+      resolve: `@factly/gatsby-source-dega`,
+     options: {
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.ACCESS_TOKEN,
+        uri: process.env.API_ENDPOINT,
+      },
+    },
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
