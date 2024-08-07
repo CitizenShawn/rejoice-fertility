@@ -47,7 +47,7 @@ const Doctors = () => {
               variant: 'text.normal',
             }}
           >
-            Dr. John Gordon lead our caring, committed team.
+            Dr. John Gordon leads our caring, committed team.
           </p>
         </div>
         <div
