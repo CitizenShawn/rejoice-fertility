@@ -16,7 +16,7 @@ const FertilityTreatmentNonIVFPage = () => {
     {
       question: 'What medications are used for Ovulation Induction?',
       answer:
-        'Usually we start with oral medications like oral fertility medications or letrozole. Some women may require more advanced medical treatment to restore normal cycles.',
+        'Usually, we start with oral fertility medications like Letrozole or Clomid. Some women may require more advanced medical treatment to restore normal cycles.',
     },
     {
       question: 'Who are the best candidates for IUI?',
