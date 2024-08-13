@@ -71,7 +71,46 @@ const EmbryoAdoptionTestPage = () => {
           Donation Center and the Nightlight Christian Adoptions Snowflake Embryo Adoption Program.
         </p>
       </section>
-      <Header title={'Nightlight'} description={'In 1997 <a href="nightlight.org">Nightlight Christian Adoption</a> pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.<br/>They named their new program the "Snowflakes Embryo Adoption Program," likening each embryo to a unique, frozen snowflake. Snowflakes Embryo Adoption has since become the largest embryo adoption agency in the world.'}image={'/images/nightlight-christian-adoptions-header.jpeg'} />
+      <Header title={'Nightlight'} description={'In 1997 >Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={''} ctaSecondary={''} ctaPrimaryLink{''} ctaSecondaryLink{''}/>
+      <section
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          px: ['1rem', null, null, '2rem'],
+          py: ['2rem', null, null, '4rem'],
+          variant: 'text.normal',
+        }}
+        className="content"
+      >
+        <p>
+          They named their new program the "Snowflakes Embryo Adoption Program," likening each
+embryo to a unique, frozen snowflake. Snowflakes Embryo Adoption has since become the
+largest embryo adoption agency in the world.
+        </p>
+        <p>
+          Embryo adoption follows adoption best practices, transferring remaining embryos from donors to
+recipients—the adopting families—who then undergo frozen embryo transfers (FETs) with the
+embryos and give birth to their adopted child.
+        </p>
+        <p>
+          To ensure the well-being of all parties involved, an adoption home study is required. This process
+educates the adopting family and provides peace of mind to the embryo donors, knowing that the
+family receiving their embryos has been thoroughly vetted by the agency.
+        </p>
+        <p>
+          Embryo adoption programs differ from embryo donation programs run out of fertility clinics.
+While the latter primarily focus on medical treatment, adoption agencies consider social and
+emotional aspects for all involved in the adoption process.
+        </p>
+         <p>
+          Encouraging open relationships is a key aspect of embryo adoption, allowing children born from
+this process to maintain connections with both their biological background and their adoptive
+family's experiences. In contrast, embryo donation programs often prioritize anonymity,
+providing little to no information to either the donor or recipient and encouraging privacy rather
+than secrecy.
+        </p>
+      </section>
       <Faqs data={data} />
       <Help />
     </Layout>
