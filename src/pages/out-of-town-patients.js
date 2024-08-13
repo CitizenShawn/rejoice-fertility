@@ -15,7 +15,7 @@ const OutOfTownPatientsPage = () => {
       />
       <Header
         title={'Out-of-Town Patients'}
-        image={'/images/out-of-town-patients.png'}
+        image={'/images/OOT-Patients.jpg'}
       />
       <section sx={{ p: { fontSize: ['1rem', null, '1.25rem'], mb: '1rem' } }}>
         <div sx={{ maxWidth: '1400px', mx: 'auto', p: '2rem' }}>
