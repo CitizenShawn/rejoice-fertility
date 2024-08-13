@@ -49,6 +49,7 @@ const EmbryoAdoptionTestPage = () => {
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
+      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
       <section
         sx={{
           display: 'flex',
@@ -71,6 +72,7 @@ const EmbryoAdoptionTestPage = () => {
           Donation Center and the Nightlight Christian Adoptions Snowflake Embryo Adoption Program.
         </p>
       </section>
+      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
       <Faqs data={data} />
       <Help />
     </Layout>
