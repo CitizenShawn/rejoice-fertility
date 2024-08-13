@@ -98,7 +98,6 @@ transfer into a patient. In order to support Snowflakes OPEN HEARTS PROGRAM all
 patients matching through this unique program can have their embryo transfers in Knoxville
 for only $2,835 … a significant savings off of our normal FET fees.</p>
       </section>
-      
       <section
       sx={{
         background: '#343753',
