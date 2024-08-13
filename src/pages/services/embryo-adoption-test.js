@@ -61,15 +61,20 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-          It is estimated that there are over 1,000,000 frozen embryos stored in IVF Clinics across
-          the United States. Some couples are willing to donate their frozen embryos to recipient
-          couples who are willing to undergo a frozen embryo transfer with these embryos.
+          Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF clinics across the United States but no one is really sure of the actual number with a range of (600,000 to 1.5 million frequently quoted).
         </p>
         <p>
-          At Rejoice Fertility we have extensive experience with Embryo Adoption. All matching
-          of embryo donors and recipients is accomplished through the efforts of the National Embryo
-          Donation Center and the Nightlight Christian Adoptions Snowflake Embryo Adoption Program.
+          Some couples are willing to donate their frozen embryos to recipient couples who are willing to undergo a frozen embryo transfer with these embryos.
         </p>
+        <p>
+          At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire world.
+        </p>
+        <p>
+          All of our matching of embryo donors and recipients is currently accomplished through the efforts of Nightlight Christian Adoption Snowflake Embryo Adoption Program. Patients undergo an evaluation to ensure that there are no medical contraindictions to Embryo Adoption and then undergo their embryo transfers in Knoxville.
+        </p>
+        <h3>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</h3>
+        <h4>1. Expertise</h4>
+        <p>Our embryology team has the most experience of any IVF program in the country with the thawing and care of donated embryos especially those that have been frozen for decades including several amazing outcomes such as the delivery of healthy twins after the transfer of embryos stored for 30 years!
       </section>
       <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'}/>
       <section
