@@ -71,7 +71,7 @@ const EmbryoAdoptionTestPage = () => {
           Donation Center and the Nightlight Christian Adoptions Snowflake Embryo Adoption Program.
         </p>
       </section>
-      <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={''} ctaSecondary={''} ctaPrimaryLink{''} ctaSecondaryLink{''}/>
+      <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'}/>
       <section
         sx={{
           display: 'flex',
