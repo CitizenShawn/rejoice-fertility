@@ -42,28 +42,6 @@ const EmbryoAdoptionTestPage = () => {
         'The treatment cost per cycle is less than $4,000 but that does not include pre-screening and the costs associated with the matching process through Snowflake Embryo Adoption or the National Embryo Donation Center.',
     },
   ];
-  const nightlight = [
-    {
-      question: 'I have been matched with embryos. Now, what do I do?',
-      answer: 'You have to schedule an in-person or virtual consult with Dr. Gordon and then based upon that consultation, you will need a few basic tests performed: A vaginal ultrasound, a saline sonogram to check to inside of the cavity, and a trial embryo transfer (also called a mock transfer).',
-    },
-    {
-      question: 'Do I need to travel to Knoxville for those tests?',
-      answer: 'No. You can have those tests performed by a fertility clinic in your geographic region if that is more convenient. However, many patients prefer to have these tests done by Dr. Gordon in Knoxville.',
-    },
-  {
-    question: 'Do I need to undergo a "sham" cycle with hormones?',
-    answer: 'No. The vast majority of patients respond predictably to estrogen pills (estrace). If you are in the small group of patients who require an atypical protocol then this can easily be employed in a future cycle.',
-  },
-  {
-    question: 'Do I need to take Lupron?',
-    answer: 'Some patients do need to take Lupron but most do not and their cycles can be controlled by the use of oral contraceptives as needed.',
-  },
-  {
-    question: 'Can I have a Natural Cycle FET?',
-    answer: 'Yes. BUT you need to have regular cycles and be willing to have closer monitoring during your cycle to ensure we don't miss ovulation.',
-  },
-  ];
   return (
     <Layout>
       <Seo
@@ -184,25 +162,9 @@ const EmbryoAdoptionTestPage = () => {
           to your adopted child.</li>
         <li>Snowflakes has no waiting lists for adoptive families to be matched with embryos.</li>
         <li>Hoping to rescue an embryo from frozen storage? You may be interested in our Open Hearts Program.</li>
-        <li>Here are 50 more benefits you recieve when you choose Snowflakes Embryo Adoption/</li>
+        <li>Here are 50 more benefits you recieve when you choose Snowflakes Embryo Adoption.</li>
             </ul>
       </section>
-      <Faqs data={nightlight} />
-      <section
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '16px',
-          px: ['1rem', null, null, '2rem'],
-          py: ['2rem', null, null, '4rem'],
-          variant: 'text.normal',
-        }}
-        className="content"
-      >
-          <p>
-            Lorem Ipsum
-          </p>
-            </section>
       <Faqs data={data} />
       <Help />
     </Layout>
