@@ -79,6 +79,14 @@ const EmbryoAdoptionTestPage = () => {
           Patients undergo an evaluation to ensure that there are no medical contraindications to Embryo Adoption
           and then undergo their embryo transfers in Knoxville.
             </p>
+        <h3>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</h3>
+        <h4>1. EXPERTISE</h4>
+        <p>
+            Our embryology team has the most experience of any IVF program in the
+            country with the thawing and care of donated embryos especially those that
+            have been frozen for decades including several amazing outcomes such as the 
+            delivery of healthy twins after the transfer of embryos stored for 30 years!
+              </p>
       </section>
       <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'}/>
       <section
