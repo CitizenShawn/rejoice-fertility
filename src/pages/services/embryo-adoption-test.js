@@ -79,13 +79,38 @@ const EmbryoAdoptionTestPage = () => {
           Patients undergo an evaluation to ensure that there are no medical contraindications to Embryo Adoption
           and then undergo their embryo transfers in Knoxville.
             </p>
-        <h3>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</h3>
-        <h4>1. EXPERTISE</h4>
+        <h3><strong>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</strong></h3>
+        <h4><strong>1. EXPERTISE</strong></h4>
         <p>
             Our embryology team has the most experience of any IVF program in the
             country with the thawing and care of donated embryos especially those that
             have been frozen for decades including several amazing outcomes such as the 
             delivery of healthy twins after the transfer of embryos stored for 30 years!
+              </p>
+        <h4><strong>2. EXPERIENCE</strong></h4>
+        <p>
+            Our team has coordinated hundreds of frozen embryo transfer cycles for patients
+            pursuing embryo adoption.
+              </p>
+        <h4><strong>3. EXCELLENCE</strong></h4>
+        <p>
+            All embryos are handled with the upmost care. Rejoice IVF is the only accredited
+            IVF Program in the Greater Knoxville Area having secured this accreditation by
+            The Joint Commission back in 2021.
+                </p>
+        <h4><strong>4. EXPANSION</strong></h4>
+        <p>
+            Our new state-of-the-art IVF Laboratory and clinical space will be ready in August
+            2024 and with many patient-friendly features such as Private Rooms for pre-transfer
+            discussions with Dr. Gordon.
+              </p>
+        <h4><strong>5. EMPATHY</strong></h4>
+        <p>
+            All of us here at Rejoice Fertility believe that every embryo deserves a chance at life
+            and that the only embryo that cannot result in a healthy babyt is an embryo that you
+            do not transfer into a patient. In order to support Snowflakes OPEN HEARTS PROGRAM all
+            patients matching through this unique program can have their embryo transfers in Knoxville
+            for only $2,835 ... a significant savings off of our normal FET fees.
               </p>
       </section>
       <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'}/>
