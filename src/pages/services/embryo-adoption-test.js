@@ -151,6 +151,17 @@ const EmbryoAdoptionTestPage = () => {
           experiences. In contrast, embryo donation programs often priortize anonymity, providing little to no
           information to either the donor nor receipient and encouraging privacy rather than secrecy.
             </p>
+        <h3><strong>TOP REASONS TO CHOOSE SNOWFLAKES FOR EMBRYO ADOPTION</strong></h3>
+        <p>Snowflakes was established by Nightlight Christian Adoptions in 1997.</p>
+        <p>Over 2,000 have donated their remaining embryos through Snowflakes -- sometimes referred to as leftover
+          embryos or unused embryos -- allowing them to choose the adoptive family of their embryos.</p>
+        <p>More than 120 babies are expected to be born through the program in 2024, making a total number of
+          over 1,300 Snowflakes Babies born!</p>
+        <p>Embryo adoption is a low-cost adoption option, allowing you to experience pregnancy and give birth
+          to your adopted child.</p>
+        <p>Snowflakes has no waiting lists for adoptive families to be matched with embryos.</p>
+        <p>Hoping to rescue an embryo from frozen storage? You may be interested in our Open Hearts Program.</p>
+        <p>Here are 50 more benefits you recieve when you choose Snowflakes Embryo Adoption/</p>
       </section>
       <Faqs data={data} />
       <Help />
