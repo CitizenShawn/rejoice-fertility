@@ -61,15 +61,18 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-          It is estimated that there are over 1,000,000 frozen embryos stored in IVF Clinics across
-          the United States. Some couples are willing to donate their frozen embryos to recipient
-          couples who are willing to undergo a frozen embryo transfer with these embryos.
+          Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF
+          Clinics across the United States but no one is really sure of the actual number with a range of
+          (600,000 to 1.5 million frequently quoted).
         </p>
         <p>
-          At Rejoice Fertility we have extensive experience with Embryo Adoption. All matching
-          of embryo donors and recipients is accomplished through the efforts of the National Embryo
-          Donation Center and the Nightlight Christian Adoptions Snowflake Embryo Adoption Program.
+          Some couples are willing to donate their frozen embryos to recipient couples who are willing to
+          undergo a frozen embryo transfer with these embryos.
         </p>
+        <p>
+          At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire
+          world.
+            </p>
       </section>
       <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'}/>
       <section
