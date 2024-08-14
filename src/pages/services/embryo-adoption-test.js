@@ -73,6 +73,12 @@ const EmbryoAdoptionTestPage = () => {
           At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire
           world.
             </p>
+        <p>
+          All of our matching of embryo donors and recipients is currently accomplished through the efforts of
+          Nightlight Christian Adoptions Snowflake Embryo Adoption Program (<a href='https://nightlight.org/snowflakes-embryo-adoption-donation/'>nightlight.org/snowflakes-embryo-adoption-donation/</a>).
+          Patients undergo an evaluation to ensure that there are no medical contraindications to Embryo Adoption
+          and then undergo their embryo transfers in Knoxville.
+            </p>
       </section>
       <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'}/>
       <section
