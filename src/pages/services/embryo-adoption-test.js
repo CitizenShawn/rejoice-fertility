@@ -126,8 +126,31 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-          Lorem Ipsum
+          They named their new program "Snowflakes Embryo Adoption Program," likening each embryo to a
+          unique, frozen snowflake. Snowflakes Embryo Adoption has since become the largest embryo adoption
+          agency in the world.
           </p>
+        <p>
+          Embryo adoption follows adoption best practices, transferring remaining embryos from donors to
+          recipients -- the adopting families -- who then undergo frozen embryo transfers (FETs) with the
+          family receiving their embryos and give birth to their adopted child.
+            </p>
+        <p>
+          To ensure the well-being of all parties involved, an adoption home study is required. This process
+          educates the adopting family and provides peace of mind to the embryo donors, knowing that the
+          family receiving their embryos has been thorough vetted by the agency.
+            </p>
+        <p>
+          Embryo adoption programs differ from embryo donation programs run out of fertility clinics. While
+          the latter primarily focus on medical treatment, adoption agencies consider social and emotional
+          aspects for all involved in the adoption process.
+            </p>
+        <p>
+          Encouraging open relationships is a key aspect of embryo adoption, allowing children born from this
+          process to maintain connections with both their biological background and their adoptive family's
+          experiences. In contrast, embryo donation programs often priortize anonymity, providing little to no
+          information to either the donor nor receipient and encouraging privacy rather than secrecy.
+            </p>
       </section>
       <Faqs data={data} />
       <Help />
