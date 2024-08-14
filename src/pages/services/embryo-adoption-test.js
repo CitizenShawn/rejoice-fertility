@@ -188,6 +188,21 @@ const EmbryoAdoptionTestPage = () => {
             </ul>
       </section>
       <Faqs data={nightlight} />
+      <section
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          px: ['1rem', null, null, '2rem'],
+          py: ['2rem', null, null, '4rem'],
+          variant: 'text.normal',
+        }}
+        className="content"
+      >
+          <p>
+            Lorem Ipsum
+          </p>
+            </section>
       <Faqs data={data} />
       <Help />
     </Layout>
