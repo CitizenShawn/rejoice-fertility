@@ -146,10 +146,20 @@ const EmbryoAdoptionTestPage = () => {
             </p>
         <p>
           All of our matching of embryo donors and recipients is currently accomplished through the efforts of
-          Nightlight Christian Adoptions Snowflake Embryo Adoption Program (<a href='https://nightlight.org/snowflakes-embryo-adoption-donation/'>nightlight.org/snowflakes-embryo-adoption-donation/</a>).
-          Patients undergo an evaluation to ensure that there are no medical contraindications to Embryo Adoption
-          and then undergo their embryo transfers in Knoxville.
+          three organizations: <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflake Embryo Adoption Program</a>,
+          <a href='/services/embryo-adoption-organziations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a>
+          and <a href='/services/embryo-adoption-organziations/cac'>Christian Adoption Consultants</a>.
             </p>
+        <p>
+        Patients seeking to adopt embryos will undergo an evaluation to ensure that there are no medical
+        contraindications to Embryo Adoption (performed either here in Knoxville or with a local fertility
+        clinic close to where they live) and then undergo their embryo transfers in Knoxville. 
+        </p>
+        <p>
+        Most patients will only need to spend a day or two in Knoxville for their embryo transfer although
+        those seeking to have a Natural Cycle Frozen Embryo Transfer may have to spend a bit longer in order
+        to complete the necessary monitoring of their natural cycle.
+        </p>
         <h3><strong>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</strong></h3>
         <h4><strong>1. EXPERTISE</strong></h4>
         <p>
@@ -184,7 +194,7 @@ const EmbryoAdoptionTestPage = () => {
             for only $2,835 ... a significant savings off of our normal FET fees.
               </p>
       </section>
-      <Header title={'Nightlight'} description={'Snowflake Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Nightlight Christian Adoptions'} description={'Snowflake Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organziations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organziations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
