@@ -7,7 +7,7 @@ import Layout from '../../components/Layout';
 import Help from '../../components/Common/Help';
 import { Seo } from '../../components/Seo';
 
-const Nightlight = () => {
+const NightlightPage = () => {
   const data = [
     {
       question: 'Why are there embryos available for adoption?',
@@ -177,4 +177,4 @@ const Nightlight = () => {
   );
 };
 
-export default Nightlight;
+export default NightlightPage;
