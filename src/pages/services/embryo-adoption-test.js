@@ -45,37 +45,47 @@ const EmbryoAdoptionTestPage = () => {
   ];
   const q = [
     {
-      question: 'Why are there embryos available for adoption?',
+      question: 'How much are the fees of Embryo Adoption Services of Cedar Park?',
       answer:
-        'Stimulated Cycle IVF can result in the production of 12-30 eggs or more in some patients. One of the unanticipated issues associated with traditional IVF has been the question of what to do with the extra embryos that are left stored frozen in liquid nitrogen once a couple believes that their family is complete. Some couples are willing to allow others to adopt these embryos.',
+        'Fees are: $375 application fee, $6,800 program fee, $1,800 home study fee. The "Program Fee" can be paid over time in a flexible payment plan. There are no fees for placing/donating families.',
     },
     {
-      question: 'How common is Embryo Adoption?',
+      question: 'How long does it take?',
       answer:
-        'Although many IVF clinics offer Embryo Adoption / Embryo Donation, none has the depth of experience found at Rejoice Fertility. Although there are over 200,000 IVF procedures performed in the United States every year there are fewer than 2000 cycles of Embryo Adoption performed yearly.',
+        'Generally, 1-2 months to do the home study, and find your match. We can give you a better estimate when we get some information about your family and your needs.',
     },
     {
-      question: 'Who are the best candidates for Embryo Adoption?',
+      question: 'Do you have to have a home study?',
       answer:
-        'The best candidates for EA are those couples where the wife has a normal uterus and no medical reason which could result in a lower chance of success such as the presence of a dilated, fluid-filled fallopian tube (hydrosalpinx).',
+        'Yes, adopting families must have a home study by a licensed social worker prior to matching you with a family. We do have a social worker that can come to you, anywhere in the U.S.',
     },
     {
-      question: 'How successful is EA?',
-      answer: 'Success rates with Embryo Donation/Adoption are close to 50% per cycle',
+      question: 'How many embryos do we receive once we are matched with a family?',
+      answer: 'You will receive all the embryos that the donating/placing family has remaining. This could be 2-20 embryos (average 4-8). Once your family is complete, the embryos remaining would be matched with another family, and would not be your responsibility to make any decisions for the remaining embryos. If any born children come from another match, it can be possible to have contact with that family for the sake of sibling relationships. Not required.',
     },
     {
-      question: 'What about couples with male factor?',
+      question: 'Do you have embryos available right now?',
       answer:
-        'Some couples feel more comfortable with EA as opposed to the use of donor egg or donor sperm.',
+        'Yes, we do. This includes embryos from many different racial and ethnic backgrounds and combinations. We currently have no waiting list.',
     },
     {
-      question: 'Can couples without a fertility problem adopt embryos?',
-      answer: 'Absolutely. Some patients have pursued EA because they feel called to adopt.',
+      question: 'If we are making our embryos available for another family, can we decide which family they will be placed in?',
+      answer: 'Yes, we will send you a family profile for an approved adopting family, based on strong similarities, values, and the desired degree of contact with each other. If this family feels right to you, we will send your info to them to see and approve of as well. If everyone is comfortable, that is a successful "family match". You can choose any desired contact you desire, including "no contact".',
     },
     {
-      question: 'How expensive is this treatment?',
+      question: 'Do you handle the shipping and logistics of shipping the embryos?',
       answer:
-        'The treatment cost per cycle is less than $4,000 but that does not include pre-screening and the costs associated with the matching process through Snowflake Embryo Adoption or the National Embryo Donation Center.',
+        'Yes, we do that, working with both clinics. You pay only shipping fees for the actual carrier, FEDEX, etc.',
+    },
+    {
+      question: 'What are the average success rates?',
+      answer:
+        'Generally speaking, on a national average, there is a born child per transfer about 35-40% of the time. There are many variables that can increase the odds of success. To date, our success rates are higher that the national average. You will receive an entire set of embryos, so you will be able to try more than one time, thereby greatly increasing your chances of a live baby through your match.',
+    },
+    {
+      question: 'Do we get medical history background on the donating/placing families?',
+      answer:
+        'Absolutely, you will have all that information before you make a final decision if this is the right family match for you. Photos and letters from the placing/donating family will be sent to you as well in almost all cases. There are rare exceptions where photos are not provided.',
     },
   ];
   return (
@@ -201,7 +211,7 @@ const EmbryoAdoptionTestPage = () => {
         <li>Here are 50 more benefits you recieve when you choose Snowflakes Embryo Adoption.</li>
             </ul>
       </section>
-      <Header title={'Christian Adoption Consultants'} description={'Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people adopt with personalized support.'} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'christianadoptionconsultants.com'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'adoptembryos.org'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',
@@ -230,7 +240,8 @@ const EmbryoAdoptionTestPage = () => {
           who choose embryo adoption with Rejoice Fertility.
             </p>
       </section>
-      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'adoptembryos.org'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Questions q={q} />
+      <Header title={'Christian Adoption Consultants'} description={'Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people adopt with personalized support.'} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'christianadoptionconsultants.com'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',
