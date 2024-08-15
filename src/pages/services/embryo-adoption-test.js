@@ -248,21 +248,30 @@ const EmbryoAdoptionTestPage = () => {
         }}
         className="content"
       >
+        <h4><strong>MISSION</strong></h4>
         <p>
-          CAC uses an approach that goes through multiple agencies while also keeping the process ethical
-          start to finish. While CAC does go through different agencies and attorneys, clients always know
-          exactly what they are getting into. CAC doesn't recieve any additional funds from these agencies;
-          all of their funding comes from consultation fees.
+          There are thousands of human embryos held in suspended animation, in freezers all over
+          America, and around the world. Millions of couples that struggle with infertility year to hold a
+          baby in their arms, but are unable to conceive. Our program is designed to bring those families
+          together. Our service enables families to find each other, and for the embryos to have a chance to
+          be born, for the sake of their own lives, and for the infinite number of future generations.
           </p>
+        <p><em>"I knew you before you were yet formed in your mother's womb". - Psalm 139:13</em></p>
+        <h4><strong>ABOUT US</strong></h4>
         <p>
-          CAC is committed to providing personalized support, even going so far as to set up boundaries for
-          every client. With the largest support team of any adoption consultation agency in the country, you
-          can rest assured that CAC will help you throughout the entirety of the adoption process.
+          Embryo Adoption Services of Cedar Park is a Christian organization. We believe that life begins
+          at conception, and that every embryo is worthy of a loving family. Our focus is to unite genetic
+          families that have remaining embryos from previous IVF treatments, with adopting families, for
+          the purposes of providing a loving, nurturing environment for the child, and bringing the endless
+          joy of parenthood to those that embrace these little ones.
             </p>
         <p>
-          CAC is partnering with Rejoice Fertility to ensure that you are getting the support you deserve throughout
-          the embryo adoption process. Christian Adoption Consultants have even set up special pricing for clients
-          who choose embryo adoption with Rejoice Fertility.
+          Our Cedar Park program is designed to make embryo adoption both affordable and accessible, while
+          at the same time providing a venue for both the genetic famility and the adopting family to
+          have the advantage of choosing the kind of contact they will have with each other. Some families
+          may want an "open" model; while some families may want to reserve contact through Cedar Park. We
+          will work to procide the parameters that each family is most comfortable with. Counseling is
+          available and encouraged to determine what would be the best for your family.
             </p>
       </section>
       <Questions q={q} />
