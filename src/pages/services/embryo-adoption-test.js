@@ -194,6 +194,35 @@ const EmbryoAdoptionTestPage = () => {
           who choose embryo adoption with Rejoice Fertility.
             </p>
       </section>
+      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'adoptembryos.org'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <section
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          px: ['1rem', null, null, '2rem'],
+          py: ['2rem', null, null, '4rem'],
+          variant: 'text.normal',
+        }}
+        className="content"
+      >
+        <p>
+          CAC uses an approach that goes through multiple agencies while also keeping the process ethical
+          start to finish. While CAC does go through different agencies and attorneys, clients always know
+          exactly what they are getting into. CAC doesn't recieve any additional funds from these agencies;
+          all of their funding comes from consultation fees.
+          </p>
+        <p>
+          CAC is committed to providing personalized support, even going so far as to set up boundaries for
+          every client. With the largest support team of any adoption consultation agency in the country, you
+          can rest assured that CAC will help you throughout the entirety of the adoption process.
+            </p>
+        <p>
+          CAC is partnering with Rejoice Fertility to ensure that you are getting the support you deserve throughout
+          the embryo adoption process. Christian Adoption Consultants have even set up special pricing for clients
+          who choose embryo adoption with Rejoice Fertility.
+            </p>
+      </section>
       <Faqs data={data} />
       <Help />
     </Layout>
