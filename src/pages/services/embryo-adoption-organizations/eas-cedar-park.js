@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import Faqs from '../../components/Common/Faqs';
-import Questions from '../../components/Common/Questions';
-import Header from '../../components/Common/Header';
-import Layout from '../../components/Layout';
-import Help from '../../components/Common/Help';
-import { Seo } from '../../components/Seo';
+import Faqs from '../../../components/Common/Faqs';
+import Questions from '../../../components/Common/Questions';
+import Header from '../../../components/Common/Header';
+import Layout from '../../../components/Layout';
+import Help from '../../../components/Common/Help';
+import { Seo } from '../../../components/Seo';
 
 const EASPage = () => {
   const q = [
