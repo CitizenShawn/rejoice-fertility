@@ -197,7 +197,7 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-          They named their new program "Snowflakes Embryo Adoption Program," likening each embryo to a
+          They named their new program <a href='nightlight.org/snowflakes-embryo-adoption-donation/'>"Snowflakes Embryo Adoption Program,"</a> likening each embryo to a
           unique, frozen snowflake. Snowflakes Embryo Adoption has since become the largest embryo adoption
           agency in the world.
           </p>
@@ -207,20 +207,20 @@ const EmbryoAdoptionTestPage = () => {
           family receiving their embryos and give birth to their adopted child.
             </p>
         <p>
-          To ensure the well-being of all parties involved, an adoption home study is required. This process
+          To ensure the well-being of all parties involved, an <a href='mljadoptions.com/home-study'>adoption home study</a> is required. This process
           educates the adopting family and provides peace of mind to the embryo donors, knowing that the
           family receiving their embryos has been thorough vetted by the agency.
             </p>
         <p>
-          Embryo adoption programs differ from embryo donation programs run out of fertility clinics. While
-          the latter primarily focus on medical treatment, adoption agencies consider social and emotional
-          aspects for all involved in the adoption process.
+          Embryo adoption programs differ from <a href='en.wikipedia.org/wiki/Embryo_donation'>embryo donation</a> programs run out of fertility clinics. While
+          the latter primarily focus on medical treatment, adoption agencies consider <a href='adoption.org/what-is-the-adoption-triad'>social and emotional
+          aspects</a> for all involved in the adoption process.
             </p>
         <p>
           Encouraging open relationships is a key aspect of embryo adoption, allowing children born from this
-          process to maintain connections with both their biological background and their adoptive family's
+          process to maintain connections with both their <a href='lavenderluz.com/cover-story-embryo-adoption/'>biological background</a> and their adoptive family's
           experiences. In contrast, embryo donation programs often priortize anonymity, providing little to no
-          information to either the donor nor receipient and encouraging privacy rather than secrecy.
+          information to either the donor nor receipient and encouraging <a href='embryoadoption.org/2018/10/secrecy-privacy/'>privacy rather than secrecy</a>.
             </p>
         <h3><strong>TOP REASONS TO CHOOSE SNOWFLAKES FOR EMBRYO ADOPTION</strong></h3>
         <ul>
@@ -232,8 +232,8 @@ const EmbryoAdoptionTestPage = () => {
         <li>Embryo adoption is a low-cost adoption option, allowing you to experience pregnancy and give birth
           to your adopted child.</li>
         <li>Snowflakes has no waiting lists for adoptive families to be matched with embryos.</li>
-        <li>Hoping to rescue an embryo from frozen storage? You may be interested in our Open Hearts Program.</li>
-        <li>Here are 50 more benefits you recieve when you choose Snowflakes Embryo Adoption.</li>
+        <li>Hoping to rescue an embryo from frozen storage? You may be interested in our <a href='nightlight.org/snowflakes-embryo-adoption-donation/open-hearts-program/'>Open Hearts Program</a>.</li>
+        <li>Here are <a href='nightlight.org/wp-content/uploads/2023/06/50-Benefits-of-Snowflakes-2020.pdf'>50 more benefits you recieve</a> when you choose Snowflakes Embryo Adoption.</li>
             </ul>
       </section>
       <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'adoptembryos.org'} ctaSecondary={''} ctaSecondaryLink={''} />
@@ -275,7 +275,7 @@ const EmbryoAdoptionTestPage = () => {
             </p>
       </section>
       <Questions q={q} />
-      <Header title={'Christian Adoption Consultants'} description={'Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people adopt with personalized support.'} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'christianadoptionconsultants.com'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Christian Adoption Consultants'} description={'Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people adopt with personalized support.'} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'christianadoptionconsultants.com'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'www.christianadoptionconsultants.com/embryo-adoption-rejoice-fertility-special-pricing/'} />
       <section
         sx={{
           display: 'flex',
