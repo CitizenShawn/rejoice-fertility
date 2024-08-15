@@ -165,7 +165,7 @@ const EmbryoAdoptionTestPage = () => {
         <li>Here are 50 more benefits you recieve when you choose Snowflakes Embryo Adoption.</li>
             </ul>
       </section>
-      <Header title={'Christian Adoption Consultants'} description={'Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people adopt with personalized support.'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'christianadoptionconsultants.com'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Christian Adoption Consultants'} description={'Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people adopt with personalized support.'} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'christianadoptionconsultants.com'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',
@@ -194,7 +194,7 @@ const EmbryoAdoptionTestPage = () => {
           who choose embryo adoption with Rejoice Fertility.
             </p>
       </section>
-      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'adoptembryos.org'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'adoptembryos.org'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',
