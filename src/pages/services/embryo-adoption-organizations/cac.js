@@ -59,7 +59,7 @@ const NightlightPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Christian Adoption Consultants'} description={'Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people adopt with personalized support.'} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'christianadoptionconsultants.com'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'www.christianadoptionconsultants.com/embryo-adoption-rejoice-fertility-special-pricing/'} />
+      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://www.christianadoptionconsultants.com'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'https://www.christianadoptionconsultants.com/embryo-adoption-rejoice-fertility-special-pricing/'} />
       <section
         sx={{
           display: 'flex',
@@ -71,6 +71,10 @@ const NightlightPage = () => {
         }}
         className="content"
       >
+        <p>
+        Founded in 2006, Christian Adoption Consultants (CAC) are a team of professionals that help people
+        adopt with personalized support.
+        </p>
         <p>
           CAC uses an approach that goes through multiple agencies while also keeping the process ethical
           start to finish. While CAC does go through different agencies and attorneys, clients always know

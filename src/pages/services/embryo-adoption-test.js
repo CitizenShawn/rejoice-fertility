@@ -195,8 +195,8 @@ const EmbryoAdoptionTestPage = () => {
               </p>
       </section>
       <Header title={'Nightlight Christian Adoptions'} description={'Snowflake Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
-      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organziations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
-      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organziations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
       <Help />
     </Layout>
