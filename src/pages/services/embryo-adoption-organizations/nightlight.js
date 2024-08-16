@@ -74,7 +74,7 @@ const NightlightPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'Rejoice-Fee-Schedule-Snowflakes'} />
+      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'/Rejoice-Fee-Schedule-Snowflake.pdf'} />
       <section
         sx={{
           display: 'flex',
@@ -87,7 +87,7 @@ const NightlightPage = () => {
         className="content"
       >
         <p>
-        In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in frozen storage in selecting an adopting family to attempt pregnancy with them.
+        In 1997 Nightlight Christian Adoptions pioneered embryo adoption to assist families with remaining embryos in frozen storage in selecting an adopting family to attempt pregnancy with them.
         </p>
         <p>
           They named their new program <a href='https://nightlight.org/snowflakes-embryo-adoption-donation/'>"Snowflakes Embryo Adoption Program,"</a> likening each embryo to a
@@ -100,7 +100,7 @@ const NightlightPage = () => {
           family receiving their embryos and give birth to their adopted child.
             </p>
         <p>
-          To ensure the well-being of all parties involved, an <a href='https://mljadoptions.com/home-study'>adoption home study</a> is required. This process
+          To ensure the well-being of all parties involved, an <a href='https://nightlight.org/snowflakes-embryo-adoption-donation/snowflakes-family-evaluation/'>adoption home study</a> is required. This process
           educates the adopting family and provides peace of mind to the embryo donors, knowing that the
           family receiving their embryos has been thoroughly vetted by the agency.
             </p>
