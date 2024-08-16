@@ -74,7 +74,7 @@ const NightlightPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'/Rejoice-Fee-Schedule-Snowflake.pdf'} />
+      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'/Rejoice-Fee-Schedule-Snowflakes.pdf'} />
       <section
         sx={{
           display: 'flex',
