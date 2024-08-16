@@ -153,15 +153,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [process.env.trackingIds],
-        gTagConfig: {
-          send_page_view: true,
-        },
-      },
-    },
-    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-KXH3QS6T",
