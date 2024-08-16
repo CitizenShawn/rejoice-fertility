@@ -74,7 +74,7 @@ const NightlightPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Nightlight'} description={'In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in forzen storage in selecting an adopting family to attempt pregnancy with them.'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',
@@ -87,7 +87,10 @@ const NightlightPage = () => {
         className="content"
       >
         <p>
-          They named their new program <a href='nightlight.org/snowflakes-embryo-adoption-donation/'>"Snowflakes Embryo Adoption Program,"</a> likening each embryo to a
+        In 1997 Nightlight Christian Adoption pioneered embryo adoption to assist families with remaining embryos in frozen storage in selecting an adopting family to attempt pregnancy with them.
+        </p>
+        <p>
+          They named their new program <a href='https://nightlight.org/snowflakes-embryo-adoption-donation/'>"Snowflakes Embryo Adoption Program,"</a> likening each embryo to a
           unique, frozen snowflake. Snowflakes Embryo Adoption has since become the largest embryo adoption
           agency in the world.
           </p>
@@ -97,20 +100,20 @@ const NightlightPage = () => {
           family receiving their embryos and give birth to their adopted child.
             </p>
         <p>
-          To ensure the well-being of all parties involved, an <a href='mljadoptions.com/home-study'>adoption home study</a> is required. This process
+          To ensure the well-being of all parties involved, an <a href='https://mljadoptions.com/home-study'>adoption home study</a> is required. This process
           educates the adopting family and provides peace of mind to the embryo donors, knowing that the
-          family receiving their embryos has been thorough vetted by the agency.
+          family receiving their embryos has been thoroughly vetted by the agency.
             </p>
         <p>
-          Embryo adoption programs differ from <a href='en.wikipedia.org/wiki/Embryo_donation'>embryo donation</a> programs run out of fertility clinics. While
+          Embryo adoption programs differ from <a href='https://en.wikipedia.org/wiki/Embryo_donation'>embryo donation</a> programs run out of fertility clinics. While
           the latter primarily focus on medical treatment, adoption agencies consider <a href='adoption.org/what-is-the-adoption-triad'>social and emotional
           aspects</a> for all involved in the adoption process.
             </p>
         <p>
           Encouraging open relationships is a key aspect of embryo adoption, allowing children born from this
-          process to maintain connections with both their <a href='lavenderluz.com/cover-story-embryo-adoption/'>biological background</a> and their adoptive family's
+          process to maintain connections with both their <a href='https://lavenderluz.com/cover-story-embryo-adoption/'>biological background</a> and their adoptive family's
           experiences. In contrast, embryo donation programs often priortize anonymity, providing little to no
-          information to either the donor nor receipient and encouraging <a href='embryoadoption.org/2018/10/secrecy-privacy/'>privacy rather than secrecy</a>.
+          information to either the donor nor receipient and encouraging <a href='https://embryoadoption.org/2018/10/secrecy-privacy/'>privacy rather than secrecy</a>.
             </p>
         <h3><strong>TOP REASONS TO CHOOSE SNOWFLAKES FOR EMBRYO ADOPTION</strong></h3>
         <ul>
@@ -122,11 +125,11 @@ const NightlightPage = () => {
         <li>Embryo adoption is a low-cost adoption option, allowing you to experience pregnancy and give birth
           to your adopted child.</li>
         <li>Snowflakes has no waiting lists for adoptive families to be matched with embryos.</li>
-        <li>Hoping to rescue an embryo from frozen storage? You may be interested in our <a href='nightlight.org/snowflakes-embryo-adoption-donation/open-hearts-program/'>Open Hearts Program</a>.</li>
-        <li>Here are <a href='nightlight.org/wp-content/uploads/2023/06/50-Benefits-of-Snowflakes-2020.pdf'>50 more benefits you recieve</a> when you choose Snowflakes Embryo Adoption.</li>
+        <li>Hoping to rescue an embryo from frozen storage? You may be interested in our <a href='https://nightlight.org/snowflakes-embryo-adoption-donation/open-hearts-program/'>Open Hearts Program</a>.</li>
+        In order to support Snowflakes OPEN HEARTS PROGRAM all patients matching through this unique program can have their embryo transfers in Knoxville for only $2,835 ... a significant savings off of our normal FET fees.
+        <li>Here are <a href='https://nightlight.org/wp-content/uploads/2023/06/50-Benefits-of-Snowflakes-2020.pdf'>50 more benefits you recieve</a> when you choose Snowflakes Embryo Adoption.</li>
             </ul>
       </section>
-      <Faqs data={data} />
       <Help />
     </Layout>
   );

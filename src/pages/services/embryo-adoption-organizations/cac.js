@@ -88,7 +88,7 @@ const NightlightPage = () => {
             </p>
         <p>
           CAC is partnering with Rejoice Fertility to ensure that you are getting the support you deserve throughout
-          the embryo adoption process. Christian Adoption Consultants have even set up special pricing for clients
+          the embryo adoption process. Christian Adoption Consultants have even set up <a href='https://www.christianadoptionconsultants.com/embryo-adoption-rejoice-fertility-special-pricing/'>special pricing</a> for clients
           who choose embryo adoption with Rejoice Fertility.
             </p>
       </section>

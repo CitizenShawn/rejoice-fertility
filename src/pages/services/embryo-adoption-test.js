@@ -133,8 +133,8 @@ const EmbryoAdoptionTestPage = () => {
       >
         <p>
           Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF
-          Clinics across the United States but no one is really sure of the actual number with a range of
-          (600,000 to 1.5 million frequently quoted).
+          Clinic across the United States but no one is really sure of the actual number with a range of
+          600,000 to 1.5 million frequently quoted.
         </p>
         <p>
           Some couples are willing to donate their frozen embryos to recipient couples who are willing to
@@ -146,9 +146,9 @@ const EmbryoAdoptionTestPage = () => {
             </p>
         <p>
           All of our matching of embryo donors and recipients is currently accomplished through the efforts of
-          three organizations: <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflake Embryo Adoption Program</a>,
-          <a href='/services/embryo-adoption-organziations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a>
-          and <a href='/services/embryo-adoption-organziations/cac'>Christian Adoption Consultants</a>.
+          three organizations: <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
+          <a href='/services/embryo-adoption-organziations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a> 
+          and <a href='/services/embryo-adoption-organziations/cac'>Christian Adoption Consultants</a>. 
             </p>
         <p>
         Patients seeking to adopt embryos will undergo an evaluation to ensure that there are no medical
@@ -188,13 +188,11 @@ const EmbryoAdoptionTestPage = () => {
         <h4><strong>5. EMPATHY</strong></h4>
         <p>
             All of us here at Rejoice Fertility believe that every embryo deserves a chance at life
-            and that the only embryo that cannot result in a healthy babyt is an embryo that you
-            do not transfer into a patient. In order to support Snowflakes OPEN HEARTS PROGRAM all
-            patients matching through this unique program can have their embryo transfers in Knoxville
-            for only $2,835 ... a significant savings off of our normal FET fees.
+            and that the only embryo that cannot result in a healthy baby is the embryo that you
+            do not transfer into a patient.
               </p>
       </section>
-      <Header title={'Nightlight Christian Adoptions'} description={'Snowflake Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
