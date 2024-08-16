@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import Faqs from '../../components/Common/Faqs';
+import Questions from '../../components/Common/Questions';
 import Header from '../../components/Common/Header';
 import Layout from '../../components/Layout';
 import Help from '../../components/Common/Help';
 import { Seo } from '../../components/Seo';
 
-const EmbryoAdoptionPage = () => {
+const EmbryoAdoptionTestPage = () => {
   const data = [
     {
       question: 'Why are there embryos available for adoption?',
@@ -41,6 +42,76 @@ const EmbryoAdoptionPage = () => {
       answer:
         'The treatment cost per cycle is less than $4,000 but that does not include pre-screening and the costs associated with the matching process through Snowflake Embryo Adoption or the National Embryo Donation Center.',
     },
+    {
+      question: 'I have been matched with embryos now what do I do?',
+      answer:
+        'You can schedule an in-person or virtual consult with Dr. Gordon and then based upon that consultation you will need to have a few basic tests performed: A vaginal ultrasound, a saline sonogram to check the inside of the cavity, and a trial embryo transfer (also called a mock transfer).',
+    },
+    {
+      question: 'Do I need to travel to Knoxville for those tests?',
+      answer:
+        'No. You can have those tests performed by a fertility clinic in your geographic region if that is more convenient. However, many patients prefer to have these tests done by Dr. Gordon in Knoxville.',
+    },
+    {
+      question: 'Do I need to undergo a "sham" cycle with hormones?',
+      answer:
+        'No. The vast majority of patients respond predictably to estrogen pills (estrace). If you are in the samll group of patients who require an atypical protocol then this can easily be employed in a future cycle.',
+    },
+    {
+      question: 'Do I need to take Lupron?',
+      answer:
+        'Some patients do need to take Lupron but most do not and their cycles can be controlled by the use of oral contraceptives as needed.',
+    },
+    {
+      question: 'Can I have a Natural Cycle FET?',
+      answer:
+        'Yes. BUT you need to have regular cycles and be willing to have closer monitoring during your cycle to ensure we do not miss ovulation.',
+    },
+  ];
+  const q = [
+    {
+      question: 'How much are the fees of Embryo Adoption Services of Cedar Park?',
+      answer:
+        'Fees are: $375 application fee, $6,800 program fee, $1,800 home study fee. The "Program Fee" can be paid over time in a flexible payment plan. There are no fees for placing/donating families.',
+    },
+    {
+      question: 'How long does it take?',
+      answer:
+        'Generally, 1-2 months to do the home study, and find your match. We can give you a better estimate when we get some information about your family and your needs.',
+    },
+    {
+      question: 'Do you have to have a home study?',
+      answer:
+        'Yes, adopting families must have a home study by a licensed social worker prior to matching you with a family. We do have a social worker that can come to you, anywhere in the U.S.',
+    },
+    {
+      question: 'How many embryos do we receive once we are matched with a family?',
+      answer: 'You will receive all the embryos that the donating/placing family has remaining. This could be 2-20 embryos (average 4-8). Once your family is complete, the embryos remaining would be matched with another family, and would not be your responsibility to make any decisions for the remaining embryos. If any born children come from another match, it can be possible to have contact with that family for the sake of sibling relationships. Not required.',
+    },
+    {
+      question: 'Do you have embryos available right now?',
+      answer:
+        'Yes, we do. This includes embryos from many different racial and ethnic backgrounds and combinations. We currently have no waiting list.',
+    },
+    {
+      question: 'If we are making our embryos available for another family, can we decide which family they will be placed in?',
+      answer: 'Yes, we will send you a family profile for an approved adopting family, based on strong similarities, values, and the desired degree of contact with each other. If this family feels right to you, we will send your info to them to see and approve of as well. If everyone is comfortable, that is a successful "family match". You can choose any desired contact you desire, including "no contact".',
+    },
+    {
+      question: 'Do you handle the shipping and logistics of shipping the embryos?',
+      answer:
+        'Yes, we do that, working with both clinics. You pay only shipping fees for the actual carrier, FEDEX, etc.',
+    },
+    {
+      question: 'What are the average success rates?',
+      answer:
+        'Generally speaking, on a national average, there is a born child per transfer about 35-40% of the time. There are many variables that can increase the odds of success. To date, our success rates are higher that the national average. You will receive an entire set of embryos, so you will be able to try more than one time, thereby greatly increasing your chances of a live baby through your match.',
+    },
+    {
+      question: 'Do we get medical history background on the donating/placing families?',
+      answer:
+        'Absolutely, you will have all that information before you make a final decision if this is the right family match for you. Photos and letters from the placing/donating family will be sent to you as well in almost all cases. There are rare exceptions where photos are not provided.',
+    },
   ];
   return (
     <Layout>
@@ -61,20 +132,73 @@ const EmbryoAdoptionPage = () => {
         className="content"
       >
         <p>
-          It is estimated that there are over 1,000,000 frozen embryos stored in IVF Clinics across
-          the United States. Some couples are willing to donate their frozen embryos to recipient
-          couples who are willing to undergo a frozen embryo transfer with these embryos.
+          Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF
+          Clinic across the United States but no one is really sure of the actual number with a range of
+          600,000 to 1.5 million frequently quoted.
         </p>
         <p>
-          At Rejoice Fertility we have extensive experience with Embryo Adoption. All matching
-          of embryo donors and recipients is accomplished through the efforts of the National Embryo
-          Donation Center and the Nightlight Christian Adoptions Snowflake Embryo Adoption Program.
+          Some couples are willing to donate their frozen embryos to recipient couples who are willing to
+          undergo a frozen embryo transfer with these embryos.
         </p>
+        <p>
+          At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire
+          world.
+            </p>
+        <p>
+          All of our matching of embryo donors and recipients is currently accomplished through the efforts of
+          three organizations: <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
+          <a href='/services/embryo-adoption-organziations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a> 
+          and <a href='/services/embryo-adoption-organziations/cac'>Christian Adoption Consultants</a>. 
+            </p>
+        <p>
+        Patients seeking to adopt embryos will undergo an evaluation to ensure that there are no medical
+        contraindications to Embryo Adoption (performed either here in Knoxville or with a local fertility
+        clinic close to where they live) and then undergo their embryo transfers in Knoxville. 
+        </p>
+        <p>
+        Most patients will only need to spend a day or two in Knoxville for their embryo transfer although
+        those seeking to have a Natural Cycle Frozen Embryo Transfer may have to spend a bit longer in order
+        to complete the necessary monitoring of their natural cycle.
+        </p>
+        <h3><strong>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</strong></h3>
+        <h4><strong>1. EXPERTISE</strong></h4>
+        <p>
+            Our embryology team has the most experience of any IVF program in the
+            country with the thawing and care of donated embryos especially those that
+            have been frozen for decades including several amazing outcomes such as the 
+            delivery of healthy twins after the transfer of embryos stored for 30 years!
+              </p>
+        <h4><strong>2. EXPERIENCE</strong></h4>
+        <p>
+            Our team has coordinated hundreds of frozen embryo transfer cycles for patients
+            pursuing embryo adoption.
+              </p>
+        <h4><strong>3. EXCELLENCE</strong></h4>
+        <p>
+            All embryos are handled with the upmost care. Rejoice IVF is the only accredited
+            IVF Program in the Greater Knoxville Area having secured this accreditation by
+            The Joint Commission back in 2021.
+                </p>
+        <h4><strong>4. EXPANSION</strong></h4>
+        <p>
+            Our new state-of-the-art IVF Laboratory and clinical space will be ready in August
+            2024 and with many patient-friendly features such as Private Rooms for pre-transfer
+            discussions with Dr. Gordon.
+              </p>
+        <h4><strong>5. EMPATHY</strong></h4>
+        <p>
+            All of us here at Rejoice Fertility believe that every embryo deserves a chance at life
+            and that the only embryo that cannot result in a healthy baby is the embryo that you
+            do not transfer into a patient.
+              </p>
       </section>
+      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
       <Help />
     </Layout>
   );
 };
 
-export default EmbryoAdoptionPage;
+export default EmbryoAdoptionTestPage;
