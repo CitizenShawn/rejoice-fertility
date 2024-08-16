@@ -59,7 +59,7 @@ const NightlightPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://www.christianadoptionconsultants.com'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'https://www.christianadoptionconsultants.com/embryo-adoption-rejoice-fertility-special-pricing/'} />
+      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://www.christianadoptionconsultants.com'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'/Rejoice-Fee-Schedule-Cedar Park.pdf'} />
       <section
         sx={{
           display: 'flex',
