@@ -74,7 +74,7 @@ const NightlightPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={'Specialty Pricing'} ctaSecondaryLink={'Rejoice-Fee-Schedule-Snowflakes'} />
       <section
         sx={{
           display: 'flex',
@@ -126,7 +126,7 @@ const NightlightPage = () => {
           to your adopted child.</li>
         <li>Snowflakes has no waiting lists for adoptive families to be matched with embryos.</li>
         <li>Hoping to rescue an embryo from frozen storage? You may be interested in our <a href='https://nightlight.org/snowflakes-embryo-adoption-donation/open-hearts-program/'>Open Hearts Program</a>.</li>
-        In order to support Snowflakes OPEN HEARTS PROGRAM all patients matching through this unique program can have their embryo transfers in Knoxville for only $2,835 ... a significant savings off of our normal FET fees.
+        In order to support <a href='/Rejoice-Fee-Schedule-Open-Hearts.pdf'>Snowflakes OPEN HEARTS PROGRAM</a> all patients matching through this unique program can have their embryo transfers in Knoxville for only $2,835 ... a significant savings off of our normal FET fees.
         <li>Here are <a href='https://nightlight.org/wp-content/uploads/2023/06/50-Benefits-of-Snowflakes-2020.pdf'>50 more benefits you recieve</a> when you choose Snowflakes Embryo Adoption.</li>
             </ul>
       </section>
