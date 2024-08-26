@@ -147,8 +147,8 @@ const EmbryoAdoptionTestPage = () => {
         <p>
           All of our matching of embryo donors and recipients is currently accomplished through the efforts of
           three organizations: <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
-          <a href='/services/embryo-adoption-organziations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a> 
-          and <a href='/services/embryo-adoption-organziations/cac'>Christian Adoption Consultants</a>. 
+          <a href='/services/embryo-adoption-organizations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a> 
+           and <a href='/services/embryo-adoption-organizations/cac'>Christian Adoption Consultants</a>. 
             </p>
         <p>
         Patients seeking to adopt embryos will undergo an evaluation to ensure that there are no medical
