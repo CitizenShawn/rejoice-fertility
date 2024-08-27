@@ -196,6 +196,31 @@ const EmbryoAdoptionTestPage = () => {
       <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
+      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <section
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          px: ['1rem', null, null, '2rem'],
+          py: ['2rem', null, null, '4rem'],
+          variant: 'text.normal',
+        }}
+        className="content"
+      >
+        <p>
+        There were previous issues between Rejoice and the NEDC; however, those issues were worked out in Mediation
+        on August 23, 2024 to the mutual benefit of all parties, and most importantly, all patients
+        </p>
+        <p>
+        The parties agreed that all Rejoice patients (both Dr. Keenan’s and Dr. Gordon’s) who were matched with NEDC
+        donated embryos or had NEDC embryos on reserve as of 8/1/24 could choose to keep these embryos at Rejoice
+        and have their future care with Dr. Gordon and the nursing and embryology team at Rejoice, OR choose to have
+        future embryo transfers with Dr. Keenan in Powell, TN, OR choose to have their care with another NEDC affiliated
+        clinic.
+        </p>
+      </section>
+      <Questions q={q} />
       <Help />
     </Layout>
   );
