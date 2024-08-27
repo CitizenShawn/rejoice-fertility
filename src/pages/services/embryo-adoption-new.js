@@ -70,47 +70,37 @@ const EmbryoAdoptionTestPage = () => {
   ];
   const q = [
     {
-      question: 'How much are the fees of Embryo Adoption Services of Cedar Park?',
+      question: 'What are the next steps that I need to take?',
       answer:
-        'Fees are: $375 application fee, $6,800 program fee, $1,800 home study fee. The "Program Fee" can be paid over time in a flexible payment plan. There are no fees for placing/donating families.',
+        'Per the mediation agreement signed on 8/23/24, all affected patients are being notified so that they can make their own choice via the outline above. Both parties request that patients make their choice known by Sept. 20, 2024. If you have already sent in that form, then your choice will be honored by both entities. A link to this form can be found here: https://pdf.ac/3KY2Y9',
     },
     {
-      question: 'How long does it take?',
+      question: 'I was recently seen as a new patient (by either Dr. Gordon or Dr. Keenan) and have yet to matched with any NEDC embryos, what are my options?',
       answer:
-        'Generally, 1-2 months to do the home study, and find your match. We can give you a better estimate when we get some information about your family and your needs.',
+        'If you wish to be matched with NEDC embryos, then you will remain a patient of Dr. Keenan’s. Contact Dr. Keenan’s new practice and the NEDC. If you are interested in pursuing Embryo Adoption at Rejoice then you can do so with embryos matched to you by either Snowflakes Embryo Adoption or Embryo Adoption Services of Cedar Park. Please contact Rejoice at any time if you have any questions.',
     },
     {
-      question: 'Do you have to have a home study?',
+      question: 'I am a Rejoice patient (previously seen by Dr. Gordon or Dr. Keenan) but have used all of my NEDC donated embryos, what are my options?',
+      answer: 'Refer to above question for all options available.',
+    },
+    {
+      question: 'Where are my embryos now?',
       answer:
-        'Yes, adopting families must have a home study by a licensed social worker prior to matching you with a family. We do have a social worker that can come to you, anywhere in the U.S.',
+        'Your adopted embryos remain where they have always been since they arrived here in Knoxville - safe and sound in the cryostorage tanks (also called dewars) at Rejoice Fertility under the care of our experienced embryology team.',
     },
     {
-      question: 'How many embryos do we receive once we are matched with a family?',
-      answer: 'You will receive all the embryos that the donating/placing family has remaining. This could be 2-20 embryos (average 4-8). Once your family is complete, the embryos remaining would be matched with another family, and would not be your responsibility to make any decisions for the remaining embryos. If any born children come from another match, it can be possible to have contact with that family for the sake of sibling relationships. Not required.',
+      question: 'When will my embryos be moved if I choose to transfer my care to Dr. Keenan’s new practice?',
+      answer: 'Per the agreement of both parties all of the embryos for patients who wish to continue their care with Dr. Keenan and all of the unmatched embryos will hopefully be moved to Dr. Keenan’s new practice location by October 15, 2024.',
     },
     {
-      question: 'Do you have embryos available right now?',
+      question: 'When will embryo transfers resume?',
       answer:
-        'Yes, we do. This includes embryos from many different racial and ethnic backgrounds and combinations. We currently have no waiting list.',
+        'At Rejoice, getting a brand new IVF Laboratory up and running requires diligence and attention to detail. We are scheduling our first group of embryo transfers in the new Rejoice Fertility building for the last week of September. During October we will be performing FETs over 3 weeks in order to catch up on patients who have been waiting patiently for their FETs. If you choose to continue your care with Dr. Keenan, please contact his new practice in Powell, TN or the NEDC',
     },
     {
-      question: 'If we are making our embryos available for another family, can we decide which family they will be placed in?',
-      answer: 'Yes, we will send you a family profile for an approved adopting family, based on strong similarities, values, and the desired degree of contact with each other. If this family feels right to you, we will send your info to them to see and approve of as well. If everyone is comfortable, that is a successful "family match". You can choose any desired contact you desire, including "no contact".',
-    },
-    {
-      question: 'Do you handle the shipping and logistics of shipping the embryos?',
+      question: 'What can I do if I have additional questions or concerns?',
       answer:
-        'Yes, we do that, working with both clinics. You pay only shipping fees for the actual carrier, FEDEX, etc.',
-    },
-    {
-      question: 'What are the average success rates?',
-      answer:
-        'Generally speaking, on a national average, there is a born child per transfer about 35-40% of the time. There are many variables that can increase the odds of success. To date, our success rates are higher that the national average. You will receive an entire set of embryos, so you will be able to try more than one time, thereby greatly increasing your chances of a live baby through your match.',
-    },
-    {
-      question: 'Do we get medical history background on the donating/placing families?',
-      answer:
-        'Absolutely, you will have all that information before you make a final decision if this is the right family match for you. Photos and letters from the placing/donating family will be sent to you as well in almost all cases. There are rare exceptions where photos are not provided.',
+        'Dr. Gordon will continue to make himself available to all patients with questions or concerns. Patients are welcome to contact him via phone, email (dr.gordon@rejoiceivf.com) or via a video call using the DOXY.ME video conferencing system (please call Taylor or Alyssa at 865-777-0088 to schedule). All of us here at Rejoice are so sorry for any distress that this situation has caused and we are so happy that patients will be able to continue their care with the physician, clinical and embryology team of their choice!',
     },
   ];
   return (
