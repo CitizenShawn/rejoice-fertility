@@ -220,7 +220,7 @@ const IVFPage = () => {
         <p>
           At Rejoice Fertility we perform IVF right here in our office! IVF can be performed
           with no fertility medications (Natural Cycle IVF), minimal fertility medications
-          (Mini-IVF) or traditional stimulation medications (Stimulated Cycle IVF).
+          (Mini-IVF) or traditional stimulation medications (Stimulated Cycle IVF).<br />
         </p>
         <p>
         Rejoice is a "no-discard” IVF program. All viable embryos must either be transferred or
@@ -230,7 +230,7 @@ const IVFPage = () => {
         and patients without a belief in God. Many patients who struggle with the ethical, moral
         and spiritual questions raised by the process of IVF are relieved to find a clinic that
         not only respects these concerns but welcomes an honest and frank discussion about the
-        issues inherent in IVF.
+        issues inherent in IVF.<br />
         </p>
         <p>
           <a href="https://www.theatlantic.com/health/archive/2024/08/vision-future-ivf-christian-fetal-personhood/679586/?gift=D_hJMI87NXlE47BC567UVA_bUSYmsqS6LjsmvUus3JU">Learn more about why Rejoice Fertility is the choice for IVF according to this article
