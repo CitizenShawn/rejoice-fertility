@@ -118,6 +118,20 @@ const EmbryoAdoptionTestPage = () => {
           px: ['1rem', null, null, '2rem'],
           py: ['2rem', null, null, '4rem'],
           variant: 'text.normal',
+          background: #47E4E0;
+        }}
+        className="content"
+      >
+        <h2><strong><a href="https://rejoicefertility.com/services/embryo-adoption-new/#NEDC">Click Here to Learn More about Rejoice Fertility and the NEDC</a></strong></h2>
+      </section>
+      <section
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          px: ['1rem', null, null, '2rem'],
+          py: ['2rem', null, null, '4rem'],
+          variant: 'text.normal',
         }}
         className="content"
       >
@@ -198,6 +212,7 @@ const EmbryoAdoptionTestPage = () => {
         }}
         className="content"
       >
+        <div id="NEDC">
         <p>
         There were previous issues between Rejoice and the NEDC; however, those issues were worked out in Mediation
         on August 23, 2024 to the mutual benefit of all parties, and most importantly, all patients
@@ -209,6 +224,7 @@ const EmbryoAdoptionTestPage = () => {
         future embryo transfers with Dr. Keenan in Powell, TN, OR choose to have their care with another NEDC affiliated
         clinic.
         </p>
+        </div>
       </section>
       <Questions q={q} />
       <Help />

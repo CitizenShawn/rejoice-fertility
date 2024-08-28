@@ -222,6 +222,7 @@ const IVFPage = () => {
           with no fertility medications (Natural Cycle IVF), minimal fertility medications
           (Mini-IVF) or traditional stimulation medications (Stimulated Cycle IVF).<br />
         </p>
+        <br />
         <p>
         Rejoice is a "no-discard” IVF program. All viable embryos must either be transferred or
         frozen for future use. We will not discard any viable embryos (fresh or frozen). We do not
@@ -232,6 +233,7 @@ const IVFPage = () => {
         not only respects these concerns but welcomes an honest and frank discussion about the
         issues inherent in IVF.<br />
         </p>
+        <br />
         <p>
           <a href="https://www.theatlantic.com/health/archive/2024/08/vision-future-ivf-christian-fetal-personhood/679586/?gift=D_hJMI87NXlE47BC567UVA_bUSYmsqS6LjsmvUus3JU">Learn more about why Rejoice Fertility is the choice for IVF according to this article
             by the Atlantic.
