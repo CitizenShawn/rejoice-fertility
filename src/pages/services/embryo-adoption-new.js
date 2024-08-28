@@ -183,7 +183,6 @@ const EmbryoAdoptionTestPage = () => {
               </p>
       </section>
       <section
-        style="background-color: red;"
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -194,7 +193,7 @@ const EmbryoAdoptionTestPage = () => {
         }}
         className="content"
       >
-        <p>
+        <p style="background-color: red">
           Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF
           Clinic across the United States but no one is really sure of the actual number with a range of
           600,000 to 1.5 million frequently quoted.
