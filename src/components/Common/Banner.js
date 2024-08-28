@@ -32,6 +32,28 @@ const Banner = ({
       >
         <div
           sx={{
+            flex: ['1 0 100%', null, '1 0 calc(50% - 1rem)'],
+            maxWidth: ['100%', null, '1 0 calc(50% - 1rem) '],
+
+            order: [2, null, 0],
+            maxHeight: '100px',
+            minHeight: '100%',
+          }}
+        >
+          <img
+            sx={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              maxHeight: 'inherit',
+              p: ['1rem', null, '0px'],
+            }}
+            src={image}
+            alt=""
+          />
+        </div>
+        <div
+          sx={{
             flex: ['1 0 100%', null, '1 0 50%'],
             maxWidth: ['100%', null, '50%'],
             position: 'relative',
@@ -158,4 +180,4 @@ const Banner = ({
   );
 };
 
-export default Header;
+export default Banner;
