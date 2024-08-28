@@ -183,6 +183,7 @@ const EmbryoAdoptionTestPage = () => {
               </p>
       </section>
       <section
+        style="background-color: red;"
         sx={{
           display: 'flex',
           flexDirection: 'column',
