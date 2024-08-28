@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui';
 import Faqs from '../../components/Common/Faqs';
 import Questions from '../../components/Common/Questions';
 import Header from '../../components/Common/Header';
+import Banner from '../../components/Common/Banner';
 import Layout from '../../components/Layout';
 import Help from '../../components/Common/Help';
 import { Seo } from '../../components/Seo';
@@ -110,6 +111,7 @@ const EmbryoAdoptionTestPage = () => {
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
+      <Banner title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',
