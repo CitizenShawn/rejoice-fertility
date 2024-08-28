@@ -222,6 +222,21 @@ const IVFPage = () => {
           with no fertility medications (Natural Cycle IVF), minimal fertility medications
           (Mini-IVF) or traditional stimulation medications (Stimulated Cycle IVF).
         </p>
+        <p>
+        Rejoice is a "no-discard” IVF program. All viable embryos must either be transferred or
+        frozen for future use. We will not discard any viable embryos (fresh or frozen). We do not
+        offer Preimplantation Genetic Testing (PGT). We believe that that the only embryo that
+        cannot result in a baby is the one that you don’t transfer. We treat patients of all faiths
+        and patients without a belief in God. Many patients who struggle with the ethical, moral
+        and spiritual questions raised by the process of IVF are relieved to find a clinic that
+        not only respects these concerns but welcomes an honest and frank discussion about the
+        issues inherent in IVF.
+        </p>
+        <p>
+          <a href="https://www.theatlantic.com/health/archive/2024/08/vision-future-ivf-christian-fetal-personhood/679586/?gift=D_hJMI87NXlE47BC567UVA_bUSYmsqS6LjsmvUus3JU">Learn more about why Rejoice Fertility is the choice for IVF according to this article
+            by the Atlantic.
+          </a>
+        </p>
         <div
           sx={{
             h4: {

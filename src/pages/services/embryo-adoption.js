@@ -156,7 +156,7 @@ const EmbryoAdoptionTestPage = () => {
             Our embryology team has the most experience of any IVF program in the
             country with the thawing and care of donated embryos especially those that
             have been frozen for decades including several amazing outcomes such as the 
-            delivery of healthy twins after the transfer of embryos stored for 30 years!
+            delivery of healthy twins after the transfer of <a href="https://www.thegospelcoalition.org/article/worlds-oldest-babies/">embryos stored for 30 years</a>!
               </p>
         <h4><strong>2. EXPERIENCE</strong></h4>
         <p>
@@ -171,7 +171,7 @@ const EmbryoAdoptionTestPage = () => {
                 </p>
         <h4><strong>4. EXPANSION</strong></h4>
         <p>
-            Our new state-of-the-art IVF Laboratory and clinical space will be ready in August
+            <a href="https://www.facebook.com/story.php?story_fbid=10211808426682206&id=1715810446&mibextid=WC7FNe&rdid=kbiLyaCUi6CHrBOW">Our new state-of-the-art IVF Laboratory and clinical space</a> will be ready in August
             2024 and with many patient-friendly features such as Private Rooms for pre-transfer
             discussions with Dr. Gordon.
               </p>

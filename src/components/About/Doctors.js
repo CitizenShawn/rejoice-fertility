@@ -39,7 +39,7 @@ const Doctors = () => {
               mb: '1rem',
             }}
           >
-            Our Doctors
+            Our Doctor
           </h3>
           <p
             sx={{
