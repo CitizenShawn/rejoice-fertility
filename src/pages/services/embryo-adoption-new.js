@@ -118,20 +118,6 @@ const EmbryoAdoptionTestPage = () => {
           px: ['1rem', null, null, '2rem'],
           py: ['2rem', null, null, '4rem'],
           variant: 'text.normal',
-          background: #47E4E0;
-        }}
-        className="content"
-      >
-        <h2><strong><a href="https://rejoicefertility.com/services/embryo-adoption-new/#NEDC">Click Here to Learn More about Rejoice Fertility and the NEDC</a></strong></h2>
-      </section>
-      <section
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '16px',
-          px: ['1rem', null, null, '2rem'],
-          py: ['2rem', null, null, '4rem'],
-          variant: 'text.normal',
         }}
         className="content"
       >
