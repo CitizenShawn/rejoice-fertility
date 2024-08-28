@@ -111,7 +111,7 @@ const EmbryoAdoptionTestPage = () => {
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
-      <Banner title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Banner title={'NEDC And Rejoice Fertility'} description={'For information about the relationship between NEDC and Rejoice Fertility and how that impacts more, please click the link below.'} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',

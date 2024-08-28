@@ -96,7 +96,7 @@ const Banner = ({
                   to={ctaPrimaryLink}
                   sx={{
                     background: '#343753',
-                    color: '#000',
+                    color: '#FFF',
                     '&:hover': {
                       opacity: 0.75,
                     },
@@ -110,7 +110,7 @@ const Banner = ({
                   href={ctaPrimaryLink}
                   sx={{
                     background: '#343753',
-                    color: '#000',
+                    color: '#FFF',
                     '&:hover': {
                       opacity: 0.75,
                     },
