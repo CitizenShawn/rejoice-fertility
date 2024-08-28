@@ -40,17 +40,7 @@ const Banner = ({
             minHeight: '100%',
           }}
         >
-          <img
-            sx={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              maxHeight: 'inherit',
-              p: ['1rem', null, '0px'],
-            }}
-            src={image}
-            alt=""
-          />
+          
         </div>
         <div
           sx={{
