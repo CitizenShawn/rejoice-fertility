@@ -88,7 +88,7 @@ const ContactForm = () => {
               Office
             </h3>
             <p>Come say hello at our office.</p>
-            <p>11126 Kingston Pike Knoxville, TN 37934</p>
+            <p>11132 Kingston Pike Knoxville, TN 37934</p>
           </div>
         </div>
         <div

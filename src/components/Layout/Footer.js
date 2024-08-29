@@ -71,8 +71,8 @@ const Footer = () => {
             },
           }}
         >
-          <a href="https://www.google.com/maps/place/11126+Kingston+Pike,+Farragut,+TN+37934/@35.8857761,-84.1525038,17z/data=!3m1!4b1!4m5!3m4!1s0x885c2ee6ea52e5f3:0x4a1daddb8b3077dc!8m2!3d35.8857761!4d-84.1503151">
-            <FaMapMarkerAlt /> 11126 Kingston Pike Knoxville, TN
+          <a href="https://www.google.com/maps/place/11132+Kingston+Pike,+Farragut,+TN+37934/@35.8858771,-84.1520417,17z/data=!3m1!4b1!4m6!3m5!1s0x885c2f6ec7e3bf6d:0x8f4567ff95a2e5be!8m2!3d35.8858728!4d-84.1494668!16s%2Fg%2F11vr9xg416?entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D">
+            <FaMapMarkerAlt /> 11132 Kingston Pike Knoxville, TN
             <br /> 37934
           </a>
           <a href="tel:8657770088">
