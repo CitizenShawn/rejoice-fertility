@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui';
 import Faqs from '../../components/Common/Faqs';
 import Questions from '../../components/Common/Questions';
 import Header from '../../components/Common/Header';
+import Banner from '../../components/Common/Banner';
 import Layout from '../../components/Layout';
 import Help from '../../components/Common/Help';
 import { Seo } from '../../components/Seo';
@@ -156,7 +157,7 @@ const EmbryoAdoptionTestPage = () => {
             Our embryology team has the most experience of any IVF program in the
             country with the thawing and care of donated embryos especially those that
             have been frozen for decades including several amazing outcomes such as the 
-            delivery of healthy twins after the transfer of <a href="https://www.thegospelcoalition.org/article/worlds-oldest-babies/">embryos stored for 30 years</a>!
+            delivery of healthy twins after the transfer of embryos stored for 30 years!
               </p>
         <h4><strong>2. EXPERIENCE</strong></h4>
         <p>
@@ -171,7 +172,7 @@ const EmbryoAdoptionTestPage = () => {
                 </p>
         <h4><strong>4. EXPANSION</strong></h4>
         <p>
-            <a href="https://www.facebook.com/story.php?story_fbid=10211808426682206&id=1715810446&mibextid=WC7FNe&rdid=kbiLyaCUi6CHrBOW">Our new state-of-the-art IVF Laboratory and clinical space</a> will be ready in August
+            Our new state-of-the-art IVF Laboratory and clinical space will be ready in August
             2024 and with many patient-friendly features such as Private Rooms for pre-transfer
             discussions with Dr. Gordon.
               </p>
@@ -186,6 +187,18 @@ const EmbryoAdoptionTestPage = () => {
       <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
+      <section
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          px: ['1rem', null, null, '2rem'],
+          py: ['2rem', null, null, '4rem'],
+          variant: 'text.normal',
+        }}
+        className="content"
+        id="NEDC"
+      ></section>
       <Header title={'NEDC and Rejoice Fertility'} description={''} image={'/images/pexels-pixabay-51953.jpg'} ctaPrimary={''} ctaPrimaryLink={''} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{

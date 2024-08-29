@@ -24,7 +24,7 @@ const Homepage = () => {
           }
           image={'/images/homepage.jpeg'}
         />
-        <Banner title={'NEDC And Rejoice Fertility'} description={'For information about the relationship between NEDC and Rejoice Fertility and how that affects patients pursuing embryo adoption using NEDC donated embryos , who are currently matched or have embryos on reserve, please click the link below.'} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-new#NEDC'} ctaSecondary={''} ctaSecondaryLink={''} />
+        <Banner title={'NEDC And Rejoice Fertility'} description={'For information about the relationship between NEDC and Rejoice Fertility and how that affects patients pursuing embryo adoption using NEDC donated embryos , who are currently matched or have embryos on reserve, please click the link below.'} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption#NEDC'} ctaSecondary={''} ctaSecondaryLink={''} />
         <FeaturedSection />
         <QuoteSection />
         <Services />
