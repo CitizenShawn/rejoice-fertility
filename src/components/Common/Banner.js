@@ -51,7 +51,7 @@ const Banner = ({
             sx={{
               variant: 'text.xxl',
               lineHeight: 1.15,
-              color: '#FFFFFF',
+              color: '#000000',
               textAlign: ['center', null, 'left'],
               maxWidth: '600px',
             }}
@@ -64,7 +64,7 @@ const Banner = ({
                 variant: 'text.normal',
                 lineHeight: '1.5',
                 letterSpacing: '0.09em',
-                color: '#FFFFFF',
+                color: '#000000',
                 textAlign: ['center', null, 'left'],
                 maxWidth: '600px',
               }}
