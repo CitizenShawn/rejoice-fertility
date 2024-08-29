@@ -272,6 +272,18 @@ const Staff = () => {
       anesthesia in Knoxville and rural KY since 2014 and joined Rejoice Fertility in 2020.`,
       image: '/images/staff/stephanie.png',
     },
+    {
+      name: 'Ann Fisher',
+      position: 'Embryologist',
+      description: `Ann Marie Fisher grew up here in Knoxville, attended Farragut High School, and attended the University of Tennessee, graduating with a B.S. and a MPH. While life took her away to Atlanta, GA for 30 years, she has found her way back home to be with family and friends. While in Atlanta, she worked her way up to be a senior embryologist at RBA, working with and being trained by some of the pioneers in the field of embryology. She brings this expertise to Rejoice and hopes to help Rejoice expand and grow. Married to an amazing husband, she enjoys spending time with him, the dog, and 2 cats. She enjoys UT football and is a VFL!`,
+      image: '/images/staff/ann-fisher.jpeg',
+    },
+    {
+      name: 'Bailey Gaddis',
+      position: 'Andrologist',
+      description: `Bailey is from Newnan, Georgia and went to college at Georgia Southern University where she got her Bachelor’s Degree in Biological Sciences. She moved to Knoxville in 2023 and found her passion in fertility. When she’s not working, she enjoys spending time outdoors and hiking.`,
+      image: '/images/staff/bailey-gaddis.JPEG',
+    },    
   ];
 
   return (
