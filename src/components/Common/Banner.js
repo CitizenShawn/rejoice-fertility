@@ -34,7 +34,7 @@ const Banner = ({
         <div
           sx={{
             flex: ['1 0 100%', null, '1 0 50%'],
-            maxWidth: ['100%', null, '50%'],
+            maxWidth: ['100%', null, '100%'],
             position: 'relative',
             minHeight: ['100%', null, '100px'],
             height: '100%',
