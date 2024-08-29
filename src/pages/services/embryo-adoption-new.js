@@ -111,7 +111,6 @@ const EmbryoAdoptionTestPage = () => {
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
-      <Banner title={'NEDC And Rejoice Fertility'} description={'For information about the relationship between NEDC and Rejoice Fertility and how that affects patients pursuing embryo adoption using NEDC donated embryos , who are currently matched or have embryos on reserve, please click the link below.'} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-new#NEDC'} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',

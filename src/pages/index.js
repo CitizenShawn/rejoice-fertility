@@ -3,6 +3,7 @@ import Header from '../components/Common/Header';
 import FeaturedSection from '../components/Home/FeaturedSection';
 import QuoteSection from '../components/Home/QuoteSection';
 import Doctors from '../components/Home/Doctors';
+import Banner from '../components/Common/Banner';
 import Help from '../components/Common/Help';
 import Services from '../components/Home/Services';
 import Layout from '../components/Layout';
@@ -23,6 +24,7 @@ const Homepage = () => {
           }
           image={'/images/homepage.jpeg'}
         />
+        <Banner title={'NEDC And Rejoice Fertility'} description={'For information about the relationship between NEDC and Rejoice Fertility and how that affects patients pursuing embryo adoption using NEDC donated embryos , who are currently matched or have embryos on reserve, please click the link below.'} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-new#NEDC'} ctaSecondary={''} ctaSecondaryLink={''} />
         <FeaturedSection />
         <QuoteSection />
         <Services />
