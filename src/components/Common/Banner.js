@@ -66,7 +66,7 @@ const Banner = ({
                 letterSpacing: '0.09em',
                 color: '#000000',
                 textAlign: ['center', null, 'left'],
-                maxWidth: '600px',
+                maxWidth: '100%',
               }}
             >
               {description}
