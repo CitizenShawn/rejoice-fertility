@@ -52,7 +52,7 @@ const GettingStartedPage = () => {
     { name: 'Genetic Screening', link: 'https://pdf.ac/2bRXz1' },
     {
       name: 'Andrology Request/Semen Analysis Form',
-      link: '/assets/andrology-mergeddocuments_compressed.pdf',
+      link: '/assets/Rejoice 05-01 Referring MD Andrology Request tear sheet 1-1-24.pages.pdf',
     },
   ];
 
