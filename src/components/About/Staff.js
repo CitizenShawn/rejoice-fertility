@@ -171,12 +171,6 @@ const Staff = () => {
       image: '/images/staff/susan.png',
     },
     {
-      name: 'Brooke Huguenard',
-      position: 'IVF Nurse',
-      description: `Brooke Huguenard is ecstatic to be a part of the Rejoice Fertility family as Dr. Gordon's NEDC IVF nurse. She is originally from Alabama and graduated from the University of Alabama-Huntsville in 2014 with her Bachelor of Science in Nursing. Since then, she has worked as a Labor and Delivery nurse for the last 8 years, and is eager to use this knowledge to bring excellent care to her patients. For 3 years of her career, Brooke was a travel L&D nurse across the U.S. working at hospitals from Kaiser in California to Yale in Connecticut. East TN is a sentimental place to Brooke and her husband because they got engaged here and were married in the breathtaking Cade's Cove. In her spare time, Brooke enjoys taking the puppers hiking, ballroom dancing, and camping with her husband.`,
-      image: '/images/staff/brooke.png',
-    },
-    {
       name: 'Lauren Dyckman',
       position: 'RN, IVF Nurse',
       description: `Lauren Dyckman has spent more than 25 years serving patients struggling with infertility. A New York native, she enjoys the slower pace of life in East Tennessee and began caring for Rejoice Fertility families in 2022.`,
@@ -199,12 +193,6 @@ const Staff = () => {
       position: 'Certified Surgical Tech',
       description: `Melanie was born and raised in Oak Ridge, where she graduated from high school in 1983. She now lives in Morgan County with Rex, her husband of three decades. She also has a daughter, Ashleigh, and a son, Todd. Melanie has a colorful work background that includes stints as a waitress, senior office assistant, assistant manager, driver's license examiner and home inspector. She has now been a Certified Surgical Tech for more than 15 years.`,
       image: '/images/staff/melanie.png',
-    },
-    {
-      name: 'Sherry Schoolfield',
-      position: 'Phlebotomist',
-      description: `Sherry Schoolfield is our on-site laboratory phlebotomist, provided by AEL Laboratories. Sherry provides our patients with gentle venipuncture and prepares specimens for testing. Sherry has been practicing phlebotomy since 1999.`,
-      image: '/images/staff/sherry.png',
     },
     //{
     //  name: 'Lynda McCollum',

@@ -15,7 +15,7 @@ const GettingStartedPage = () => {
     {
       question: 'Who works at Rejoice Fertility?',
       answer:
-        "Dr. Jeffrey Keenan and Dr. John Gordon are our two Board Certified Reproductive Endocrinologists. Rejoice Fertility is also Knoxville's only fertility practice with an IVF Laboratory accredited by The Joint Commission.",
+        "Dr. John Gordon is our Board Certified Reproductive Endocrinologist. Rejoice Fertility is also Knoxville's only fertility practice with an IVF Laboratory accredited by The Joint Commission.",
     },
     {
       question:
@@ -27,7 +27,7 @@ const GettingStartedPage = () => {
       question:
         'How much experience do the doctors at Rejoice Fertility have in treating infertility?',
       answer:
-        'Together Dr. Keenan and Dr. Gordon have over 50 years of combined experience in treating disorders of reproduction.',
+        'Dr. Gordon has over 50 years of combined experience in treating disorders of reproduction.',
     },
     {
       question: 'Where do the patients seen at Rejoice Fertility come from?',
@@ -45,11 +45,6 @@ const GettingStartedPage = () => {
     { name: 'New Patient Forms', link: 'https://pdf.ac/2bRXz1' },
     { name: 'Female Fertility Questionnaire', link: 'https://pdf.ac/1R8xDH' },
     { name: 'Male Questionnaire', link: 'https://pdf.ac/X19oV' },
-    {
-      name: 'Demographics',
-      link: 'https://www.pdffiller.com/en/link_to_fill/679762811.htm',
-    },
-    { name: 'Genetic Screening', link: 'https://pdf.ac/2bRXz1' },
     {
       name: 'Andrology Request/Semen Analysis Form',
       link: '/assets/Rejoice 05-01 Referring MD Andrology Request tear sheet 1-1-24.pages.pdf',

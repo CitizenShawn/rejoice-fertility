@@ -78,6 +78,9 @@ const Footer = () => {
           <a href="tel:8657770088">
             <FaPhone /> 865.777.0088
           </a>
+          <a href="tel:8657772015">
+            Fax: 865.777.0088
+          </a>
         </div>
 
         <div
