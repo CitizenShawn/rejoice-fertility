@@ -42,15 +42,14 @@ const GettingStartedPage = () => {
   ];
 
   const forms = [
-    { name: 'New Patient Forms', link: 'https://pdf.ac/9regSK' },
-    { name: 'Female Fertility Questionnaire', link: 'https://pdf.ac/7fMKhb' },
-    { name: 'Male Questionnaire', link: 'https://pdf.ac/6rHEm4' },
+    { name: 'New Patient Forms', link: 'https://pdf.ac/2bRXz1' },
+    { name: 'Female Fertility Questionnaire', link: 'https://pdf.ac/1R8xDH' },
+    { name: 'Male Questionnaire', link: 'https://pdf.ac/X19oV' },
     {
       name: 'Demographics',
       link: 'https://www.pdffiller.com/en/link_to_fill/679762811.htm',
     },
-    { name: 'COVID', link: 'https://pdf.ac/cWKRi' },
-    { name: 'Genetic Screening', link: 'https://pdf.ac/uJ0bB' },
+    { name: 'Genetic Screening', link: 'https://pdf.ac/2bRXz1' },
     {
       name: 'Andrology Request/Semen Analysis Form',
       link: '/assets/andrology-mergeddocuments_compressed.pdf',
