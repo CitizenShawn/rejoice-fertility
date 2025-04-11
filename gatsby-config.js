@@ -46,6 +46,28 @@ module.exports = {
       options: {
         apiURL: process.env.STRAPI_API_URL || "https://leading-bird-3a9d286e5b.strapiapp.com",
         accessToken: "590dcc7fec9ad33866cb884a561a430af505743dbc2ee45453be6349bcac4c1d71eb69ad592827a2f820b42ff8c0e6acce4bd93fb63fae87079e6042e90b03e2b484158ba75e2801a23bec863bfebaa21c5f8295e200c29869cd64bf6522bd3b2cc2b21b4ca0a9d68bb0d637b2ebc528d4291949abdcb2929cd80c8ec8ccc856",
+        collectionTypes: [
+          {
+            singularName: "blog",
+            queryParams: {
+              populate: {
+                categories: "*",
+                tags: "*",
+                author: "*",
+                medium: "*",
+              },
+            },
+          },
+          {
+            singularName: "category",
+          },
+          {
+            singularName: "tag",
+          },
+          {
+            singularName: "author",
+          },
+        ],
       },
     },
     {
