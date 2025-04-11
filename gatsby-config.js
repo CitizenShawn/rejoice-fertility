@@ -42,12 +42,19 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: process.env.STRAPI_API_URL || "https://leading-bird-3a9d286e5b.strapiapp.com",
+        accessToken: "590dcc7fec9ad33866cb884a561a430af505743dbc2ee45453be6349bcac4c1d71eb69ad592827a2f820b42ff8c0e6acce4bd93fb63fae87079e6042e90b03e2b484158ba75e2801a23bec863bfebaa21c5f8295e200c29869cd64bf6522bd3b2cc2b21b4ca0a9d68bb0d637b2ebc528d4291949abdcb2929cd80c8ec8ccc856",
+      },
+    },
+    {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
         // 1 query for each data type
         query: `
       {
-          allDegaPost {
+          allStrapiBlog {
               edges {
                   node {
                       id
@@ -59,7 +66,7 @@ module.exports = {
                   }
               }
           }
-          allDegaCategory {
+          allStrapiCategory {
             edges {
                 node {
                     id
@@ -67,7 +74,7 @@ module.exports = {
                 }
             }
         }
-        allDegaTag {
+        allStrapiTag {
             edges {
                 node {
                     id
@@ -75,7 +82,7 @@ module.exports = {
                 }
             }
         }
-        allDegaUser {
+        allStrapiAuthor {
             edges {
                   node {
                       id
@@ -88,7 +95,7 @@ module.exports = {
           // Each data type can be mapped to a predefined sitemap
           // Routes can be grouped in one of: posts, tags, authors, pages, or a custom name
           // The default sitemap - if none is passed - will be pages
-          allDegaPost: {
+          allStrapiBlog: {
             sitemap: `post`,
             // Add a query level prefix to slugs, Don't get confused with global path prefix from Gatsby
             // This will add a prefix to this particular sitemap only
@@ -107,7 +114,7 @@ module.exports = {
               return siteMapEntries;
             },
           },
-          allDegaTag: {
+          allStrapiTag: {
             sitemap: `tag`,
             serializer: (edges) => {
               const siteMapEntries = [];
@@ -118,7 +125,7 @@ module.exports = {
               return siteMapEntries;
             },
           },
-          allDegaUser: {
+          allStrapiAuthor: {
             sitemap: `author`,
             serializer: (edges) => {
               const siteMapEntries = [];
@@ -129,7 +136,7 @@ module.exports = {
               return siteMapEntries;
             },
           },
-          allDegaCategory: {
+          allStrapiCategory: {
             sitemap: `category`,
             serializer: (edges) => {
               const siteMapEntries = [];
