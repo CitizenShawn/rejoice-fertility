@@ -42,6 +42,17 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-strapi',
+      options: {
+        apiURL: process.env.STRAPI_API_URL,
+        collectionTypes: ["blog", "author", "category"],
+        queryLimit: 1000,
+        headers: {
+          Authorization: 'Bearer ${process.env.STRAPI_TOKEN}',
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
         // 1 query for each data type
