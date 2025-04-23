@@ -48,7 +48,7 @@ module.exports = {
         collectionTypes: ["blog", "author", "category"],
         queryLimit: 1000,
         headers: {
-          Authorization: 'Bearer ${process.env.STRAPI_TOKEN}',
+          Authorization: `Bearer ${process.env.STRAPI_TOKEN}`,
         },
       },
     },
