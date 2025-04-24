@@ -59,10 +59,12 @@ module.exports = {
         query: `
       {
           allStrapiBlog {
-            nodes {
-              documentId
-              slug
-              updatedAt
+            edges {
+              nodes {
+                documentId
+                slug
+                updatedAt
+              }
             }
           }
           allDegaPost {
@@ -160,11 +162,11 @@ module.exports = {
           },
           allStrapiBlog: {
             sitemap: `test`,
-            serializer: (nodes) => {
+            serializer: (edges) => {
               const siteMapEntries = [];
-              nodes.forEach((node) => {
-                node.slug = '/blog/test/' + node.slug;
-                siteMapEntries.push(node);
+              edges.forEach((edge) => {
+                edge.node.slug = '/blog/test/' + edge.node.slug;
+                siteMapEntries.push(edge);
               });
               return siteMapEntries;
             },
