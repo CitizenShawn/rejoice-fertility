@@ -14,6 +14,24 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   });
 };
 
+exports.createResolvers = ({ createResolvers }) => {
+  createResolvers({
+    StrapiBlog: {
+      description_html: {
+        type: "String",
+        resolve(source) {
+          const value = source.description_html;
+          if (typeof value === "string") {
+            return value;
+          }
+          // Fallback: stringify object or return empty string
+          return JSON.stringify(value || "");
+        },
+      },
+    },
+  });
+};
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
