@@ -14,6 +14,16 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   });
 };
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+
+  createTypes(`
+    type StrapiBlog implements Node {
+      description_html: String
+    }
+  `)
+}
+
 // These templates are only data-fetching wrappers that import components
 
 const postTemplate = require.resolve('./src/templates/post-template.js');
@@ -23,6 +33,8 @@ const categoryTemplate = require.resolve('./src/templates/category-template.js')
 const tagTemplate = require.resolve('./src/templates/tag-template.js');
 
 const authorTemplate = require.resolve('./src/templates/author-template.js');
+
+const testTemplate = require.resolve('./src/templates/post-test.js');
 
 exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId }) => {
   const { createPage } = actions;
@@ -70,6 +82,18 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     }
   `);
 
+  const blogs = await graphql(`
+    query BlogsQuery {
+      allStrapiBlog {
+        nodes {
+          documentId
+          publishedAt
+          slug
+        }
+      }
+    }
+  `);
+
   // create post details page
 
   posts.data.allDegaPost.nodes.forEach((post) => {
@@ -80,6 +104,21 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
         context: {
           id: post.degaId,
           slug: post.slug,
+        },
+      });
+    }
+  });
+
+  //create test pages
+
+  blogs.data.allStrapiBlog.nodes.forEach((blog) => {
+    if (blog.publishedAt) {
+      createPage({
+        path: `/blog/test/${blog.slug}/`,
+        component: testTemplate,
+        context: {
+          documentId: blog.documentId,
+          slug: blog.slug,
         },
       });
     }
