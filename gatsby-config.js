@@ -63,9 +63,6 @@ module.exports = {
               documentId
               slug
               updatedAt
-              medium {
-                url
-              }
             }
           }
           allDegaPost {
@@ -166,7 +163,7 @@ module.exports = {
             serializer: (nodes) => {
               const siteMapEntries = [];
               nodes.forEach((node) => {
-                edge.node.slug = '/blog/test/' + node.slug;
+                node.slug = '/blog/test/' + node.slug;
                 siteMapEntries.push(node);
               });
               return siteMapEntries;
