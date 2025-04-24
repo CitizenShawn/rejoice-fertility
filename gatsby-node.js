@@ -16,7 +16,7 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
 
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
-    strapiBlog: {
+    StrapiBlog: {
       description_html: {
         type: "String",
         resolve(source) {
@@ -41,7 +41,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   console.log("Creating custom type override for description_html");
 
   createTypes(`
-    type strapiBlog implements Node @dontInfer {
+    type StrapiBlog implements Node @dontInfer {
       description_html: String
     }
   `)
