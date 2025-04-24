@@ -25,13 +25,11 @@ export const query = graphql`
         node {
           documentId
           excerpt
-          schemas
           slug
-          status
           subtitle
           title
           updatedAt
-          users {
+          authors {
             email
             first_name
             last_name
@@ -74,13 +72,11 @@ export const query = graphql`
       documentId
       publishedAt
       excerpt
-      schemas
       slug
-      status
       subtitle
       title
       updatedAt
-      users {
+      authors {
         email
         first_name
         last_name
@@ -109,7 +105,7 @@ export const query = graphql`
         title
         excerpt
         slug
-        users {
+        authors {
           display_name
           slug
         }
