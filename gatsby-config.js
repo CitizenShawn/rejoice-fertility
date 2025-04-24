@@ -58,6 +58,16 @@ module.exports = {
         // 1 query for each data type
         query: `
       {
+          allStrapiBlog {
+            nodes {
+              documentId
+              slug
+              updatedAt
+              medium {
+                url
+              }
+            }
+          }
           allDegaPost {
               edges {
                   node {
@@ -147,6 +157,17 @@ module.exports = {
               edges.forEach((edge) => {
                 edge.node.slug = '/blog/category/' + edge.node.slug;
                 siteMapEntries.push(edge);
+              });
+              return siteMapEntries;
+            },
+          },
+          allStrapiBlog: {
+            sitemap: `test`,
+            serializer: (nodes) => {
+              const siteMapEntries = [];
+              nodes.forEach((node) => {
+                edge.node.slug = '/blog/test/' + node.slug;
+                siteMapEntries.push(node);
               });
               return siteMapEntries;
             },
