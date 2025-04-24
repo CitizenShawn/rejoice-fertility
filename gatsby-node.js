@@ -20,7 +20,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   console.log("Creating custom type override for description_html");
 
   createTypes(`
-    type StrapiBlog implements Node {
+    type StrapiBlog implements Node @dontInfer {
       description_html: String
     }
   `)
