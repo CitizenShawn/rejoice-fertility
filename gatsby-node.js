@@ -20,7 +20,15 @@ exports.createResolvers = ({ createResolvers }) => {
       description_html: {
         type: "String",
         resolve(source) {
-          return source.description_html || null;
+          if (typeof source.description_html === 'string') {
+            console.log("description_html is a string.");
+            return source.description_html;
+          } else if (source.description_html && typeof source.description_html.content === 'string') {
+            console.log("description_html is not a string and has content");
+            return source.description_html.content;
+          }
+          console.log("I have no idea.");
+          return "";
         },
       },
     },
@@ -37,6 +45,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       description_html: String
     }
   `)
+
+  console.log("description_html should be a string now.");
 };
 
 // These templates are only data-fetching wrappers that import components
