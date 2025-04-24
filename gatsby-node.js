@@ -99,6 +99,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     query PostsQuery {
       allDegaPost {
         nodes {
+          description_html
           degaId
           published_date
           slug
@@ -111,6 +112,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     query BlogsQuery {
       allStrapiBlog {
         nodes {
+          description_html
           documentId
           publishedAt
           slug
@@ -122,6 +124,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   // create post details page
 
   posts.data.allDegaPost.nodes.forEach((post) => {
+    console.log("Dega description is: ", typeof post.description_html);
     if (post.published_date) {
       createPage({
         path: `/blog/${post.slug}/`,
@@ -137,6 +140,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   //create test pages
 
   blogs.data.allStrapiBlog.nodes.forEach((blog) => {
+    console.log("Strapi description is: ", typeof blog.description_html);
     if (blog.publishedAt) {
       createPage({
         path: `/blog/test/${blog.slug}/`,
