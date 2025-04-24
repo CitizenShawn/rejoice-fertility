@@ -8,6 +8,7 @@ const PostPage = ({ data }) => {
   const { posts, post: strapiBlog } = data;
   const currentPost = posts.edges.filter(({ node }) => node.documentId === strapiBlog.documentId)[0];
   const { previous: previousPost, next: nextPost } = currentPost;
+  console.log(typeof(data.description_html));
   return (
     <Layout>
       <Seo title={strapiBlog.title} description={strapiBlog.subtitle} />

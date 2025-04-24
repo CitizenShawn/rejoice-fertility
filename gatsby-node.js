@@ -59,7 +59,7 @@ const tagTemplate = require.resolve('./src/templates/tag-template.js');
 
 const authorTemplate = require.resolve('./src/templates/author-template.js');
 
-//const testTemplate = require.resolve('./src/templates/post-test.js');
+const testTemplate = require.resolve('./src/templates/post-test.js');
 
 exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId }) => {
   const { createPage } = actions;
