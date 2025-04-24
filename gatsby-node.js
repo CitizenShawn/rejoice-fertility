@@ -24,7 +24,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description_html: String
     }
   `)
-}
+};
 
 // These templates are only data-fetching wrappers that import components
 
