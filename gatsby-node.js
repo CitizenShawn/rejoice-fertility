@@ -17,6 +17,8 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
+  console.log("Creating custom type override for description_html");
+
   createTypes(`
     type StrapiBlog implements Node {
       description_html: String
