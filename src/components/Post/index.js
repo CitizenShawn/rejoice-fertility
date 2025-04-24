@@ -158,7 +158,7 @@ const Post = ({ data, nextPost, previousPost }) => {
             py: '3rem',
           }}
         >
-          {isBrowser && parseTiptapContent("")}
+          {isBrowser && parseTiptapContent(data.description_html)}
         </div>
       </main>
       <div>
