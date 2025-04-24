@@ -60,7 +60,7 @@ module.exports = {
       {
           allStrapiBlog {
             edges {
-              nodes {
+              node {
                 documentId
                 slug
                 updatedAt
