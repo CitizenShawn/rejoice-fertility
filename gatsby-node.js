@@ -50,7 +50,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 };
 
 // These templates are only data-fetching wrappers that import components
-
+/*
 const postTemplate = require.resolve('./src/templates/post-template.js');
 
 const categoryTemplate = require.resolve('./src/templates/category-template.js');
@@ -58,7 +58,7 @@ const categoryTemplate = require.resolve('./src/templates/category-template.js')
 const tagTemplate = require.resolve('./src/templates/tag-template.js');
 
 const authorTemplate = require.resolve('./src/templates/author-template.js');
-
+*/
 const testTemplate = require.resolve('./src/templates/post-test.js');
 
 exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId }) => {
@@ -128,7 +128,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   `);
 
   // create post details page
-
+/*
   posts.data.allDegaPost.nodes.forEach((post) => {
     if (post.published_date) {
       createPage({
@@ -141,14 +141,14 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       });
     }
   });
-
+*/
   //create test pages
 
   blogs.data.allStrapiBlog.nodes.forEach((blog) => {
     console.log("Strapi description_html is: ", typeof blog.description_html.data.internal.content);
     if (blog.publishedAt) {
       createPage({
-        path: `/blog/test/${blog.slug}/`,
+        path: `/blog/${blog.slug}/`,
         component: testTemplate,
         context: {
           documentId: blog.documentId,
@@ -158,7 +158,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     }
   });
   //create category list page
-
+/*
   categories.data.allStrapiCategory.nodes.forEach((category) => {
     createPage({
       path: `/blog/category/${category.slug}/`,
@@ -182,9 +182,9 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       },
     });
   });
-
+*/
   //create author page
-
+/*
   authors.data.allStrapiAuthor.nodes.forEach((author) => {
     createPage({
       path: `/blog/author/${author.slug}/`,
@@ -196,3 +196,4 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     });
   });
 };
+*/
