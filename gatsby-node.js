@@ -76,7 +76,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   `);
   const tags = await graphql(`
     query TagsQuery {
-      allStrapiTag {
+      allDegaTag {
         nodes {
           documentId
           slug
