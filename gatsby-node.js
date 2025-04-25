@@ -185,7 +185,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
 
   //create author page
 
-  authors.data.allDegaUser.nodes.forEach((author) => {
+  authors.data.allStrapiAuthor.nodes.forEach((author) => {
     createPage({
       path: `/blog/author/${author.slug}/`,
       component: authorTemplate,
