@@ -4,8 +4,8 @@ import PostTest from '@components/PostTest';
 import Layout from '@components/Layout/index';
 import { Seo } from '../components/Seo';
 
-const PostPage = ({ datam }) => {
-  const { posts, post: strapiBlog } = datam;
+const PostPage = ({ data }) => {
+  const { posts, post: strapiBlog } = data;
   const currentPost = posts.edges.filter(({ node }) => node.documentId === strapiBlog.documentId)[0];
   const { previous: previousPost, next: nextPost } = currentPost;
   return (
