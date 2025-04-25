@@ -114,14 +114,15 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
         nodes {
           description_html {
             data {
-              id
-              content
-              body
-              text
-              markdown
-              value
-              html
-              internal
+              internal {
+                id
+                content
+                body
+                text
+                markdown
+                value
+                html
+              }
             }
           }
           documentId
@@ -151,7 +152,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   //create test pages
 
   blogs.data.allStrapiBlog.nodes.forEach((blog) => {
-    console.log("Strapi description_html typename is: ", blog.description_html.data.__typename)
+    console.log("Strapi description_html typename is: ", blog.description_html.data.internal.__typename)
     if (blog.publishedAt) {
       createPage({
         path: `/blog/test/${blog.slug}/`,
