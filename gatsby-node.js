@@ -114,7 +114,14 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
         nodes {
           description_html {
             data {
-              __typename
+              id
+              content
+              body
+              text
+              markdown
+              value
+              html
+              internal
             }
           }
           documentId
