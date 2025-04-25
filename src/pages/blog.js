@@ -9,6 +9,7 @@ import Help from '@components/Common/Help';
 import { Seo } from '../components/Seo';
 
 const BlogPage = ({ data }) => {
+  console.log("Building Blog Page");
   const { posts } = data;
   return (
     <Layout>

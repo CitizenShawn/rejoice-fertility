@@ -8,6 +8,7 @@ import BlogCard from '../components/BlogPage/BlogCard';
 import capitalize from '../helpers/capitalize';
 
 const UserDetailsPage = ({ data }) => {
+  console.log("Building Authors");
   const { posts, user } = data;
   return (
     <Layout>

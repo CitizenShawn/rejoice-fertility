@@ -7,6 +7,7 @@ import BlogCard from '../components/BlogPage/BlogCard';
 import capitalize from '../helpers/capitalize';
 
 const CategoryDetailsPage = ({ data }) => {
+  console.log("Building Categories");
   const { posts, category } = data;
   return (
     <Layout>
