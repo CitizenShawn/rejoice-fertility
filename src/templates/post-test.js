@@ -11,7 +11,7 @@ const PostPage = ({ data }) => {
   return (
     <Layout>
       <Seo title={strapiBlog.title} description={strapiBlog.subtitle} />
-      <PostTest data={strapiBlog} previousPost={previousPost} nextPost={nextPost} />
+      <PostTest datam={strapiBlog} previousPost={previousPost} nextPost={nextPost} />
     </Layout>
   );
 };
