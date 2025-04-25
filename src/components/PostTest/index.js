@@ -9,7 +9,7 @@ import Help from '@components/Common/Help';
 const PostTest = ({ datam, nextPost, previousPost }) => {
   const src = datam.medium?.url?.proxy;
   console.log("In PostTest, title: ", datam.title);
-  console.log("I can read the description of data_html: ", typeof datam.description_html.data);
+  console.log("I can read the description of data_html: ", typeof datam.description_html.data.internal.content);
   const description = datam.description_html.data.internal.content;
   return (
     <>
@@ -161,7 +161,7 @@ const PostTest = ({ datam, nextPost, previousPost }) => {
             py: '3rem',
           }}
         >
-          {isBrowser && parseTiptapContent("description")}
+          {isBrowser && parseTiptapContent(description)}
         </div>
       </main>
       <div>
