@@ -8,6 +8,7 @@ import Help from '@components/Common/Help';
 
 const Post = ({ data, nextPost, previousPost }) => {
   const src = data.medium?.url?.proxy;
+  console.log("In Post");
   return (
     <>
       <main sx={{ maxWidth: '900px', mx: 'auto', padding: '1rem' }}>

@@ -8,6 +8,7 @@ import Help from '@components/Common/Help';
 
 const PostTest = ({ data, nextPost, previousPost }) => {
   const src = data.medium?.url?.proxy;
+  console.log("In PostTest");
   const description = data.description_html.data.internal.content;
   return (
     <>
