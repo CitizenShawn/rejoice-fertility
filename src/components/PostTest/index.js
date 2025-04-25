@@ -6,8 +6,9 @@ import { isBrowser } from '../../helpers/isBrowser';
 import parseTiptapContent from '../../helpers/parseTiptapContent';
 import Help from '@components/Common/Help';
 
-const Post = ({ data, nextPost, previousPost }) => {
+const PostTest = ({ data, nextPost, previousPost }) => {
   const src = data.medium?.url?.proxy;
+  const description = data.description_html.data.internal.content;
   return (
     <>
       <main sx={{ maxWidth: '900px', mx: 'auto', padding: '1rem' }}>
@@ -158,7 +159,7 @@ const Post = ({ data, nextPost, previousPost }) => {
             py: '3rem',
           }}
         >
-          {isBrowser && parseTiptapContent(data.description_html)}
+          {isBrowser && parseTiptapContent("description")}
         </div>
       </main>
       <div>
@@ -168,4 +169,4 @@ const Post = ({ data, nextPost, previousPost }) => {
   );
 };
 
-export default Post;
+export default PostTest;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import Post from '@components/Post';
+import PostTest from '@components/PostTest';
 import Layout from '@components/Layout/index';
 import { Seo } from '../components/Seo';
 
@@ -12,7 +12,7 @@ const PostPage = ({ data }) => {
   return (
     <Layout>
       <Seo title={strapiBlog.title} description={strapiBlog.subtitle} />
-      <Post data={strapiBlog} previousPost={previousPost} nextPost={nextPost} />
+      <PostTest data={strapiBlog} previousPost={previousPost} nextPost={nextPost} />
     </Layout>
   );
 };
