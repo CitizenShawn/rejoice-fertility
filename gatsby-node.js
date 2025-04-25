@@ -68,7 +68,6 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     query CategoriesQuery {
       allStrapiCategory {
         nodes {
-          documentId
           slug
         }
       }
@@ -164,7 +163,6 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       path: `/blog/category/${category.slug}/`,
       component: categoryTemplate,
       context: {
-        id: category.documentId,
         slug: category.slug,
       },
     });

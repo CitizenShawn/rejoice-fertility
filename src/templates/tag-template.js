@@ -63,7 +63,7 @@ export const query = graphql`
           subtitle
           title
           updated_at
-          users {
+          authors {
             email
             first_name
             last_name
@@ -116,7 +116,7 @@ export const query = graphql`
         title
         excerpt
         slug
-        users {
+        authors {
           display_name
           slug
           id

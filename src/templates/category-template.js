@@ -47,15 +47,11 @@ export default CategoryDetailsPage;
 
 export const query = graphql`
   query ($id: String!) {
-    category: strapiCategory(documentId: { eq: $id }) {
-      documentid
-      medium {
-        url
-      }
+    category: strapiCategory(name: { eq: $name }) {
       name
       slug
     }
-    posts: allStrapiPost(filter: { categories: { elemMatch: { id: { eq: $id } } } }) {
+    posts: allStrapiPost(filter: { categories: { elemMatch: { documentId: { eq: $documentId } } } }) {
       edges {
         node {
           publishedAt
@@ -82,7 +78,6 @@ export const query = graphql`
           }
           categories {
             created_at
-            documentId
             name
             slug
           }
@@ -114,7 +109,7 @@ export const query = graphql`
         title
         excerpt
         slug
-        users {
+        authors {
           display_name
           slug
           id
