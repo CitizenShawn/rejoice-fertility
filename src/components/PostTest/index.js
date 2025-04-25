@@ -9,8 +9,8 @@ import Help from '@components/Common/Help';
 const PostTest = ({ datam, nextPost, previousPost }) => {
   const src = datam.medium?.url?.proxy;
   console.log("In PostTest");
-  console.log("I can read the description of data_html: ", typeof datam.description_html.data.internal.content);
-  const description = datam.description_html.data.internal.content;
+  console.log("I can read the description of data_html: ", typeof datam.description_html);
+  const description = datam.description_html;
   return (
     <>
       <main sx={{ maxWidth: '900px', mx: 'auto', padding: '1rem' }}>
