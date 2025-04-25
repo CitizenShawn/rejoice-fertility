@@ -45,7 +45,6 @@ export const query = graphql`
           tags {
             name
             slug
-            description
           }
           medium {
             url
@@ -98,8 +97,7 @@ export const query = graphql`
       }
       tags {
         name
-        slug
-        description
+        slug        
       }
       medium {
         url

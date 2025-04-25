@@ -19,15 +19,7 @@ const CategoryDetailsPage = ({ data }) => {
         <section>
           <div className="content">
             {`${capitalize(category.name)}`}
-            {category.description && (
-              <p
-                sx={{
-                  variant: 'text.normal',
-                }}
-              >
-                {category.description}
-              </p>
-            )}
+            
           </div>
         </section>
         <section>
@@ -56,12 +48,9 @@ export default CategoryDetailsPage;
 export const query = graphql`
   query ($id: String!) {
     category: strapiCategory(documentId: { eq: $id }) {
-      description
       documentid
       medium {
-        alt_text
         url
-        dimensions
       }
       name
       slug
@@ -87,15 +76,11 @@ export const query = graphql`
             documentId
             name
             slug
-            description
           }
           medium {
-            alt_text
             url
-            dimensions
           }
           categories {
-            description
             created_at
             documentId
             name
@@ -107,9 +92,7 @@ export const query = graphql`
           title
           publishedAt
           medium {
-            alt_text
             url
-            dimensions
           }
         }
         previous {
@@ -117,9 +100,7 @@ export const query = graphql`
           title
           publishedAt
           medium {
-            alt_text
             url
-            dimensions
           }
         }
       }
@@ -144,8 +125,6 @@ export const query = graphql`
           slug
         }
         medium {
-          dimensions
-          alt_text
           url
         }
       }

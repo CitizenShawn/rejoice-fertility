@@ -18,15 +18,7 @@ const TagDetailsPage = ({ data }) => {
         <section>
           <div className="content">
             {`${capitalize(tag.name)}`}
-            {tag.description && (
-              <p
-                sx={{
-                  variant: 'text.normal',
-                }}
-              >
-                {tag.description}
-              </p>
-            )}
+            
           </div>
         </section>
         <section>
@@ -55,7 +47,6 @@ export default TagDetailsPage;
 export const query = graphql`
   query ($id: String!) {
     tag: degaTag(degaId: { eq: $id }) {
-      description
       id
       name
       slug
@@ -64,7 +55,6 @@ export const query = graphql`
       edges {
         node {
           published_date
-          description
           excerpt
           id
           schemas
@@ -84,16 +74,12 @@ export const query = graphql`
             id
             name
             slug
-            description
           }
           medium {
-            alt_text
             id
             url
-            dimensions
           }
           categories {
-            description
             created_at
             id
             name
@@ -105,10 +91,8 @@ export const query = graphql`
           title
           published_date
           medium {
-            alt_text
             id
             url
-            dimensions
           }
         }
         previous {
@@ -116,10 +100,8 @@ export const query = graphql`
           title
           published_date
           medium {
-            alt_text
             id
             url
-            dimensions
           }
         }
       }
@@ -145,8 +127,6 @@ export const query = graphql`
           slug
         }
         medium {
-          dimensions
-          alt_text
           url
         }
       }

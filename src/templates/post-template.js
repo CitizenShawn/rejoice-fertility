@@ -45,25 +45,19 @@ export const query = graphql`
             id
             name
             slug
-            description
           }
           medium {
-            alt_text
             id
             url
-            dimensions
           }
           categories {
-            description
             created_at
             id
             name
             slug
             medium {
-              alt_text
               id
               url
-              dimensions
             }
           }
         }
@@ -72,10 +66,8 @@ export const query = graphql`
           title
           published_date
           medium {
-            alt_text
             id
             url
-            dimensions
           }
         }
         previous {
@@ -83,10 +75,8 @@ export const query = graphql`
           title
           published_date
           medium {
-            alt_text
             id
             url
-            dimensions
           }
         }
       }
@@ -114,16 +104,12 @@ export const query = graphql`
         id
         name
         slug
-        description
       }
       medium {
-        alt_text
         id
         url
-        dimensions
       }
       categories {
-        description
         created_at
         id
         name
@@ -151,8 +137,6 @@ export const query = graphql`
           slug
         }
         medium {
-          dimensions
-          alt_text
           url
         }
       }

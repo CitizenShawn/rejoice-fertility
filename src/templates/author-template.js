@@ -20,15 +20,7 @@ const UserDetailsPage = ({ data }) => {
         <section>
           <div className="content">
             {`Posts by ${capitalize(user.display_name)}`}
-            {user.description && (
-              <p
-                sx={{
-                  variant: 'text.normal',
-                }}
-              >
-                {user.description}
-              </p>
-            )}
+            
           </div>
         </section>
         <section>
@@ -57,7 +49,6 @@ export default UserDetailsPage;
 export const query = graphql`
   query ($id: String!) {
     user: strapiAuthor(documentId: { eq: $id }) {
-      description
       documentId
       first_name
       last_name
@@ -70,7 +61,6 @@ export const query = graphql`
           publishedAt
           excerpt
           slug
-          status
           subtitle
           title
           authors {
@@ -82,10 +72,8 @@ export const query = graphql`
           tags {
             name
             slug
-            description
           }
           medium {
-            alt_text
             url
           }
           categories {
@@ -99,7 +87,6 @@ export const query = graphql`
           publishedAt
           medium {
             url
-            dimensions
           }
         }
         previous {
@@ -108,7 +95,6 @@ export const query = graphql`
           publishedAt
           medium {
             url
-            dimensions
           }
         }
       }
@@ -132,7 +118,6 @@ export const query = graphql`
           slug
         }
         medium {
-          alt_text
           url
         }
       }
