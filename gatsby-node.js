@@ -112,7 +112,11 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     query BlogsQuery {
       allStrapiBlog {
         nodes {
-          description_html
+          description_html {
+            data {
+              richText
+            }
+          }
           documentId
           publishedAt
           slug
