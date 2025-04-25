@@ -25,7 +25,6 @@ export const query = graphql`
       edges {
         node {
           documentId
-          description_html
           excerpt
           slug
           subtitle
@@ -72,7 +71,6 @@ export const query = graphql`
     }
     post: strapiBlog(slug: { eq: $slug }) {
       documentId
-      description_html
       publishedAt
       excerpt
       slug
@@ -104,7 +102,6 @@ export const query = graphql`
     ) {
       nodes {
         documentId
-        description_html
         publishedAt
         title
         excerpt
