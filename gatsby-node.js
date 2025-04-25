@@ -113,8 +113,8 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       allStrapiBlog {
         nodes {
           description_html {
-            data {
-              richText
+            internal {
+              content
             }
           }
           documentId
