@@ -71,7 +71,7 @@ const IntroSection = ({ posts }) => {
               >
                 <p>
                   {posts[0].users[0]?.display_name && <span>{posts[0].users[0].display_name}</span>}
-                  <span>{parseDate(posts[0].published_date)}</span>
+                  <span>{parseDate(posts[0].publishedAt)}</span>
                 </p>
                 <h2
                   sx={{
@@ -151,7 +151,7 @@ const IntroSection = ({ posts }) => {
                   >
                     {posts[1].users[0]?.display_name && posts[1].users[0].display_name}
                   </span>
-                  <span>{parseDate(posts[1].published_date)}</span>
+                  <span>{parseDate(posts[1].publishedAt)}</span>
                 </p>
                 <h2
                   sx={{
@@ -230,7 +230,7 @@ const IntroSection = ({ posts }) => {
                   >
                     {posts[2].users[0]?.display_name && posts[2].users[0].display_name}
                   </span>
-                  <span>{parseDate(posts[2].published_date)}</span>
+                  <span>{parseDate(posts[2].publishedAt)}</span>
                 </p>
                 <h2
                   sx={{

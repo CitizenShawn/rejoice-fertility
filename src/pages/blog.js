@@ -42,7 +42,7 @@ const BlogPage = ({ data }) => {
               }}
             >
               {posts.nodes.length > 3 &&
-                posts.nodes.slice(3).map((post) => <BlogCard key={post.id} data={post} />)}
+                posts.nodes.slice(3).map((post) => <BlogCard key={post.documentId} data={post} />)}
             </div>
           </div>
         </section>
@@ -56,10 +56,9 @@ export default BlogPage;
 
 export const query = graphql`
   query StoriesPageQuery {
-    posts: allDegaPost {
+    posts: allStrapiBlog {
       nodes {
-        users {
-          id
+        authors {
           first_name
           last_name
         }
@@ -68,13 +67,10 @@ export const query = graphql`
           name
         }
         medium {
-          alt_text
           url
-          dimensions
         }
-        published_date
-        id
-        status
+        publishedAt
+        documentId
         subtitle
         title
         slug
