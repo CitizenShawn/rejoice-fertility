@@ -8,7 +8,7 @@ import Help from '@components/Common/Help';
 
 const PostTest = ({ datam, nextPost, previousPost }) => {
   const src = datam.medium?.url?.proxy;
-  console.log("In PostTest");
+  console.log("In PostTest, title: ", datam.title);
   console.log("I can read the description of data_html: ", typeof datam.description_html.data);
   const description = datam.description_html.data.internal.content;
   return (

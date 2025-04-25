@@ -77,6 +77,13 @@ export const query = graphql`
     }
     post: strapiBlog(slug: { eq: $slug }) {
       documentId
+      description_html {
+            data {
+              internal {
+                content
+              }
+            }
+          }
       publishedAt
       excerpt
       slug
