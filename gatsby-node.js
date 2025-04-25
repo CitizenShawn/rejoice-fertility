@@ -78,7 +78,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     query TagsQuery {
       allDegaTag {
         nodes {
-          documentId
+          degaId
           slug
         }
       }
@@ -177,7 +177,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       path: `/blog/tag/${tag.slug}/`,
       component: tagTemplate,
       context: {
-        id: tag.documentId,
+        id: tag.degaId,
         slug: tag.slug,
       },
     });
