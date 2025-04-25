@@ -8,7 +8,7 @@ import Help from '@components/Common/Help';
 
 const Post = ({ data, nextPost, previousPost }) => {
   const src = data.medium?.url?.proxy;
-  const description = "";
+  var description = "";
   if (typeof data.description_html != "string") {
     description = data.description_html.data.internal.content;
   } else {
