@@ -59,16 +59,14 @@ const tagTemplate = require.resolve('./src/templates/tag-template.js');
 
 const authorTemplate = require.resolve('./src/templates/author-template.js');
 
-const testTemplate = require.resolve('./src/templates/post-test.js');
-
 exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId }) => {
   const { createPage } = actions;
 
   const categories = await graphql(`
     query CategoriesQuery {
-      allDegaCategory {
+      allStrapiCategory {
         nodes {
-          degaId
+          documentId
           slug
         }
       }
@@ -76,9 +74,9 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   `);
   const tags = await graphql(`
     query TagsQuery {
-      allDegaTag {
+      allStrapiTag {
         nodes {
-          degaId
+          documentId
           slug
         }
       }
@@ -86,9 +84,9 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   `);
   const authors = await graphql(`
     query AuthorsQuery {
-      allDegaUser {
+      allStrapiAuthor {
         nodes {
-          degaId
+          documentId
           slug
         }
       }
@@ -159,12 +157,12 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   });
   //create category list page
 
-  categories.data.allDegaCategory.nodes.forEach((category) => {
+  categories.data.allStrapiCategory.nodes.forEach((category) => {
     createPage({
       path: `/blog/category/${category.slug}/`,
       component: categoryTemplate,
       context: {
-        id: category.degaId,
+        id: category.documentId,
         slug: category.slug,
       },
     });
@@ -177,7 +175,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       path: `/blog/tag/${tag.slug}/`,
       component: tagTemplate,
       context: {
-        id: tag.degaId,
+        id: tag.documentId,
         slug: tag.slug,
       },
     });
@@ -190,7 +188,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       path: `/blog/author/${author.slug}/`,
       component: authorTemplate,
       context: {
-        id: author.degaId,
+        id: author.dId,
         slug: author.slug,
       },
     });

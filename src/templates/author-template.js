@@ -55,50 +55,39 @@ export default UserDetailsPage;
 
 export const query = graphql`
   query ($id: String!) {
-    user: degaUser(degaId: { eq: $id }) {
+    user: strapiAuthor(documentId: { eq: $id }) {
       description
-      id
+      documentId
       first_name
       last_name
       display_name
       slug
     }
-    posts: allDegaPost(filter: { users: { elemMatch: { id: { eq: $id } } } }) {
+    posts: allStrapiBlog(filter: { users: { elemMatch: { id: { eq: $id } } } }) {
       edges {
         node {
-          published_date
-          description
+          publishedAt
           excerpt
-          id
-          schemas
           slug
           status
           subtitle
           title
-          updated_at
           users {
             email
             first_name
             last_name
-            id
             slug
           }
           tags {
-            id
             name
             slug
             description
           }
           medium {
             alt_text
-            id
             url
-            dimensions
           }
           categories {
-            description
-            created_at
-            id
             name
             slug
           }
@@ -106,10 +95,8 @@ export const query = graphql`
         next {
           slug
           title
-          published_date
+          publishedAt
           medium {
-            alt_text
-            id
             url
             dimensions
           }
@@ -117,38 +104,34 @@ export const query = graphql`
         previous {
           slug
           title
-          published_date
+          publishedAt
           medium {
-            alt_text
-            id
             url
             dimensions
           }
         }
       }
     }
-    recentPosts: allDegaPost(
-      sort: { fields: created_at, order: DESC }
+    recentPosts: allStrapiBlog(
+      sort: { fields: publishedAt, order: DESC }
       filter: { format: { slug: { eq: "article" } } }
       limit: 6
     ) {
       nodes {
-        created_at
+        publishedAt
         title
         excerpt
         slug
-        users {
+        authors {
           display_name
           slug
-          id
         }
-        published_date
+        publishedAt
         categories {
           name
           slug
         }
         medium {
-          dimensions
           alt_text
           url
         }

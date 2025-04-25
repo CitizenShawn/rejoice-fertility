@@ -54,9 +54,9 @@ export default CategoryDetailsPage;
 
 export const query = graphql`
   query ($id: String!) {
-    category: degaCategory(degaId: { eq: $id }) {
+    category: strapiCategory(documentId: { eq: $id }) {
       description
-      id
+      documentid
       medium {
         alt_text
         url
@@ -65,42 +65,38 @@ export const query = graphql`
       name
       slug
     }
-    posts: allDegaPost(filter: { categories: { elemMatch: { id: { eq: $id } } } }) {
+    posts: allStrapiPost(filter: { categories: { elemMatch: { id: { eq: $id } } } }) {
       edges {
         node {
-          published_date
-          description
+          publishedAt
           excerpt
-          id
-          schemas
+          documentId
           slug
           status
           subtitle
           title
-          updated_at
-          users {
+          authors {
             email
             first_name
             last_name
-            id
+            documentId
             slug
           }
           tags {
-            id
+            documentId
             name
             slug
             description
           }
           medium {
             alt_text
-            id
             url
             dimensions
           }
           categories {
             description
             created_at
-            id
+            documentId
             name
             slug
           }
@@ -108,10 +104,9 @@ export const query = graphql`
         next {
           slug
           title
-          published_date
+          publishedAt
           medium {
             alt_text
-            id
             url
             dimensions
           }
@@ -119,23 +114,22 @@ export const query = graphql`
         previous {
           slug
           title
-          published_date
+          publishedAt
           medium {
             alt_text
-            id
             url
             dimensions
           }
         }
       }
     }
-    recentPosts: allDegaPost(
-      sort: { fields: created_at, order: DESC }
+    recentPosts: allStrapiBlog(
+      sort: { fields: publishedAt, order: DESC }
       filter: { format: { slug: { eq: "article" } } }
       limit: 6
     ) {
       nodes {
-        created_at
+        publishedAt
         title
         excerpt
         slug
