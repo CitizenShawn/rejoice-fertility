@@ -4,11 +4,10 @@ import PostTest from '@components/PostTest';
 import Layout from '@components/Layout/index';
 import { Seo } from '../components/Seo';
 
-const PostPage = ({ data }) => {
-  const { posts, post: strapiBlog } = data;
+const PostPage = ({ datam }) => {
+  const { posts, post: strapiBlog } = datam;
   const currentPost = posts.edges.filter(({ node }) => node.documentId === strapiBlog.documentId)[0];
   const { previous: previousPost, next: nextPost } = currentPost;
-  console.log("Data Description is ", typeof(data.description_html.data.internal.content));
   return (
     <Layout>
       <Seo title={strapiBlog.title} description={strapiBlog.subtitle} />

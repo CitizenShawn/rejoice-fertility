@@ -6,10 +6,11 @@ import { isBrowser } from '../../helpers/isBrowser';
 import parseTiptapContent from '../../helpers/parseTiptapContent';
 import Help from '@components/Common/Help';
 
-const PostTest = ({ data, nextPost, previousPost }) => {
-  const src = data.medium?.url?.proxy;
+const PostTest = ({ datam, nextPost, previousPost }) => {
+  const src = datam.medium?.url?.proxy;
   console.log("In PostTest");
-  const description = data.description_html.data.internal.content;
+  console.log("I can read the description of data_html: ", typeof datam.description_html.data.internal.content);
+  const description = datam.description_html.data.internal.content;
   return (
     <>
       <main sx={{ maxWidth: '900px', mx: 'auto', padding: '1rem' }}>
@@ -22,9 +23,9 @@ const PostTest = ({ data, nextPost, previousPost }) => {
             pb: '3rem',
           }}
         >
-          {data.categories && (
+          {datam.categories && (
             <div sx={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-              {data.categories.map((category) => {
+              {datam.categories.map((category) => {
                 return (
                   <Link
                     to={`/blog/category/${category.slug}`}
@@ -58,7 +59,7 @@ const PostTest = ({ data, nextPost, previousPost }) => {
               margin: 'auto',
             }}
           >
-            {data.title}
+            {datam.title}
           </h1>
           <p
             sx={{
@@ -68,7 +69,7 @@ const PostTest = ({ data, nextPost, previousPost }) => {
               textAlign: 'center',
             }}
           >
-            {data.excerpt}
+            {datam.excerpt}
           </p>
         </div>
         <div
