@@ -63,7 +63,7 @@ export const query = graphql`
       display_name
       slug
     }
-    posts: allStrapiBlog(filter: { users: { elemMatch: { id: { eq: $id } } } }) {
+    posts: allStrapiBlog(filter: { authors: { elemMatch: { id: { eq: $id } } } }) {
       edges {
         node {
           publishedAt
@@ -72,7 +72,7 @@ export const query = graphql`
           status
           subtitle
           title
-          users {
+          authors {
             email
             first_name
             last_name
@@ -114,7 +114,6 @@ export const query = graphql`
     }
     recentPosts: allStrapiBlog(
       sort: { fields: publishedAt, order: DESC }
-      filter: { format: { slug: { eq: "article" } } }
       limit: 6
     ) {
       nodes {

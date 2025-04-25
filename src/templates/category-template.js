@@ -125,7 +125,6 @@ export const query = graphql`
     }
     recentPosts: allStrapiBlog(
       sort: { fields: publishedAt, order: DESC }
-      filter: { format: { slug: { eq: "article" } } }
       limit: 6
     ) {
       nodes {
