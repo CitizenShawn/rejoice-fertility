@@ -9,7 +9,7 @@ import Help from '@components/Common/Help';
 const Post = ({ data, nextPost, previousPost }) => {
   const src = data.medium?.url?.proxy;
   var description = "";
-  if (data.description_html.data) {
+  if (typeof data.description_html == "string") {
     console.log("We have something there!");
   } else {
     console.log("We don't have something here!");
