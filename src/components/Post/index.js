@@ -8,6 +8,12 @@ import Help from '@components/Common/Help';
 
 const Post = ({ data, nextPost, previousPost }) => {
   const src = data.medium?.url?.proxy;
+  const description = "";
+  if (typeof data.description_html != "string") {
+    description = data.description_html.data.internal.content;
+  } else {
+    description = data.description_html;
+  }
   return (
     <>
       <main sx={{ maxWidth: '900px', mx: 'auto', padding: '1rem' }}>
@@ -158,7 +164,7 @@ const Post = ({ data, nextPost, previousPost }) => {
             py: '3rem',
           }}
         >
-          {isBrowser && parseTiptapContent("data.description_html")}
+          {isBrowser && parseTiptapContent(description)}
         </div>
       </main>
       <div>
