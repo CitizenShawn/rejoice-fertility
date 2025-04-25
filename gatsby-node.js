@@ -112,11 +112,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     query BlogsQuery {
       allStrapiBlog {
         nodes {
-          description_html {
-            data {
-              html
-            }
-          }
+          description_html
           documentId
           publishedAt
           slug
@@ -144,7 +140,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   //create test pages
 
   blogs.data.allStrapiBlog.nodes.forEach((blog) => {
-    console.log("Strapi description is: ", typeof blog.description_html.data.html);
+    console.log("Strapi description is: ", typeof blog.description_html);
     if (blog.publishedAt) {
       createPage({
         path: `/blog/test/${blog.slug}/`,
