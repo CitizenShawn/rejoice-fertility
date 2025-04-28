@@ -6,10 +6,10 @@ import { isBrowser } from '../../helpers/isBrowser';
 import parseTiptapContent from '../../helpers/parseTiptapContent';
 import Help from '@components/Common/Help';
 
-const PostTest = ({ datam, nextPost, previousPost }) => {
+const PostTest = ({ datam, nextPost, previousPost }) => {  
+  console.log("In Blog Template: The URL for the media is: ", datam.medium?.url);
   const src = datam.medium?.url?.proxy;
   console.log("In PostTest, title: ", datam.title);
-  console.log("I can read the description of data_html: ", typeof datam.description_html.data.internal.content);
   const description = datam.description_html.data.internal.content;
   return (
     <>

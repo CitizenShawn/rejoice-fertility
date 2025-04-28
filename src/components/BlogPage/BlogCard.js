@@ -4,6 +4,7 @@ import { jsx } from 'theme-ui';
 import { BsArrowUpRight } from 'react-icons/bs';
 
 const BlogCard = ({ data }) => {
+  console.log("In Blog Card: The URL for the media is: ", data.medium?.url);
   const src = data.medium?.url?.proxy;
   return (
     <div
