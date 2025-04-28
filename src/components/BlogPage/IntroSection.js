@@ -73,7 +73,7 @@ const IntroSection = ({ posts }) => {
                 }}
               >
                 <p>
-                  {posts[0].users[0]?.display_name && <span>{posts[0].users[0].display_name}</span>}
+                  {posts[0].authors[0]?.display_name && <span>{posts[0].authors[0].display_name}</span>}
                   <span>{parseDate(posts[0].publishedAt)}</span>
                 </p>
                 <h2
@@ -152,7 +152,7 @@ const IntroSection = ({ posts }) => {
                       color: '#343753',
                     }}
                   >
-                    {posts[1].users[0]?.display_name && posts[1].users[0].display_name}
+                    {posts[1].authors[0]?.display_name && posts[1].authors[0].display_name}
                   </span>
                   <span>{parseDate(posts[1].publishedAt)}</span>
                 </p>
@@ -231,7 +231,7 @@ const IntroSection = ({ posts }) => {
                       color: '#343753',
                     }}
                   >
-                    {posts[2].users[0]?.display_name && posts[2].users[0].display_name}
+                    {posts[2].authors[0]?.display_name && posts[2].authors[0].display_name}
                   </span>
                   <span>{parseDate(posts[2].publishedAt)}</span>
                 </p>
