@@ -5,6 +5,9 @@ import { Link } from 'gatsby';
 import parseDate from '../../helpers/parseDate';
 
 const IntroSection = ({ posts }) => {
+  if (!posts || posts.length < 1) {
+    return null;
+  }
   return (
     <section className="content">
       <div

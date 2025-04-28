@@ -5,6 +5,9 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 const BlogCard = ({ data }) => {
   const src = data.medium?.url?.proxy;
+  if (!posts || posts.length < 1) {
+    return null;
+  }
   return (
     <div
       sx={{

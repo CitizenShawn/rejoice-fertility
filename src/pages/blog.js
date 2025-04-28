@@ -21,8 +21,7 @@ const BlogPage = ({ data }) => {
         <Header title={'Blog'} image={'/images/blog-img.png'} />
 
         <section>
-        {posts.nodes.length > 3 &&
-                posts.nodes.slice(3).map((post) => <IntroSection posts={posts.nodes.slice(0, 3)} />)}
+          <IntroSection posts={posts.nodes.slice(0, 3)} />
 
           <div className="content">
             <h2
