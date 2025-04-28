@@ -111,22 +111,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
     }
   `);
 
-  // create post details page
-/*
-  posts.data.allDegaPost.nodes.forEach((post) => {
-    if (post.published_date) {
-      createPage({
-        path: `/blog/${post.slug}/`,
-        component: postTemplate,
-        context: {
-          id: post.degaId,
-          slug: post.slug,
-        },
-      });
-    }
-  });
-*/
-  //create test pages
+  // create post details
 
   blogs.data.allStrapiBlog.nodes.forEach((blog) => {
     console.log("Strapi description_html is: ", typeof blog.description_html.data.internal.content);

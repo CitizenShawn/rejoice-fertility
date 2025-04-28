@@ -88,25 +88,6 @@ module.exports = {
           // Each data type can be mapped to a predefined sitemap
           // Routes can be grouped in one of: posts, tags, authors, pages, or a custom name
           // The default sitemap - if none is passed - will be pages
-          /*allDegaPost: {
-            sitemap: `post`,
-            // Add a query level prefix to slugs, Don't get confused with global path prefix from Gatsby
-            // This will add a prefix to this particular sitemap only
-            // Custom Serializer
-            // serializer: (edges) => {
-            //   return edges.map(({ node }) => {
-            //     console.log({ node });
-            //   });
-            // },
-            serializer: (edges) => {
-              const siteMapEntries = [];
-              edges.forEach((edge) => {
-                edge.node.slug = '/blog/' + edge.node.slug;
-                siteMapEntries.push(edge);
-              });
-              return siteMapEntries;
-            },
-          }, */
           allStrapiTag: {
             sitemap: `tag`,
             serializer: (edges) => {

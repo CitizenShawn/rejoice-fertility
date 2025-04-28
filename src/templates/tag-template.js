@@ -99,7 +99,7 @@ export const query = graphql`
       }
     }
     recentPosts: allStrapiBlog(
-      sort: { fields: created_at, order: DESC }
+      sort: { fields: createdAt, order: DESC }
       limit: 6
     ) {
       nodes {
