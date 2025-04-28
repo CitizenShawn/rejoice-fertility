@@ -48,7 +48,7 @@ export default UserDetailsPage;
 
 export const query = graphql`
   query ($id: String!) {
-    user: strapiAuthor(documentId: { eq: $id }) {
+    user: strapiAuthor(documentId: { eq: $documentId }) {
       documentId
       first_name
       last_name
