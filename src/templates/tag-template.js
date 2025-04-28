@@ -46,7 +46,7 @@ export default TagDetailsPage;
 
 export const query = graphql`
   query ($slug: String!) {
-    tag: StrapiTag(slug: { eq: $slug }) {
+    tag: strapiTag(slug: { eq: $slug }) {
       id
       name
       slug
