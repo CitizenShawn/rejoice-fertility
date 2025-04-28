@@ -47,15 +47,15 @@ const UserDetailsPage = ({ data }) => {
 export default UserDetailsPage;
 
 export const query = graphql`
-  query ($id: String!) {
-    user: strapiAuthor(documentId: { eq: $documentId }) {
+  query ($slug: String!) {
+    user: strapiAuthor(slug: { eq: $slug }) {
       documentId
       first_name
       last_name
       display_name
       slug
     }
-    posts: allStrapiBlog(filter: { authors: { elemMatch: { id: { eq: $id } } } }) {
+    posts: allStrapiBlog(filter: { authors: { elemMatch: { slug: { eq: $slug } } } }) {
       edges {
         node {
           publishedAt

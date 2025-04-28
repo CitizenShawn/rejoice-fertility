@@ -30,7 +30,6 @@ export const query = graphql`
           id
           schemas
           slug
-          status
           subtitle
           title
           updated_at
@@ -89,7 +88,6 @@ export const query = graphql`
       id
       schemas
       slug
-      status
       subtitle
       title
       updated_at

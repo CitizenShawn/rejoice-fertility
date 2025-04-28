@@ -46,19 +46,18 @@ const CategoryDetailsPage = ({ data }) => {
 export default CategoryDetailsPage;
 
 export const query = graphql`
-  query ($id: String!) {
-    category: strapiCategory(name: { eq: $name }) {
+  query ($slug: String!) {
+    category: strapiCategory(slug: { eq: $slug }) {
       name
       slug
     }
-    posts: allStrapiBlog(filter: { categories: { elemMatch: { documentId: { eq: $documentId } } } }) {
+    posts: allStrapiBlog(filter: { categories: { elemMatch: { slug: { eq: $slug } } } }) {
       edges {
         node {
           publishedAt
           excerpt
           documentId
           slug
-          status
           subtitle
           title
           authors {
