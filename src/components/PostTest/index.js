@@ -7,8 +7,7 @@ import parseTiptapContent from '../../helpers/parseTiptapContent';
 import Help from '@components/Common/Help';
 
 const PostTest = ({ datam, nextPost, previousPost }) => {  
-  console.log("In Blog Template: The URL for the media is: ", datam.medium?.url);
-  const src = datam.medium?.url?.proxy;
+  const src = datam.medium?.url;
   console.log("In PostTest, title: ", datam.title);
   const description = datam.description_html.data.internal.content;
   return (
