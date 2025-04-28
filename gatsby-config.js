@@ -34,14 +34,6 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `@factly/gatsby-source-dega`,
-      options: {
-        spaceId: process.env.SPACE_ID,
-        accessToken: process.env.ACCESS_TOKEN,
-        uri: process.env.API_ENDPOINT,
-      },
-    },
-    {
       resolve: 'gatsby-source-strapi',
       options: {
         apiURL: process.env.STRAPI_API_URL,
@@ -67,38 +59,26 @@ module.exports = {
               }
             }
           }
-          allDegaPost {
-              edges {
-                  node {
-                      id
-                      slug
-                      updated_at
-                      medium {
-                        url
-                      }
-                  }
-              }
-          }
-          allDegaCategory {
+          allStrapiCategory {
             edges {
                 node {
-                    id
+                    documentId
                     slug
                 }
             }
         }
-        allDegaTag {
+        allStrapiTag {
             edges {
                 node {
-                    id
+                    documentId
                     slug
                 }
             }
         }
-        allDegaUser {
+        allStrapiAuthor {
             edges {
                   node {
-                      id
+                      documentId
                       slug
                   }
               }
@@ -108,7 +88,7 @@ module.exports = {
           // Each data type can be mapped to a predefined sitemap
           // Routes can be grouped in one of: posts, tags, authors, pages, or a custom name
           // The default sitemap - if none is passed - will be pages
-          /* allDegaPost: {
+          /*allDegaPost: {
             sitemap: `post`,
             // Add a query level prefix to slugs, Don't get confused with global path prefix from Gatsby
             // This will add a prefix to this particular sitemap only
@@ -126,8 +106,8 @@ module.exports = {
               });
               return siteMapEntries;
             },
-          },
-          allDegaTag: {
+          }, */
+          allStrapiTag: {
             sitemap: `tag`,
             serializer: (edges) => {
               const siteMapEntries = [];
@@ -138,7 +118,7 @@ module.exports = {
               return siteMapEntries;
             },
           },
-          allDegaUser: {
+          allStrapiAuthor: {
             sitemap: `author`,
             serializer: (edges) => {
               const siteMapEntries = [];
@@ -149,7 +129,7 @@ module.exports = {
               return siteMapEntries;
             },
           },
-          allDegaCategory: {
+          allStrapiCategory: {
             sitemap: `category`,
             serializer: (edges) => {
               const siteMapEntries = [];
@@ -159,7 +139,7 @@ module.exports = {
               });
               return siteMapEntries;
             },
-          }, */
+          },
           allStrapiBlog: {
             sitemap: `blog`,
             serializer: (edges) => {

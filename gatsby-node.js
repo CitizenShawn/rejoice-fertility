@@ -51,8 +51,6 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 // These templates are only data-fetching wrappers that import components
 
-const postTemplate = require.resolve('./src/templates/post-template.js');
-
 const categoryTemplate = require.resolve('./src/templates/category-template.js');
 
 const tagTemplate = require.resolve('./src/templates/tag-template.js');
@@ -75,9 +73,9 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
   `);
   const tags = await graphql(`
     query TagsQuery {
-      allDegaTag {
+      allStrapiTag {
         nodes {
-          degaId
+          documentId
           slug
         }
       }
@@ -88,19 +86,6 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
       allStrapiAuthor {
         nodes {
           documentId
-          slug
-        }
-      }
-    }
-  `);
-
-  const posts = await graphql(`
-    query PostsQuery {
-      allDegaPost {
-        nodes {
-          description_html
-          degaId
-          published_date
           slug
         }
       }
@@ -170,12 +155,12 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
 
   //create tag list page
 
-  tags.data.allDegaTag.nodes.forEach((tag) => {
+  tags.data.allStrapiTag.nodes.forEach((tag) => {
     createPage({
       path: `/blog/tag/${tag.slug}/`,
       component: tagTemplate,
       context: {
-        id: tag.degaId,
+        id: tag.documentId,
         slug: tag.slug,
       },
     });

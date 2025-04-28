@@ -45,42 +45,37 @@ const TagDetailsPage = ({ data }) => {
 export default TagDetailsPage;
 
 export const query = graphql`
-  query ($id: String!) {
-    tag: degaTag(degaId: { eq: $id }) {
+  query ($slug: String!) {
+    tag: StrapiTag(slug: { eq: $slug }) {
       id
       name
       slug
     }
-    posts: allDegaPost(filter: { tags: { elemMatch: { id: { eq: $id } } } }) {
+    posts: allStrapiBlog(filter: { tags: { elemMatch: { slug: { eq: $slug } } } }) {
       edges {
         node {
-          published_date
+          publishedAt
           excerpt
-          id
-          schemas
           slug
           subtitle
           title
-          updated_at
+          updatedAt
           authors {
             email
             first_name
             last_name
-            id
             slug
           }
           tags {
-            id
+            documentId
             name
             slug
           }
           medium {
-            id
             url
           }
           categories {
-            created_at
-            id
+            createdAt
             name
             slug
           }
@@ -88,39 +83,35 @@ export const query = graphql`
         next {
           slug
           title
-          published_date
+          publishedAt
           medium {
-            id
             url
           }
         }
         previous {
           slug
           title
-          published_date
+          publishedAt
           medium {
-            id
             url
           }
         }
       }
     }
-    recentPosts: allDegaPost(
+    recentPosts: allStrapiBlog(
       sort: { fields: created_at, order: DESC }
-      filter: { format: { slug: { eq: "article" } } }
       limit: 6
     ) {
       nodes {
-        created_at
+        createdAt
         title
         excerpt
         slug
         authors {
           display_name
           slug
-          id
         }
-        published_date
+        publishedAt
         categories {
           name
           slug
