@@ -51,14 +51,14 @@ const IntroSection = ({ posts }) => {
                     height: '100%',
                     objectFit: 'cover',
                   }}
-                  src={posts[0].medium.url.proxy}
+                  src={posts[0].medium.url}
                   srcSet={`
-                          ${posts[0].medium.url.proxy}?rs:fill/w:100 100w,
-                          ${posts[0].medium.url.proxy}?rs:fill/w:400 400w,
-                          ${posts[0].medium.url.proxy}?rs:fill/w:600 600w,
-                          ${posts[0].medium.url.proxy}?rs:fill/w:1024 1024w,
-                          ${posts[0].medium.url.proxy}?rs:fill/w:1280 1280w,
-                          ${posts[0].medium.url.proxy}?rs:fill/w:1280 1280w
+                          ${posts[0].medium.url}?rs:fill/w:100 100w,
+                          ${posts[0].medium.url}?rs:fill/w:400 400w,
+                          ${posts[0].medium.url}?rs:fill/w:600 600w,
+                          ${posts[0].medium.url}?rs:fill/w:1024 1024w,
+                          ${posts[0].medium.url}?rs:fill/w:1280 1280w,
+                          ${posts[0].medium.url}?rs:fill/w:1280 1280w
                           `}
                   sizes="(max-width: 1280px) 100vw, 1280px"
                   alt=""
@@ -116,15 +116,15 @@ const IntroSection = ({ posts }) => {
                 className="lazy"
               >
                 <img
-                  src={posts[1].medium.url.proxy}
+                  src={posts[1].medium.url}
                   alt=""
                   srcSet={`
-                          ${posts[1].medium.url.proxy}?rs:fill/w:100 100w,
-                          ${posts[1].medium.url.proxy}?rs:fill/w:400 400w,
-                          ${posts[1].medium.url.proxy}?rs:fill/w:600 600w,
-                          ${posts[1].medium.url.proxy}?rs:fill/w:1024 1024w,
-                          ${posts[1].medium.url.proxy}?rs:fill/w:1280 1280w,
-                          ${posts[1].medium.url.proxy}?rs:fill/w:1280 1280w
+                          ${posts[1].medium.url}?rs:fill/w:100 100w,
+                          ${posts[1].medium.url}?rs:fill/w:400 400w,
+                          ${posts[1].medium.url}?rs:fill/w:600 600w,
+                          ${posts[1].medium.url}?rs:fill/w:1024 1024w,
+                          ${posts[1].medium.url}?rs:fill/w:1280 1280w,
+                          ${posts[1].medium.url}?rs:fill/w:1280 1280w
                           `}
                   sizes="(max-width: 1280px) 100vw, 1280px"
                 />
@@ -195,14 +195,14 @@ const IntroSection = ({ posts }) => {
                 className="lazy"
               >
                 <img
-                  src={posts[2].medium.url.proxy}
+                  src={posts[2].medium.url}
                   srcSet={`
-                          ${posts[2].medium.url.proxy}?rs:fill/w:100 100w,
-                          ${posts[2].medium.url.proxy}?rs:fill/w:400 400w,
-                          ${posts[2].medium.url.proxy}?rs:fill/w:600 600w,
-                          ${posts[2].medium.url.proxy}?rs:fill/w:1024 1024w,
-                          ${posts[2].medium.url.proxy}?rs:fill/w:1280 1280w,
-                          ${posts[2].medium.url.proxy}?rs:fill/w:1280 1280w
+                          ${posts[2].medium.url}?rs:fill/w:100 100w,
+                          ${posts[2].medium.url}?rs:fill/w:400 400w,
+                          ${posts[2].medium.url}?rs:fill/w:600 600w,
+                          ${posts[2].medium.url}?rs:fill/w:1024 1024w,
+                          ${posts[2].medium.url}?rs:fill/w:1280 1280w,
+                          ${posts[2].medium.url}?rs:fill/w:1280 1280w
                           `}
                   sizes="(max-width: 1280px) 100vw, 1280px"
                   alt=""
