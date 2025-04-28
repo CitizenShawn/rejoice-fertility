@@ -138,7 +138,7 @@ const DiagnosisAndTestingPage = () => {
       >
         <p>
           Sometimes it is hard to know where to start! Rest assured that by choosing Rejoice
-          Fertility you have picked the right place. Dr. Keenan and Dr. Gordon have over 50 years of
+          Fertility you have picked the right place. Dr. Gordon have over 50 years of
           combined experience in treating the infertile couple.
         </p>
         <p>
