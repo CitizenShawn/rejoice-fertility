@@ -51,7 +51,7 @@ export const query = graphql`
       name
       slug
     }
-    posts: allStrapiPost(filter: { categories: { elemMatch: { documentId: { eq: $documentId } } } }) {
+    posts: allStrapiBlog(filter: { categories: { elemMatch: { documentId: { eq: $documentId } } } }) {
       edges {
         node {
           publishedAt
@@ -77,7 +77,7 @@ export const query = graphql`
             url
           }
           categories {
-            created_at
+            createdAt
             name
             slug
           }
@@ -112,7 +112,7 @@ export const query = graphql`
         authors {
           display_name
           slug
-          id
+          documentId
         }
         published_date
         categories {
