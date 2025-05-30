@@ -48,7 +48,7 @@ const Form = ({ formUrl = 'https://usebasin.com/f/f95fb9d7171b' }) => {
     <iframe
           title="Jotform"
           src="https://form.jotform.com/251464191705052"
-          style={{ width: '100%', height: '800px', border: 'none' }}
+          style={{ width: '100%', height: '1000px', border: 'none' }}
           allowFullScreen
     >
     </iframe>
