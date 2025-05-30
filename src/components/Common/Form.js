@@ -44,16 +44,12 @@ const Form = ({ formUrl = 'https://usebasin.com/f/f95fb9d7171b' }) => {
       }}
       id="form-section"
     >
+        
     <iframe
-      id="JotFormIFrame-251464191705052"
-      title="Contact Form"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen; payment"
-      src="https://form.jotform.com/251464191705052"
-      frameborder="0"
-      style="min-width:100%;max-width:100%;height:539px;border:none;"
-      scrolling="no"
+          title="Jotform"
+          src="https://form.jotform.com/251464191705052"
+          style={{ width: '100%', height: '800px', border: 'none' }}
+          allowFullScreen
     >
     </iframe>
     <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
