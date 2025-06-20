@@ -258,13 +258,13 @@ const LargeTable = () => {
             <div>N/A</div>
           </td>
           <td>
-            <div>$450.00</div>
+            <div>Included</div>
           </td>
           <td>
-            <div>$450.00</div>
+            <div>Included</div>
           </td>
           <td>
-            <div>$450.00</div>
+            <div>Included</div>
           </td>
           <td>
             <div>N/A</div>
@@ -389,6 +389,38 @@ const LargeTable = () => {
           </td>
           <td>
             <div>$750.00</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+        </tr>
+        <tr id="features-serverless-functions">
+          <td width="30%">
+            <details>
+              <summary>
+                <div class="pricing-table-summary-heading">
+                  <div>Egg Freezing plus 1st year of storage (not prorated)</div>{' '}
+                </div>
+              </summary>{' '}
+            </details>
+          </td>{' '}
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>$1200.00</div>
+          </td>
+          <td>
+            <div>$1200.00</div>
           </td>
           <td>
             <div>N/A</div>
