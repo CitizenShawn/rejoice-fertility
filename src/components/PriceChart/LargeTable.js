@@ -69,6 +69,47 @@ const LargeTable = () => {
           <td>Normal Uterus Good Ovarian Reserve BMI &lt; 38</td>
           <td>Normal Uterus BMI &lt; 38 Husband/wife combined ages &lt; 100 years</td>
         </tr>
+        <tr id="rejoice-fertility-fees">
+          <td width="30%">
+            <details>
+              <summary>
+                <div class="rejoice-fertility-fees-heading">
+                  <div>Rejoice Fertility Fees </div>{' '}
+                  <svg
+                    width="10"
+                    height="14"
+                    viewBox="0 0 10 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    focusable="false"
+                    aria-hidden="true"
+                  >
+                    <path d="M8.99023 7.59375C9.14648 7.46875 9.24023 7.28125 9.24023 7.0625C9.24023 6.875 9.14648 6.6875 8.99023 6.53125L2.92773 0.46875C2.77148 0.34375 2.58398 0.25 2.39648 0.25C2.17773 0.25 1.99023 0.34375 1.86523 0.46875L1.17773 1.15625C1.02148 1.3125 0.927734 1.5 0.927734 1.6875C0.927734 1.90625 0.990234 2.09375 1.14648 2.21875L5.99023 7.0625L1.14648 11.9062C0.990234 12.0625 0.927734 12.25 0.927734 12.4375C0.927734 12.6562 1.02148 12.8438 1.17773 12.9688L1.86523 13.6562C1.99023 13.8125 2.17773 13.875 2.39648 13.875C2.58398 13.875 2.77148 13.8125 2.92773 13.6562L8.99023 7.59375Z"></path>
+                  </svg>
+                </div>
+              </summary>{' '}
+              <p class="paragraph type-b type-b-0">(Ultrasounds, Hormone Labs, IUI, Egg Collection, Embryo transfer)</p>
+            </details>
+          </td>{' '}
+          <td>
+            <div>$150 (IUI) $315 (Per monitoring visit if any needed)</div>
+          </td>
+          <td>
+            <div>$150 (IUI) $315 (Per monitoring visit)</div>
+          </td>
+          <td>
+            <div>$4,710.00</div>
+          </td>
+          <td>
+            <div>$5,715.00</div>
+          </td>
+          <td>
+            <div>$7,725.00</div>
+          </td>
+          <td>
+            <div>$2,920.00</div>
+          </td>
+        </tr>
         <tr id="features-reviewers">
           <td width="30%">
             <details>
