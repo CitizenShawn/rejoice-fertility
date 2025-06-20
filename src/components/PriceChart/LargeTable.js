@@ -237,7 +237,7 @@ const LargeTable = () => {
             <div>$200.00</div>
           </td>
           <td>
-            <div>$1000.00</div>
+            <div>$1800.00</div>
           </td>
           <td>
             <div>$4000.00</div>
