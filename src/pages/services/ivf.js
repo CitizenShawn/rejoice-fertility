@@ -31,7 +31,7 @@ const IVFPage = () => {
     </div>
    
     <div>
-     <p><span >COST:</span> Under $6,000</p>
+     <p><span >COST:</span> About $8,000 (plus medication)</p>
      <p>&nbsp;</p>
      <p><span>MEDICATIONS USED:</span> hCG trigger shot, progesterone vaginal capsules, estrogen pills</p>
      <p >&nbsp;</p>
@@ -67,7 +67,7 @@ const IVFPage = () => {
   
     <div>
       <p>
-        <span>COST:</span> Under $8,000
+        <span>COST:</span> About $10,000 (plus medications)
       </p>
       <p>&nbsp;</p>
       <p>
@@ -78,7 +78,7 @@ const IVFPage = () => {
       </p>
       <p>&nbsp;</p>
       <p>
-        <span>GOAL:</span> Retrieval of 2-5 mature eggs
+        <span>GOAL:</span> Retrieval of 3-8 mature eggs (Couples may elect to limit # of eggs fertilized and freeze unfertilized eggs)
       </p>
       <p>&nbsp;</p>
       <p>
@@ -131,7 +131,7 @@ const IVFPage = () => {
   
     <div>
       <p id="u7253-3">
-        <span>COST:</span> About $13,445
+        <span>COST:</span> About $16,000 (plus medications)
       </p>
       <p id="u7253-4">&nbsp;</p>
       <p id="u7253-7">
@@ -140,7 +140,7 @@ const IVFPage = () => {
       </p>
       <p id="u7253-8">&nbsp;</p>
       <p id="u7253-11">
-        <span>GOAL:</span> Retrieval of 6-15 mature eggs
+        <span>GOAL:</span> Retrieval of 8-15 mature eggs (Couples may elect to limit # of eggs fertilized and freeze unfertilized eggs)
       </p>
       <p id="u7253-12">&nbsp;</p>
       <p id="u7253-15">
