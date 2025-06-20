@@ -432,10 +432,10 @@ const LargeTable = () => {
             <div>$750.00</div>
           </td>
           <td>
-            <div>N/A</div>
+            <div>$750.00</div>
           </td>
           <td>
-            <div>$750.00</div>
+            <div>N/A</div>
           </td>
           <td>
             <div>
