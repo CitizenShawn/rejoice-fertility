@@ -25,6 +25,9 @@ const LargeTable = () => {
             <span class="pricing-table-plan-name">Stimulated Cycle IVF</span>{' '}
           </th>
           <th class="pricing-table-sticky-header starter">
+            <span class="pricing-table-plan-name">FET (Own Embryos)</span>{' '}
+          </th>
+          <th class="pricing-table-sticky-header starter">
             <span class="pricing-table-plan-name">Embryo Adoption</span>{' '}
           </th>
         </tr>
@@ -67,6 +70,7 @@ const LargeTable = () => {
           <td>Normal Uterus Regular Cycles BMI &lt; 38</td>
           <td>Normal Uterus Good Ovarian Reserve BMI &lt; 38</td>
           <td>Normal Uterus Good Ovarian Reserve BMI &lt; 38</td>
+          <td>Normal Uterus BMI &lt; 38</td>
           <td>Normal Uterus BMI &lt; 38 Husband/wife combined ages &lt; 100 years</td>
         </tr>
         <tr id="rejoice-fertility-fees">
@@ -105,6 +109,9 @@ const LargeTable = () => {
           </td>
           <td>
             <div>$7,725.00</div>
+          </td>
+          <td>
+            <div>$2,920.00</div>
           </td>
           <td>
             <div>$2,920.00</div>
@@ -150,6 +157,9 @@ const LargeTable = () => {
           <td>
             <div>$2,500.00</div>
           </td>
+          <td>
+            <div>$2,500.00</div>
+          </td>
         </tr>
         <tr id="features-reviewers">
           <td width="30%">
@@ -187,6 +197,9 @@ const LargeTable = () => {
           </td>
           <td>
             <div>$15,659.00</div>
+          </td>
+          <td>
+            <div>$5,420.00</div>
           </td>
           <td>
             <div>$5,420.00</div>
@@ -232,6 +245,9 @@ const LargeTable = () => {
           <td>
             <div>$1000.00</div>
           </td>
+          <td>
+            <div>$1000.00</div>
+          </td>
         </tr>
         <tr id="features-bandwidth">
           <td width="30%">Anesthesia for egg collection</td>{' '}
@@ -249,6 +265,9 @@ const LargeTable = () => {
           </td>
           <td>
             <div>$450.00</div>
+          </td>
+          <td>
+            <div>N/A</div>
           </td>
           <td>
             <div>N/A</div>
@@ -296,6 +315,9 @@ const LargeTable = () => {
           <td>
             <div>N/A</div>
           </td>
+          <td>
+            <div>N/A</div>
+          </td>
         </tr>
         <tr id="features-websites">
           <td width="30%">
@@ -339,6 +361,9 @@ const LargeTable = () => {
           <td>
             <div>Included</div>
           </td>
+          <td>
+            <div>Included</div>
+          </td>
         </tr>
         <tr id="features-serverless-functions">
           <td width="30%">
@@ -364,6 +389,9 @@ const LargeTable = () => {
           </td>
           <td>
             <div>$750.00</div>
+          </td>
+          <td>
+            <div>N/A</div>
           </td>
           <td>
             <div>N/A</div>
@@ -404,6 +432,9 @@ const LargeTable = () => {
             <div>$750.00</div>
           </td>
           <td>
+            <div>N/A</div>
+          </td>
+          <td>
             <div>$750.00</div>
           </td>
           <td>
@@ -438,7 +469,10 @@ const LargeTable = () => {
             <div>25-40% per cycle 30-50% per ET</div>
           </td>
           <td>
-            <div>{'>'}50% per ET</div>
+            <div>Depends on age at time of freezing (25-50%)</div>
+          </td>
+          <td>
+            <div>Depends on age at time of freezing (45-50%)</div>
           </td>
         </tr>
       </tbody>
