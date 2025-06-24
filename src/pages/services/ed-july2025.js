@@ -32,8 +32,7 @@ const EmbryoDonationPage = () => {
     {
       question: 'Is there an advantage to donating our embryos directly to RER?',
       answer:
-        'If your embryos are currently stored at Rejoice then you will not be responsible for any outstanding storage charges when you donate your embryos through RER. If you wish to move your embryos to another clinic, embryo adoption agency or storage facility then you must first pay your outstanding storage fees.
-        RER stores donated embryos FREE OF CHARGE for embryo donors whose embryos are to be thawed and transferred by Rejoice IVF Lab, LLC. If your embryos are matched with a couple who wish to have their FET at a different clinic, then shipping and handling fees will be charged to and paid for by the recipients (usually about $1,500).',
+        'If your embryos are currently stored at Rejoice then you will not be responsible for any outstanding storage charges when you donate your embryos through RER. If you wish to move your embryos to another clinic, embryo adoption agency or storage facility then you must first pay your outstanding storage fees. RER stores donated embryos FREE OF CHARGE for embryo donors whose embryos are to be thawed and transferred by Rejoice IVF Lab, LLC. If your embryos are matched with a couple who wish to have their FET at a different clinic, then shipping and handling fees will be charged to and paid for by the recipients (usually about $1,500).',
     },
     {
       question: 'Is there an advantage to working with a specific Embryo Adoption Agency like Snowflakes, Embryo Adoption Solutions of Cedar Park or Flourish Embryo Adoption as opposed to donating our embryos directly to RER?',
