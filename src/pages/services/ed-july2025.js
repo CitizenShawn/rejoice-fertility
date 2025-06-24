@@ -185,6 +185,25 @@ const EmbryoDonationPage = () => {
             <p>If you choose to donate your embryos to Rejoice, please know we will handle them with the utmost care, skill and respect. We would love to be by your side as you give this incredible gift to another couple.</p>
       </section>
       <Faqs data={data} />
+      <section
+      sx={{
+        bg: '#47E4E0',
+        py: '4rem',
+        scrollMarginTop: 100,
+      }}
+      id="form-section"
+    >
+        
+    <iframe
+          title="Jotform"
+          src="https://form.jotform.com/251745430663053"
+          style={{ width: '100%', height: '1000px', border: 'none' }}
+          allowFullScreen
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251745430663053']", "https://form.jotform.com/")</script>
+    </section>
       <Help />
     </Layout>
   );
