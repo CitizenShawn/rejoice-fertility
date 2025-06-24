@@ -110,7 +110,7 @@ const EmbryoAdoptionTestPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
+      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} ctaPrimary={'Donate Embryos'} ctaPrimaryLink={'/services/donate-embryos'}/>
       <section
         sx={{
           display: 'flex',
@@ -123,23 +123,19 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-          Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF
-          Clinic across the United States but no one is really sure of the actual number with a range of
-          600,000 to 1.5 million frequently quoted.
+        Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF Clinic across the United States but no one is really sure of the actual number with a range of 600,000 to 1.5 million frequently quoted.
         </p>
         <p>
-          Some couples are willing to donate their frozen embryos to recipient couples who are willing to
-          undergo a frozen embryo transfer with these embryos.
+        Some couples are willing to donate their frozen embryos to recipient couples who are willing to undergo a frozen embryo transfer with these embryos.
         </p>
         <p>
-          At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire
-          world.
+        At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire world. However, Rejoice Fertility is not an Embryo Adoption Agency.
             </p>
         <p>
           All of our matching of embryo donors and recipients is currently accomplished through the efforts of
           three organizations: <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
           <a href='/services/embryo-adoption-organizations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a> 
-           and <a href='/services/embryo-adoption-organizations/cac'>Christian Adoption Consultants</a>. 
+           and <a href='https://flourishadoptions.com/embryo-adoption'>Flourish Embryo Adoption</a>. 
             </p>
         <p>
         Patients seeking to adopt embryos will undergo an evaluation to ensure that there are no medical
@@ -185,7 +181,7 @@ const EmbryoAdoptionTestPage = () => {
       </section>
       <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
-      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Flourish Adoption Ministries'} description={''} image={'/images/flourish-logo.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://flourishadoptions.com/embryo-adoption'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
       <section
         sx={{
