@@ -168,9 +168,7 @@ const EmbryoAdoptionTestPage = () => {
                 </p>
         <h4><strong>4. EXPANSION</strong></h4>
         <p>
-            Our new state-of-the-art IVF Laboratory and clinical space will be ready in August
-            2024 and with many patient-friendly features such as Private Rooms for pre-transfer
-            discussions with Dr. Gordon.
+            We moved into our new state-of-the-art IVF Laboratory and clinical space will be ready in October 2024 and with many patient-friendly features such as Private Rooms for pre-transfer discussions with Dr. Gordon.
               </p>
         <h4><strong>5. EMPATHY</strong></h4>
         <p>
@@ -208,18 +206,9 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-        There were previous issues between Rejoice and the NEDC; however, those issues were worked out in Mediation
-        on August 23, 2024 to the mutual benefit of all parties, and most importantly, all patients
-        </p>
-        <p>
-        The parties agreed that all Rejoice patients (both Dr. Keenan’s and Dr. Gordon’s) who were matched with NEDC
-        donated embryos or had NEDC embryos on reserve as of 8/1/24 could choose to keep these embryos at Rejoice
-        and have their future care with Dr. Gordon and the nursing and embryology team at Rejoice, OR choose to have
-        future embryo transfers with Dr. Keenan in Powell, TN, OR choose to have their care with another NEDC affiliated
-        clinic.
+        Rejoice ended its affiliation with the National Embryo Donation Center in September 2024. A number of patients who adopted embryos through the NEDC remained with Dr. Gordon / Rejoice Fertility through a Mediation Agreement. 
         </p>
       </section>
-      <Questions q={q} />
       <Help />
     </Layout>
   );
