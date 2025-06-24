@@ -140,7 +140,7 @@ const EmbryoDonationPage = () => {
         title="Knoxville Embryo Donation | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} ctaPrimary={'Donate Embryos'} ctaPrimaryLink={'/services/donate-embryos'}/>
+      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} ctaPrimary={'Adopt Embryos'} ctaPrimaryLink={'/services/embryo-adoption'}/>
       <section
         sx={{
           display: 'flex',
