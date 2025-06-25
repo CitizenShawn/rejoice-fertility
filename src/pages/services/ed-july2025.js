@@ -152,10 +152,45 @@ const EmbryoDonationPage = () => {
         }}
         className="content"
       >
-        <p>
-        All of us here at Rejoice would like to thank you for considering embryo donation; a precious gift so very treasured by our recipient couples. Rejoice Embryo Rescue, LLC would love to be a part of your journey to give the gift of life. We are excited that patients who wish to donate their frozen embryos to couples pursuing Embryo Adoption now have another option. 
-        </p>
-        <h3><strong>Overview of the Process</strong></h3>
+        <p>All of us here at Rejoice would like to thank you for considering embryo donation; a precious gift so very treasured by our recipient couples. Rejoice Embryo Rescue, LLC would love to be a part of your journey to give the gift of life. We are excited that patients who wish to donate their frozen embryos to couples pursuing Embryo Adoption now have another option.</p>
+        <p>RER is not an Embryo Adoption agency and does not match donors and recipients. RER works collaboratively with Embryo Adoption agencies which include Snowflakes, Embryo Adoption Services of Cedar Park and Flourish Adoption Services. All matching is performed by these agencies. </p>
+      </section>
+      <Header title={'DONATE NOW'} image={'/images/embryos-child-1.jpg'} description={`If you have embryos that you wish to donate to another couple, then we would love to help you give the gift of life.\n
+      Patients who wish to donate their IVF frozen embryos through either Open or Closed Embryo Adoption now have another option.\n
+      Rejoice Embryo Rescue and its 3 affiliated faithbased Embryo Adoption Services are ready to help you through this difficult decision and process of placing your embryos with another family.\n
+      Adoption counselors will work to place your embryos in families looking to adopt and you can determine your level of contact with the adopting family.`} ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}/>
+      <Header title={'What we ask of our donors'} image={'/images/embryo-child-2.jpg'} description={'Sign our consent form \nFill out a health questionaire \nProvide information for an adopting family \nDecide between open and closed adoption'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}/>
+      <Header title={'What do donors NOT have to do'} image={'/images/embryos-child-3.jpg'} description={'Pay any fees for embryo storage \nPay any shipping fees to move their embryos \nFind a family to adopt their embryos'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}/>
+      <Faqs data={data} />
+      <section
+      sx={{
+        bg: '#47E4E0',
+        py: '4rem',
+        scrollMarginTop: 100,
+      }}
+      id="form-section"
+    >
+        
+    <iframe
+          title="Jotform"
+          src="https://form.jotform.com/251745430663053"
+          style={{ width: '100%', height: '1000px', border: 'none' }}
+          allowFullScreen
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251745430663053']", "https://form.jotform.com/")</script>
+    </section>
+    <section
+            sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          px: ['1rem', null, null, '2rem'],
+          py: ['2rem', null, null, '4rem'],
+          variant: 'text.normal',
+        }}>
+            <h3><strong>Overview of the Process</strong></h3>
         <p>
         Rejoice Embryo Rescue, LLC and its affiliated faith-based Embryo Adoption Services are ready to help you place your embryos with an adopting family. Adoption counselors with one of our affiliates will work to place your embryos in families looking to adopt and you can determine your level of contact, if any, with the adopting family. Rejoice accepts all embryos for donation regardless of how they were frozen, type of device, medical history, age or embryo quality. The only embryos Rejoice cannot accept are PGT tested ABNORMAL embryos unless there is a recipient already willing to accept them for transfer. (Rejoice will consider PGT tested low-mosaic embryos on a case-by-case basis). Our goal is to keep your embryos together if at all possible and so adopting families adopt the entire set of embryos in order to encourage this goal. 
         </p>
@@ -183,33 +218,7 @@ const EmbryoDonationPage = () => {
             <p>In addition, Rejoice IVF Lab has unparalleled experience in handling the multitude of different embryo storage devices and the associated protocols and techniques needed to successfully thaw older embryos along with those frozen more recently. We have thawed thousands of donated embryos and will do our very best to safely thaw your embryos. In fact, our very own Dr Gordon and Lab Supervisor/Head Embryologist, Sarah Atkinson had the privilege of having thawed and transferred the Guinness World Record breaking oldest embryos to have ever achieved a pregnancy. Those embryos were frozen for 30 years.</p>
             <p>No recipient is ever FORCED to travel to Knoxville (unless you, as the Donor were to require it, so please let us know if those are your wishes). We think patients should have the choice as to where they have their medical care. Of course, we hope recipient families choose to stay with Rejoice for the transfer, but ultimately, we believe it's all about the lives of the embryos, and helping further the mission by getting them adopted into loving families. We currently have recipients waiting for embryos so your embryos will likely be matched quickly.</p>
             <p>If you choose to donate your embryos to Rejoice, please know we will handle them with the utmost care, skill and respect. We would love to be by your side as you give this incredible gift to another couple.</p>
-      </section>
-      <Header title={'DONATE NOW'} image={'/images/embryos-child-1.jpg'} description={`If you have embryos that you wish to donate to another couple, then we would love to help you give the gift of life.\n
-      Patients who wish to donate their IVF frozen embryos through either Open or Closed Embryo Adoption now have another option.\n
-      Rejoice Embryo Rescue and its 3 affiliated faithbased Embryo Adoption Services are ready to help you through this difficult decision and process of placing your embryos with another family.\n
-      Adoption counselors will work to place your embryos in families looking to adopt and you can determine your level of contact with the adopting family.`}/>
-      <Header title={'What we ask of our donors'} image={'/images/embryo-child-2.jpg'} description={'Sign our consent form \nFill out a health questionaire \nProvide information for an adopting family \nDecide between open and closed adoption'}/>
-      <Header title={'What do donors NOT have to do'} image={'/images/embryos-child-3.jpg'} description={'Pay any fees for embryo storage \nPay any shipping fees to move their embryos \nFind a family to adopt their embryos'}/>
-      <Faqs data={data} />
-      <section
-      sx={{
-        bg: '#47E4E0',
-        py: '4rem',
-        scrollMarginTop: 100,
-      }}
-      id="form-section"
-    >
-        
-    <iframe
-          title="Jotform"
-          src="https://form.jotform.com/251745430663053"
-          style={{ width: '100%', height: '1000px', border: 'none' }}
-          allowFullScreen
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251745430663053']", "https://form.jotform.com/")</script>
-    </section>
+            </section>
       <Help />
     </Layout>
   );
