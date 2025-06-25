@@ -146,11 +146,10 @@ const Header = ({
                 <Link
                   to={ctaSecondaryLink}
                   sx={{
-                    color: ' #FFFFFF',
-                    border: '1px solid #fff',
+                    background: '#47E4E0',
+                    color: '#000',
                     '&:hover': {
-                      color: '#47E4E0',
-                      borderColor: '#47E4E0',
+                      opacity: 0.75,
                     },
                   }}
                   title={ctaSecondary}
@@ -161,11 +160,10 @@ const Header = ({
                 <a
                   href={ctaSecondaryLink}
                   sx={{
-                    color: ' #FFFFFF',
-                    border: '1px solid #fff',
+                    background: '#47E4E0',
+                    color: '#000',
                     '&:hover': {
-                      color: '#47E4E0',
-                      borderColor: '#47E4E0',
+                      opacity: 0.75,
                     },
                   }}
                   title={ctaSecondary}
