@@ -101,7 +101,7 @@ const EmbryoDonationPage = () => {
   ];
   const q = [
     {
-      question: 'What are the next steps that I need to take?',
+      question: '1. Donor Screening',
       answer:
         'Per the mediation agreement signed on 8/23/24, all affected patients are being notified so that they can make their own choice via the outline above. Both parties request that patients make their choice known by Sept. 20, 2024. If you have already sent in that form, then your choice will be honored by both entities. A link to this form can be found here: <a href="https://pdf.ac/3KY2Y9">https://pdf.ac/3KY2Y9</a>',
     },
@@ -159,8 +159,8 @@ const EmbryoDonationPage = () => {
       Patients who wish to donate their IVF frozen embryos through either Open or Closed Embryo Adoption now have another option.\n
       Rejoice Embryo Rescue and its 3 affiliated faithbased Embryo Adoption Services are ready to help you through this difficult decision and process of placing your embryos with another family.\n
       Adoption counselors will work to place your embryos in families looking to adopt and you can determine your level of contact with the adopting family.`} ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}/>
-      <Header title={'What we ask of our donors'} image={'/images/embryo-child-2.jpg'} description={'Sign our consent form \nFill out a health questionaire \nProvide information for an adopting family \nDecide between open and closed adoption'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}/>
-      <Header title={'What do donors NOT have to do'} image={'/images/embryos-child-3.jpg'} description={'Pay any fees for embryo storage \nPay any shipping fees to move their embryos \nFind a family to adopt their embryos'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}/>
+      <Header title={'What we ask of our donors'} image={'/images/embryo-child-2.jpg'} description={'Sign our consent form \nFill out a health questionaire \nProvide information for an adopting family \nDecide between open and closed adoption'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
+      <Header title={'What do donors NOT have to do'} image={'/images/embryos-child-3.jpg'} description={'Pay any fees for embryo storage \nPay any shipping fees to move their embryos \nFind a family to adopt their embryos'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
       <Faqs data={data} />
       <section
       sx={{
