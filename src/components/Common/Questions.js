@@ -26,7 +26,7 @@ const Questions = ({ q }) => {
           my: '1.5rem',
         }}
       >
-        Questions and Answers
+        The Donation Process
       </h3>
       <div
         className="content"
