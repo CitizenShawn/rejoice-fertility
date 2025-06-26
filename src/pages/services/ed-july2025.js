@@ -176,8 +176,7 @@ const EmbryoDonationPage = () => {
           py: ['2rem', null, null, '4rem'],
           variant: 'text.normal',
         }}
-        id="overview"
-          style={{gap: 0+"px"}}>
+        id="overview">
         <Banner title={'Overview of the Process'} image={'/images/RER-logo-slide.jpg'} ctaPrimary={''} ctaPrimaryLink={'#'} ctaSecondary={''} ctaSecondaryLink={'#'} description={'Rejoice Embryo Rescue, LLC and its affiliated faith-based Embryo Adoption Services are ready to help you place your embryos with an adopting family. Adoption counselors with one of our affiliates will work to place your embryos in families looking to adopt and you can determine your level of contact, if any, with the adopting family. Rejoice accepts all embryos for donation regardless of how they were frozen, type of device, medical history, age or embryo quality. The only embryos Rejoice cannot accept are PGT tested ABNORMAL embryos unless there is a recipient already willing to accept them for transfer. (Rejoice will consider PGT tested low-mosaic embryos on a case-by-case basis). Our goal is to keep your embryos together if at all possible and so adopting families adopt the entire set of embryos in order to encourage this goal.'}/>
         <Questions q={q} />  
           <h3><strong>Overview of the Process</strong></h3>
