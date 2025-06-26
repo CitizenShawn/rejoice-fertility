@@ -8,7 +8,7 @@ const Questions = ({ q }) => {
     sx={{
       background: '#47E4E0',
       //backgroundImage: `url('/images/background2.png')`,
-      mt: '3rem',
+      mt: '0rem',
       py: '32px',
       display: 'flex',
       flexDirection: 'column',
