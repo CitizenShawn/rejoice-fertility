@@ -171,7 +171,7 @@ const EmbryoDonationPage = () => {
             sx={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '16px',
+          gap: '0px',
           px: ['1rem', null, null, '2rem'],
           py: ['2rem', null, null, '4rem'],
           variant: 'text.normal',
