@@ -27,7 +27,7 @@ const EmbryoAdoptionTestPage = () => {
     },
     {
       question: 'How successful is EA?',
-      answer: 'Success rates with Embryo Donation/Adoption are close to 50% per cycle',
+      answer: 'Success rates with Embryo Donation/Adoption are close to 50% per cycle.',
     },
     {
       question: 'What about couples with male factor?',
@@ -41,7 +41,7 @@ const EmbryoAdoptionTestPage = () => {
     {
       question: 'How expensive is this treatment?',
       answer:
-        'The treatment cost per cycle is less than $4,000 but that does not include pre-screening and the costs associated with the matching process through Snowflake Embryo Adoption or the National Embryo Donation Center.',
+        'The treatment cost per cycle is less than $6,000 but that does not include pre-screening and the costs associated with the matching process through our affiliated Embryo Adoption Organizations.',
     },
     {
       question: 'I have been matched with embryos now what do I do?',
@@ -110,7 +110,7 @@ const EmbryoAdoptionTestPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'} />
+      <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'}/>
       <section
         sx={{
           display: 'flex',
@@ -123,23 +123,16 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-          Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF
-          Clinic across the United States but no one is really sure of the actual number with a range of
-          600,000 to 1.5 million frequently quoted.
+        Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF clinics across the United States but no one is really sure of the actual number with a range of 600,000 to 1.5 million frequently quoted.
         </p>
         <p>
-          Some couples are willing to donate their frozen embryos to recipient couples who are willing to
-          undergo a frozen embryo transfer with these embryos.
+        Some couples are willing to donate their frozen embryos to recipient couples who desire to build their family through embryo adoption.
         </p>
         <p>
-          At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire
-          world.
-            </p>
-        <p>
-          All of our matching of embryo donors and recipients is currently accomplished through the efforts of
-          three organizations: <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
+          Our clinic, Rejoice Fertility, has the most experience with Embryo Adoption in the entire world. We provide the medical care and expertise to patients matched with adopted embryos through our affiliated embryo adoption organizations:
+        <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
           <a href='/services/embryo-adoption-organizations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a> 
-           and <a href='/services/embryo-adoption-organizations/cac'>Christian Adoption Consultants</a>. 
+           and <a href='https://flourishadoptions.com/embryo-adoption'>Flourish Embryo Adoption</a>. 
             </p>
         <p>
         Patients seeking to adopt embryos will undergo an evaluation to ensure that there are no medical
@@ -154,10 +147,7 @@ const EmbryoAdoptionTestPage = () => {
         <h3><strong>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</strong></h3>
         <h4><strong>1. EXPERTISE</strong></h4>
         <p>
-            Our embryology team has the most experience of any IVF program in the
-            country with the thawing and care of donated embryos especially those that
-            have been frozen for decades including several amazing outcomes such as the 
-            delivery of healthy twins after the transfer of embryos stored for 30 years!
+            Our embryology team has the most experience of any IVF program with the thawing and care of donated embryos, especially those that have been frozen for decades. Past successes include amazing outcomes such as the delivery of healthy twins after the transfer of embryos stored for 30 years!
               </p>
         <h4><strong>2. EXPERIENCE</strong></h4>
         <p>
@@ -172,20 +162,16 @@ const EmbryoAdoptionTestPage = () => {
                 </p>
         <h4><strong>4. EXPANSION</strong></h4>
         <p>
-            Our new state-of-the-art IVF Laboratory and clinical space will be ready in August
-            2024 and with many patient-friendly features such as Private Rooms for pre-transfer
-            discussions with Dr. Gordon.
+            We moved into our new state-of-the-art IVF Laboratory and clinical space in October 2024. Our office has many patient-friendly features such as Private Rooms for pre-transfer discussions with Dr. Gordon and the embryology team.
               </p>
         <h4><strong>5. EMPATHY</strong></h4>
         <p>
-            All of us here at Rejoice Fertility believe that every embryo deserves a chance at life
-            and that the only embryo that cannot result in a healthy baby is the embryo that you
-            do not transfer into a patient.
+            All of us here at Rejoice Fertility believe that every embryo deserves a chance at life and that the only embryo that cannot result in a healthy baby is the embryo not given the opportunity to be transferred into a patient.
               </p>
       </section>
       <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
-      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Flourish Adoption Ministries'} description={''} image={'/images/flourish-logo.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://flourishadoptions.com/embryo-adoption'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
       <section
         sx={{
@@ -199,7 +185,7 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
         id="NEDC"
       ></section>
-      <Header title={'NEDC and Rejoice Fertility'} description={''} image={'/images/pexels-pixabay-51953.jpg'} ctaPrimary={''} ctaPrimaryLink={''} ctaSecondary={''} ctaSecondaryLink={''} />
+      <Header title={'Rejoice Fertility Separation from NEDC'} description={''} image={'/images/pexels-pixabay-51953.jpg'} ctaPrimary={''} ctaPrimaryLink={''} ctaSecondary={''} ctaSecondaryLink={''} />
       <section
         sx={{
           display: 'flex',
@@ -212,18 +198,9 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-        There were previous issues between Rejoice and the NEDC; however, those issues were worked out in Mediation
-        on August 23, 2024 to the mutual benefit of all parties, and most importantly, all patients
-        </p>
-        <p>
-        The parties agreed that all Rejoice patients (both Dr. Keenan’s and Dr. Gordon’s) who were matched with NEDC
-        donated embryos or had NEDC embryos on reserve as of 8/1/24 could choose to keep these embryos at Rejoice
-        and have their future care with Dr. Gordon and the nursing and embryology team at Rejoice, OR choose to have
-        future embryo transfers with Dr. Keenan in Powell, TN, OR choose to have their care with another NEDC affiliated
-        clinic.
+        Rejoice ended its affiliation with the National Embryo Donation Center in September 2024. A number of patients who adopted embryos through the NEDC remained with Dr. Gordon / Rejoice Fertility through a Mediation Agreement. 
         </p>
       </section>
-      <Questions q={q} />
       <Help />
     </Layout>
   );
