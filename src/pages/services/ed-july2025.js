@@ -144,7 +144,7 @@ const EmbryoDonationPage = () => {
       <Header title={'DONATE NOW'} image={'/images/embryos-child-1.jpg'} description={`If you have embryos that you wish to donate to another couple, then we would love to help you give the gift of life.\n
       Patients who wish to donate their IVF frozen embryos through either Open or Closed Embryo Adoption now have another option.\n
       Rejoice Embryo Rescue and its 3 affiliated faithbased Embryo Adoption Services are ready to help you through this difficult decision and process of placing your embryos with another family.\n
-      Adoption counselors will work to place your embryos in families looking to adopt and you can determine your level of contact with the adopting family.`} ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}/>
+      Adoption counselors will work to place your embryos in families looking to adopt and you can determine your level of contact with the adopting family.`} ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
       <Header title={'What we ask of our donors'} image={'/images/embryo-child-2.jpg'} description={'Sign our consent form \nFill out a health questionaire \nProvide information for an adopting family \nDecide between open and closed adoption'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
       <Header title={'What do donors NOT have to do'} image={'/images/embryos-child-3.jpg'} description={'Pay any fees for embryo storage \nPay any shipping fees to move their embryos \nFind a family to adopt their embryos'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
       <Faqs data={data} />
@@ -178,7 +178,9 @@ const EmbryoDonationPage = () => {
         }}
         id="overview">
         <Banner title={'Overview of the Process'} image={'/images/RER-logo-slide.jpg'} ctaPrimary={''} ctaPrimaryLink={'#'} ctaSecondary={''} ctaSecondaryLink={'#'} description={'Rejoice Embryo Rescue, LLC and its affiliated faith-based Embryo Adoption Services are ready to help you place your embryos with an adopting family. Adoption counselors with one of our affiliates will work to place your embryos in families looking to adopt and you can determine your level of contact, if any, with the adopting family. Rejoice accepts all embryos for donation regardless of how they were frozen, type of device, medical history, age or embryo quality. The only embryos Rejoice cannot accept are PGT tested ABNORMAL embryos unless there is a recipient already willing to accept them for transfer. (Rejoice will consider PGT tested low-mosaic embryos on a case-by-case basis). Our goal is to keep your embryos together if at all possible and so adopting families adopt the entire set of embryos in order to encourage this goal.'}/>
-        <Questions q={q} /></section>
+        <Questions q={q} />
+        <Banner title={''} image={''} ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'} ctaSecondary={''} ctaSecondaryLink={'#'}/>
+        </section>
       <Help />
     </Layout>
   );
