@@ -123,14 +123,11 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-        Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF Clinic across the United States but no one is really sure of the actual number with a range of 600,000 to 1.5 million frequently quoted.
+        Some have estimated that there may be as many as 5,000,000 frozen embryos stored in IVF clinics across the United States but no one is really sure of the actual number with a range of 600,000 to 1.5 million frequently quoted.
         </p>
         <p>
         Some couples are willing to donate their frozen embryos to recipient couples who desire to build their family through embryo adoption.
         </p>
-        <p>
-        At Rejoice Fertility we have the single-clinic largest experience with Embryo Adoption in the entire world. However, Rejoice Fertility is not an Embryo Adoption Agency.
-            </p>
         <p>
           Our clinic, Rejoice Fertility, has the most experience with Embryo Adoption in the entire world. We provide the medical care and expertise to patients matched with adopted embryos through our affiliated embryo adoption organizations:
         <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
@@ -150,7 +147,7 @@ const EmbryoAdoptionTestPage = () => {
         <h3><strong>TOP REASONS TO CHOOSE REJOICE FERTILITY FOR EMBRYO ADOPTION</strong></h3>
         <h4><strong>1. EXPERTISE</strong></h4>
         <p>
-            Our embryology team has the most experience of any IVF program in the country with the thawing and care of donated embryos, especially those that have been frozen for decades. Past successes include amazing outcomes such as the delivery of healthy twins after the transfer of embryos stored for 30 years!
+            Our embryology team has the most experience of any IVF program with the thawing and care of donated embryos, especially those that have been frozen for decades. Past successes include amazing outcomes such as the delivery of healthy twins after the transfer of embryos stored for 30 years!
               </p>
         <h4><strong>2. EXPERIENCE</strong></h4>
         <p>
@@ -165,7 +162,7 @@ const EmbryoAdoptionTestPage = () => {
                 </p>
         <h4><strong>4. EXPANSION</strong></h4>
         <p>
-            We moved into our new state-of-the-art IVF Laboratory and clinical space will be ready in October 2024 and with many patient-friendly features such as Private Rooms for pre-transfer discussions with Dr. Gordon and the embryology team.
+            We moved into our new state-of-the-art IVF Laboratory and clinical space in October 2024. Our office has many patient-friendly features such as Private Rooms for pre-transfer discussions with Dr. Gordon and the embryology team.
               </p>
         <h4><strong>5. EMPATHY</strong></h4>
         <p>
