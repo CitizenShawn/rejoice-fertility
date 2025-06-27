@@ -36,12 +36,12 @@ const EmbryoDonationPage = () => {
     },
     {
       question: 'Is there an advantage to working with a specific Embryo Adoption Agency like Snowflakes, Embryo Adoption Solutions of Cedar Park or Flourish Embryo Adoption as opposed to donating our embryos directly to RER?',
-      answer: 'Some patients wishing to donate their embryos have decided that they elected to work with a particular Embryo Adoption Agency to place their embryos with an adopting family. In such cases you can further discuss with that agency whether or not you wish to have your embryos shipped and stored at Rejoice while awaiting adoption. The adopting couple can elect to have their embryo transfer at Rejoice or if the adopting couple wishes to have their embryo transfer at another clinic, then RER will coordinate the shipping of the embryos to that clinic. In such cases, the adopting family will not be responsible for any storage fees for the time that the embryos were under the care of RER, but the adopting family will be responsible for shipping and handling fees associated with the moving of the embryos into and out of RER.',
+      answer: 'Some patients wishing to donate their embryos have elected to work with a particular Embryo Adoption Agency to place their embryos with an adopting family. In such cases you can further discuss with that agency whether to have your embryos shipped to and stored at Rejoice while awaiting adoption. The adopting couple can elect to have their embryo transfer at Rejoice or at another clinic. RER will coordinate the shipping of the embryos to another clinic as desired by the adopting couple. In such cases, the adopting family will not be responsible for any storage fees for the time that the embryos were under the care of RER, but the adopting family will be responsible for shipping and handling fees associated with the moving of the embryos into and out of RER.',
     },
     {
       question: 'Why is RER not charging storage fees in such cases?',
       answer:
-        'Our name says it all...Rejoice Embryo RESCUE. We want to encourage patients to choose a life-affirming option when faced with the difficult decision to relinquish their embryos. Since economic concerns are often part of the decision we wish to remove any economic barriers to patients placing their embryos up for adoption.',
+        'Our name says it all...Rejoice Embryo RESCUE. We want to encourage patients to choose a life-affirming option when faced with the difficult decision to relinquish their embryos. Since economic concerns are often part of the decision, we wish to remove any economic barriers to patients placing their embryos up for adoption.',
     },
     {
       question: 'How do our embryos get matched if we donate directly through RER?',
@@ -138,15 +138,15 @@ const EmbryoDonationPage = () => {
         }}
         className="content"
       >
-        <p>All of us here at Rejoice would like to thank you for considering embryo donation; a precious gift so very treasured by our recipient couples. Rejoice Embryo Rescue, LLC would love to be a part of your journey to give the gift of life. We are excited that patients who wish to donate their frozen embryos to couples pursuing Embryo Adoption now have another option.</p>
+        <p>All of us here at Rejoice would like to thank you for considering embryo donation; a precious gift so very treasured by our recipient couples. Rejoice Embryo Rescue, LLC would love to be a part of your journey to give the gift of life. We are excited that patients who wish to donate their frozen embryos to couples pursuing Embryo Adoption now have a new option.</p>
         <p>RER is not an Embryo Adoption agency and does not match donors and recipients. RER works collaboratively with Embryo Adoption agencies which include Snowflakes, Embryo Adoption Services of Cedar Park and Flourish Adoption Services. All matching is performed by these agencies. </p>
       </section>
       <Header title={'DONATE NOW'} image={'/images/embryos-child-1.jpg'} description={`If you have embryos that you wish to donate to another couple, then we would love to help you give the gift of life.
       Patients who wish to donate their IVF frozen embryos through either Open or Closed Embryo Adoption now have another option.\n
       Rejoice Embryo Rescue and its 3 affiliated faithbased Embryo Adoption Services are ready to help you through this difficult decision and process of placing your embryos with another family.\n
       Adoption counselors will work to place your embryos in families looking to adopt and you can determine your level of contact with the adopting family.`} ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
-      <Header title={'What we ask of our donors'} image={'/images/embryo-child-2.jpg'} description={'Sign our consent form \nFill out a health questionaire \nProvide information for an adopting family \nDecide between open and closed adoption'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
-      <Header title={'What do donors NOT have to do'} image={'/images/embryos-child-3.jpg'} description={'Pay any fees for embryo storage \nPay any shipping fees to move their embryos \nFind a family to adopt their embryos'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
+      <Header title={'What we ask of our donors'} image={'/images/embryo-child-2.jpg'} description={'Sign our consent form. Fill out a health questionaire. Provide information for an adopting family. Decide between open and closed adoption'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
+      <Header title={'What do donors NOT have to do'} image={'/images/embryos-child-3.jpg'} description={'Pay any fees for embryo storage. Pay any shipping fees to move their embryos. Find a family to adopt their embryos'}  ctaPrimary={'Start the Process'} ctaPrimaryLink={'#form-section'}  ctaSecondary={''} ctaSecondaryLink={'#'}/>
       <Faqs data={data} />
       <section
       sx={{
