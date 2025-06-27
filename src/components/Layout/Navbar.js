@@ -44,6 +44,10 @@ const Navbar = () => {
           name: 'Embryo Adoption',
           slug: '/services/embryo-adoption',
         },
+        {
+          name: 'Donate Embryos',
+          slug: '/services/donate-embryos',
+        },
       ],
     },
     {
