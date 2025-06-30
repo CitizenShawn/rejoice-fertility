@@ -62,10 +62,6 @@ const Navbar = () => {
       name: 'Out-of-Town Patients',
       slug: '/out-of-town-patients',
     },
-    {
-      name: 'Blog',
-      slug: '/blog',
-    },
   ];
 
   const [mobile, setMobile] = useState(true);
