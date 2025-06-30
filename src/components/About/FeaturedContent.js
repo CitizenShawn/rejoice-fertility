@@ -59,7 +59,8 @@ const FeaturedContent = () => {
       <p>
       Come experience a different type of fertility practice…We rejoice in our difference!
       </p>
-      <br />
+      <p>
+      <br></br>
       - John David Gordon, MD
       <br></br>
       July 2025
