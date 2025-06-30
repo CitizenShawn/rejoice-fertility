@@ -155,7 +155,7 @@ const EmbryoAdoptionTestPage = () => {
               </p>
         <h4><strong>3. EXCELLENCE</strong></h4>
         <p>
-            All embryos are handled with the upmost care. Rejoice IVF is the only accredited
+            All embryos are handled with the upmost care. Rejoice IVF was the FIRST accredited
             IVF Program in the Greater Knoxville Area having secured this accreditation by
             The Joint Commission back in 2021.
                 </p>
