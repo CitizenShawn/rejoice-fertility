@@ -24,14 +24,10 @@ const MediaLinksPage = () => {
           </div>
           <div sx={{ h3: { mb: '12px', fontSize: ['1.25rem', null, '2rem'], fontWeight: '700' }, h4: { fontSize: ['1.25rem', null, '1.5rem'] }, color: '#000', p: { mb: '1rem' } }}>
             <p>If you would like to learn more about IVF, please read some of these amazing articles.</p>
-            <h4><a href="https://www.theatlantic.com/health/archive/2024/08/vision-future-ivf-christian-fetal-personhood/679586/?gift=D_hJMI87NXlE47BC567UVEqZjyN61KQ2wIxpLEMeC3Y&utm_source=copy-link&utm_medium=social&utm_campaign=share">Christian Parents Have a Blueprint for IVF</a></h4>
-            <p>Article by The Atlantic</p>
-            <h4><a href="https://wng.org/roundups/ivf-debates-often-overlook-critical-question-1744748255">IVF debates often overlook critical questions</a></h4>
-            <p>Article by World News Group</p>
-            <h4><a href="https://wng.org/podcasts/ivfs-collateral-damage-1745413531">IVF's collateral damage</a></h4>
-            <p>Podcast by World News Group</p>
-            <h4><a href="https://wng.org/podcasts/doubletake-in-glass-part-i-1732309729">In Glass</a></h4>
-            <p>Article by World News Group</p>
+            <Header title={'Christian Parents Have a Blueprint for IVF'} image={'images/original.png'} description={'Article by The Atlantic'} ctaPrimary={'Read the Article Here'} ctaPrimaryLink={'https://www.theatlantic.com/health/archive/2024/08/vision-future-ivf-christian-fetal-personhood/679586/?gift=D_hJMI87NXlE47BC567UVEqZjyN61KQ2wIxpLEMeC3Y&utm_source=copy-link&utm_medium=social&utm_campaign=share'} ctaSecondary={''} ctaSecondaryLink={'#'} />
+            <Header title={'IVF debates often overlook critical questions'} image={'images/microscope.jpg'} description={'Article by World News Group'} ctaPrimary={'Read the Article Here'} ctaPrimaryLink={'https://wng.org/roundups/ivf-debates-often-overlook-critical-question-1744748255'} ctaSecondary={''} ctaSecondaryLink={'#'} />
+            <Header title={"IVF's collateral damage"} image={'images/dish.jpg'} description={'Article by World News Group'} ctaPrimary={'Read the Article Here'} ctaPrimaryLink={'https://wng.org/podcasts/ivfs-collateral-damage-1745413531'} ctaSecondary={''} ctaSecondaryLink={'#'} />
+            <Header title={'In Glass'} image={'images/Doubletake.png'} description={'Article by World News Group'} ctaPrimary={'Read the Article Here'} ctaPrimaryLink={'https://wng.org/podcasts/doubletake-in-glass-part-i-1732309729'} ctaSecondary={''} ctaSecondaryLink={'#'} />
           </div>
         </div>
       </section>
