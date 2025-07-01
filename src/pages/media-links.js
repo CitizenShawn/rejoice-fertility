@@ -10,7 +10,7 @@ const MediaLinksPage = () => {
   return (
     <Layout>
       <Seo
-        title="Out-of-Town Patients | Rejoice Fertility Center"
+        title="Media Links | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <Header
