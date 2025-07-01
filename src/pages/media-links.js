@@ -14,15 +14,13 @@ const MediaLinksPage = () => {
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <Header
-        title={'Out-of-Town Patients'}
+        title={'Media Links'}
         image={'/images/oot.jpg'}
       />
       <section sx={{ p: { fontSize: ['1rem', null, '1.25rem'], mb: '1rem' } }}>
         <div sx={{ maxWidth: '1400px', mx: 'auto', p: '2rem' }}>
           <div sx={{ display: 'flex', flexDirection: 'column', gap: '1rem', mb: '1rem' }}>
-            <h1 sx={{ fontSize: ['1.5rem', null, '2.5rem'], fontWeight: 700 }}>Out-of-Town Patients General Information</h1>
-            <h3 sx={{ fontSize: ['1.25rem', null, '2rem'], fontWeight: 700 }}>Why do patients from outside of East Tennessee seek care here at Rejoice Fertility?</h3>
-            <h4 sx={{ fontSize: ['1.25rem', null, '1.5rem'] }}>Rejoice Fertility differs from the vast majority of IVF programs in the United States in many ways, which explains why patients elect to pursue care here even when they live close to IVF clinics.</h4>
+            <h1 sx={{ fontSize: ['1.5rem', null, '2.5rem'], fontWeight: 700 }}>Learn about Rejoice Fertility and IVF</h1>
           </div>
           <div sx={{ h3: { mb: '12px', fontSize: ['1.25rem', null, '2rem'], fontWeight: '700' }, h4: { fontSize: ['1.25rem', null, '1.5rem'] }, color: '#000', p: { mb: '1rem' } }}>
             <p>If you would like to learn more about IVF, please read some of these amazing articles.</p>
