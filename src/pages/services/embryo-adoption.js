@@ -131,7 +131,7 @@ const EmbryoAdoptionTestPage = () => {
         <p>
           Our clinic, Rejoice Fertility, has the most experience with Embryo Adoption in the entire world. We provide the medical care and expertise to patients matched with adopted embryos through our affiliated embryo adoption organizations:
         <a href='/services/embryo-adoption-organizations/nightlight'>Nightlight Christian Adoptions Snowflakes Embryo Adoption Program</a>, 
-          <a href='/services/embryo-adoption-organizations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a> and <a href='https://flourishadoptions.com/embryo-adoption'>Flourish Embryo Adoption</a>. 
+          <a href='/services/embryo-adoption-organizations/eas-cedar-park'>Embryo Adoption Services of Cedar Park</a>, <a href='https://embryosalive.com/'>Embryos Alive</a> and <a href='https://flourishadoptions.com/embryo-adoption'>Flourish Embryo Adoption</a>. 
             </p>
         <p>
         Patients seeking to adopt embryos will undergo an evaluation to ensure that there are no medical
