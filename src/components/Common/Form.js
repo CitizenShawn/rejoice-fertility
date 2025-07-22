@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 
 const Form = () => {
   const shadowHost = useRef(null);
+  const formRef = useRef(null);
 
   useEffect(() => {
     if (!shadowHost.current) return;
@@ -12,7 +13,7 @@ const Form = () => {
     // Attach shadow root
     const shadow = shadowHost.current.attachShadow({ mode: 'open' });
 
-    // JotForm HTML content
+    // JotForm HTML without default submit button
     const formHTML = `
       <link rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160" />
@@ -56,9 +57,6 @@ const Form = () => {
                 <textarea name="q8_comments"></textarea>
               </div>
             </li>
-            <li class="form-line" data-type="control_button">
-              <button type="submit">Submit</button>
-            </li>
           </ul>
         </div>
       </form>
@@ -66,6 +64,9 @@ const Form = () => {
 
     // Add form HTML to shadow DOM
     shadow.innerHTML = formHTML;
+
+    // Save form reference
+    formRef.current = shadow.querySelector('form');
 
     // Load external JotForm scripts dynamically inside shadow root
     const scriptUrls = [
@@ -108,6 +109,11 @@ const Form = () => {
     shadow.appendChild(jotFormInitScript);
   }, []);
 
+  // Custom handler for the form submission
+  const handleSubmit = () => {
+    if (formRef.current) formRef.current.submit();
+  };
+
   return (
     <section
       sx={{
@@ -119,6 +125,29 @@ const Form = () => {
     >
       {/* Shadow DOM container */}
       <div ref={shadowHost} style={{ width: '100%' }} />
+
+      {/* Custom Submit Button */}
+      <button
+        type="button"
+        onClick={handleSubmit}
+        sx={{
+          display: 'inline-block',
+          color: '#FFFFFF',
+          border: '1px solid #fff',
+          backgroundColor: 'transparent',
+          px: '1rem',
+          py: '0.5rem',
+          mt: '1.5rem',
+          cursor: 'pointer',
+          transition: 'all 0.3s ease',
+          '&:hover': {
+            color: '#47E4E0',
+            borderColor: '#47E4E0',
+          },
+        }}
+      >
+        Submit
+      </button>
     </section>
   );
 };
