@@ -132,14 +132,15 @@ const Form = () => {
         onClick={handleSubmit}
         sx={{
           display: 'inline-block',
-          color: '#FFFFFF',
-          border: '1px solid #fff',
+          color: '#000000',
+          border: '1px solid #000',
           backgroundColor: 'transparent',
           px: '1rem',
           py: '0.5rem',
           mt: '1.5rem',
           cursor: 'pointer',
           transition: 'all 0.3s ease',
+          align-content: 'center',
           '&:hover': {
             color: '#47E4E0',
             borderColor: '#47E4E0',
