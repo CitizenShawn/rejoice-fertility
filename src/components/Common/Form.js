@@ -31,16 +31,6 @@ const Form = () => {
         JotForm.extendsNewTheme = false;
         JotForm.singleProduct = false;
         JotForm.newPaymentUIForNewCreatedForms = true;
-        JotForm.texts = ${JSON.stringify({
-          confirmEmail: 'E-mail does not match',
-          pleaseWait: 'Please wait...',
-          validateEmail: 'You need to validate this e-mail',
-          confirmClearForm: 'Are you sure you want to clear the form',
-          lessThan: 'Your score should be less than or equal to',
-          incompleteFields: 'There are incomplete required fields. Please complete them.',
-          required: 'This field is required.',
-          error: 'Error',
-        })};
         JotForm.newPaymentUI = true;
         JotForm.originalLanguage = 'en';
         JotForm.isFormViewTrackingAllowed = true;
@@ -55,28 +45,39 @@ const Form = () => {
     `;
     document.body.appendChild(jotFormInitScript);
 
-    // Inject external styles
-    const linkUrls = [
-      'https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f',
-      'https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160',
-      'https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160',
-      'https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160',
-    ];
-    linkUrls.forEach((href) => {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = href;
-      document.head.appendChild(link);
-    });
+    // Add JotForm CSS directly in a <style> tag scoped to the container
+    const jotformCSS = document.createElement('link');
+    jotformCSS.rel = 'stylesheet';
+    jotformCSS.href = 'https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f';
+    document.head.appendChild(jotformCSS);
 
-    // Reset site fonts outside the JotForm container
-    const style = document.createElement('style');
-    style.innerHTML = `
+    const jotformTheme = document.createElement('link');
+    jotformTheme.rel = 'stylesheet';
+    jotformTheme.href = 'https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160';
+    document.head.appendChild(jotformTheme);
+
+    const jotformPaymentStyles = document.createElement('link');
+    jotformPaymentStyles.rel = 'stylesheet';
+    jotformPaymentStyles.href = 'https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160';
+    document.head.appendChild(jotformPaymentStyles);
+
+    const jotformPaymentFeature = document.createElement('link');
+    jotformPaymentFeature.rel = 'stylesheet';
+    jotformPaymentFeature.href = 'https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160';
+    document.head.appendChild(jotformPaymentFeature);
+
+    // Reset site fonts outside JotForm
+    const resetFontStyle = document.createElement('style');
+    resetFontStyle.innerHTML = `
       body *:not(.jotform-container *):not(.jotform-container) {
         font-family: "Your Primary Font", sans-serif !important;
       }
+      /* Ensure form uses your font too */
+      .jotform-container, .jotform-container * {
+        font-family: "Your Primary Font", sans-serif;
+      }
     `;
-    document.head.appendChild(style);
+    document.head.appendChild(resetFontStyle);
   }, []);
 
   return (
@@ -89,7 +90,7 @@ const Form = () => {
       id="form-section"
     >
       <div className="jotform-container">
-        {/* JotForm HTML inserted dynamically */}
+        {/* JotForm HTML */}
         <form
           className="jotform-form"
           action="https://submit.jotform.com/submit/251464191705052"
