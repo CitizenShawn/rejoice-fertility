@@ -140,7 +140,7 @@ const Form = () => {
           mt: '1.5rem',
           cursor: 'pointer',
           transition: 'all 0.3s ease',
-          align-content: 'center',
+          alignContent: 'center',
           '&:hover': {
             color: '#47E4E0',
             borderColor: '#47E4E0',
