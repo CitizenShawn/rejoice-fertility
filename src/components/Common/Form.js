@@ -15,7 +15,6 @@ const Form = () => {
       'https://cdn.jotfor.ms/s/static/87d70767e6b/js/errorNavigation.js',
     ];
 
-    // Inject scripts sequentially
     scriptUrls.forEach((src) => {
       const script = document.createElement('script');
       script.src = src;
@@ -69,6 +68,15 @@ const Form = () => {
       link.href = href;
       document.head.appendChild(link);
     });
+
+    // Reset site fonts outside the JotForm container
+    const style = document.createElement('style');
+    style.innerHTML = `
+      body *:not(.jotform-container *):not(.jotform-container) {
+        font-family: "Your Primary Font", sans-serif !important;
+      }
+    `;
+    document.head.appendChild(style);
   }, []);
 
   return (
@@ -80,53 +88,55 @@ const Form = () => {
       }}
       id="form-section"
     >
-      {/* JotForm HTML inserted dynamically */}
-      <form
-        className="jotform-form"
-        action="https://submit.jotform.com/submit/251464191705052"
-        method="post"
-        name="form_251464191705052"
-        id="251464191705052"
-        acceptCharset="utf-8"
-        autoComplete="on"
-        dangerouslySetInnerHTML={{
-          __html: `
-            <input type="hidden" name="formID" value="251464191705052" />
-            <div role="main" class="form-all">
-              <ul class="form-section page-section" role="presentation">
-                <li class="form-line" data-type="control_fullname">
-                  <label class="form-label form-label-top">Name</label>
-                  <div class="form-input-wide">
-                    <input type="text" name="q4_name[first]" placeholder="First Name" />
-                    <input type="text" name="q4_name[last]" placeholder="Last Name" />
-                  </div>
-                </li>
-                <li class="form-line" data-type="control_email">
-                  <label class="form-label form-label-top">Email</label>
-                  <div class="form-input-wide">
-                    <input type="email" name="q5_email" placeholder="example@example.com" />
-                  </div>
-                </li>
-                <li class="form-line" data-type="control_phone">
-                  <label class="form-label form-label-top">Phone Number</label>
-                  <div class="form-input-wide">
-                    <input type="tel" name="q6_phoneNumber[full]" placeholder="(000) 000-0000" />
-                  </div>
-                </li>
-                <li class="form-line" data-type="control_textarea">
-                  <label class="form-label form-label-top">Comments / Questions</label>
-                  <div class="form-input-wide">
-                    <textarea name="q8_comments"></textarea>
-                  </div>
-                </li>
-                <li class="form-line" data-type="control_button">
-                  <button type="submit">Submit</button>
-                </li>
-              </ul>
-            </div>
-          `,
-        }}
-      />
+      <div className="jotform-container">
+        {/* JotForm HTML inserted dynamically */}
+        <form
+          className="jotform-form"
+          action="https://submit.jotform.com/submit/251464191705052"
+          method="post"
+          name="form_251464191705052"
+          id="251464191705052"
+          acceptCharset="utf-8"
+          autoComplete="on"
+          dangerouslySetInnerHTML={{
+            __html: `
+              <input type="hidden" name="formID" value="251464191705052" />
+              <div role="main" class="form-all">
+                <ul class="form-section page-section" role="presentation">
+                  <li class="form-line" data-type="control_fullname">
+                    <label class="form-label form-label-top">Name</label>
+                    <div class="form-input-wide">
+                      <input type="text" name="q4_name[first]" placeholder="First Name" />
+                      <input type="text" name="q4_name[last]" placeholder="Last Name" />
+                    </div>
+                  </li>
+                  <li class="form-line" data-type="control_email">
+                    <label class="form-label form-label-top">Email</label>
+                    <div class="form-input-wide">
+                      <input type="email" name="q5_email" placeholder="example@example.com" />
+                    </div>
+                  </li>
+                  <li class="form-line" data-type="control_phone">
+                    <label class="form-label form-label-top">Phone Number</label>
+                    <div class="form-input-wide">
+                      <input type="tel" name="q6_phoneNumber[full]" placeholder="(000) 000-0000" />
+                    </div>
+                  </li>
+                  <li class="form-line" data-type="control_textarea">
+                    <label class="form-label form-label-top">Comments / Questions</label>
+                    <div class="form-input-wide">
+                      <textarea name="q8_comments"></textarea>
+                    </div>
+                  </li>
+                  <li class="form-line" data-type="control_button">
+                    <button type="submit">Submit</button>
+                  </li>
+                </ul>
+              </div>
+            `,
+          }}
+        />
+      </div>
     </section>
   );
 };
