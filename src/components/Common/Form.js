@@ -143,8 +143,8 @@ const Form = () => {
           alignContent: 'center',
           margin: 'auto',
           '&:hover': {
-            color: '#47E4E0',
-            borderColor: '#47E4E0',
+            color: '#FFFFFF',
+            borderColor: '#FFFFFF',
           },
         }}
       >
