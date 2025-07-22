@@ -1,11 +1,73 @@
 /** @jsx jsx */
 import * as React from 'react';
 import { jsx } from 'theme-ui';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const Form = () => {
+  const shadowHost = useRef(null);
+
   useEffect(() => {
-    // External scripts needed for JotForm
+    if (!shadowHost.current) return;
+
+    // Attach shadow root
+    const shadow = shadowHost.current.attachShadow({ mode: 'open' });
+
+    // JotForm HTML content
+    const formHTML = `
+      <link rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f" />
+      <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160" />
+      <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160" />
+      <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160" />
+
+      <form
+        class="jotform-form"
+        action="https://submit.jotform.com/submit/251464191705052"
+        method="post"
+        name="form_251464191705052"
+        id="251464191705052"
+        accept-charset="utf-8"
+        autocomplete="on"
+      >
+        <input type="hidden" name="formID" value="251464191705052" />
+        <div role="main" class="form-all">
+          <ul class="form-section page-section" role="presentation">
+            <li class="form-line" data-type="control_fullname">
+              <label class="form-label form-label-top">Name</label>
+              <div class="form-input-wide">
+                <input type="text" name="q4_name[first]" placeholder="First Name" />
+                <input type="text" name="q4_name[last]" placeholder="Last Name" />
+              </div>
+            </li>
+            <li class="form-line" data-type="control_email">
+              <label class="form-label form-label-top">Email</label>
+              <div class="form-input-wide">
+                <input type="email" name="q5_email" placeholder="example@example.com" />
+              </div>
+            </li>
+            <li class="form-line" data-type="control_phone">
+              <label class="form-label form-label-top">Phone Number</label>
+              <div class="form-input-wide">
+                <input type="tel" name="q6_phoneNumber[full]" placeholder="(000) 000-0000" />
+              </div>
+            </li>
+            <li class="form-line" data-type="control_textarea">
+              <label class="form-label form-label-top">Comments / Questions</label>
+              <div class="form-input-wide">
+                <textarea name="q8_comments"></textarea>
+              </div>
+            </li>
+            <li class="form-line" data-type="control_button">
+              <button type="submit">Submit</button>
+            </li>
+          </ul>
+        </div>
+      </form>
+    `;
+
+    // Add form HTML to shadow DOM
+    shadow.innerHTML = formHTML;
+
+    // Load external JotForm scripts dynamically inside shadow root
     const scriptUrls = [
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/prototype.forms.js',
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/jotform.forms.js',
@@ -19,10 +81,10 @@ const Form = () => {
       const script = document.createElement('script');
       script.src = src;
       script.async = false;
-      document.body.appendChild(script);
+      shadow.appendChild(script);
     });
 
-    // Inject JotForm initialization config
+    // Add JotForm initialization script
     const jotFormInitScript = document.createElement('script');
     jotFormInitScript.innerHTML = `
       window.enableEventObserver = true;
@@ -43,41 +105,7 @@ const Form = () => {
         JotForm.init();
       }
     `;
-    document.body.appendChild(jotFormInitScript);
-
-    // Add JotForm CSS directly in a <style> tag scoped to the container
-    const jotformCSS = document.createElement('link');
-    jotformCSS.rel = 'stylesheet';
-    jotformCSS.href = 'https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f';
-    document.head.appendChild(jotformCSS);
-
-    const jotformTheme = document.createElement('link');
-    jotformTheme.rel = 'stylesheet';
-    jotformTheme.href = 'https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160';
-    document.head.appendChild(jotformTheme);
-
-    const jotformPaymentStyles = document.createElement('link');
-    jotformPaymentStyles.rel = 'stylesheet';
-    jotformPaymentStyles.href = 'https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160';
-    document.head.appendChild(jotformPaymentStyles);
-
-    const jotformPaymentFeature = document.createElement('link');
-    jotformPaymentFeature.rel = 'stylesheet';
-    jotformPaymentFeature.href = 'https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160';
-    document.head.appendChild(jotformPaymentFeature);
-
-    // Reset site fonts outside JotForm
-    const resetFontStyle = document.createElement('style');
-    resetFontStyle.innerHTML = `
-      body *:not(.jotform-container *):not(.jotform-container) {
-        font-family: "Your Primary Font", sans-serif !important;
-      }
-      /* Ensure form uses your font too */
-      .jotform-container, .jotform-container * {
-        font-family: "Your Primary Font", sans-serif;
-      }
-    `;
-    document.head.appendChild(resetFontStyle);
+    shadow.appendChild(jotFormInitScript);
   }, []);
 
   return (
@@ -89,55 +117,8 @@ const Form = () => {
       }}
       id="form-section"
     >
-      <div className="jotform-container">
-        {/* JotForm HTML */}
-        <form
-          className="jotform-form"
-          action="https://submit.jotform.com/submit/251464191705052"
-          method="post"
-          name="form_251464191705052"
-          id="251464191705052"
-          acceptCharset="utf-8"
-          autoComplete="on"
-          dangerouslySetInnerHTML={{
-            __html: `
-              <input type="hidden" name="formID" value="251464191705052" />
-              <div role="main" class="form-all">
-                <ul class="form-section page-section" role="presentation">
-                  <li class="form-line" data-type="control_fullname">
-                    <label class="form-label form-label-top">Name</label>
-                    <div class="form-input-wide">
-                      <input type="text" name="q4_name[first]" placeholder="First Name" />
-                      <input type="text" name="q4_name[last]" placeholder="Last Name" />
-                    </div>
-                  </li>
-                  <li class="form-line" data-type="control_email">
-                    <label class="form-label form-label-top">Email</label>
-                    <div class="form-input-wide">
-                      <input type="email" name="q5_email" placeholder="example@example.com" />
-                    </div>
-                  </li>
-                  <li class="form-line" data-type="control_phone">
-                    <label class="form-label form-label-top">Phone Number</label>
-                    <div class="form-input-wide">
-                      <input type="tel" name="q6_phoneNumber[full]" placeholder="(000) 000-0000" />
-                    </div>
-                  </li>
-                  <li class="form-line" data-type="control_textarea">
-                    <label class="form-label form-label-top">Comments / Questions</label>
-                    <div class="form-input-wide">
-                      <textarea name="q8_comments"></textarea>
-                    </div>
-                  </li>
-                  <li class="form-line" data-type="control_button">
-                    <button type="submit">Submit</button>
-                  </li>
-                </ul>
-              </div>
-            `,
-          }}
-        />
-      </div>
+      {/* Shadow DOM container */}
+      <div ref={shadowHost} style={{ width: '100%' }} />
     </section>
   );
 };
