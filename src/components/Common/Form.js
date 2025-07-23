@@ -5,42 +5,20 @@ import { useEffect, useRef } from 'react';
 
 const Form = () => {
   const shadowHost = useRef(null);
+  const formRef = useRef(null);
 
   useEffect(() => {
     if (!shadowHost.current) return;
+
+    // Attach shadow root
     const shadow = shadowHost.current.attachShadow({ mode: 'open' });
 
-    // JotForm HTML with custom submit button
+    // JotForm HTML without default submit button
     const formHTML = `
       <link rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160" />
-      <style>
-        /* Custom button styling */
-        .custom-submit {
-          display: inline-block;
-          color: #000000;
-          border: 1px solid #000;
-          background-color: transparent;
-          padding: 0.5rem 1rem;
-          margin-top: 1.5rem;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          text-align: center;
-          font-family: 'Cormorant Garamond';
-        }
-        .custom-submit:hover {
-          color: #000000;
-          border-color: #000000;
-        }
-        .form-submit-container {
-          text-align: center;
-        }
-        .form-all {
-          background-color: #47E4E0 !important;
-        }
-      </style>
 
       <form
         class="jotform-form"
@@ -80,27 +58,17 @@ const Form = () => {
               </div>
             </li>
           </ul>
-          <div class="form-submit-container">
-            <button type="submit" class="custom-submit">Submit</button>
-          </div>
         </div>
       </form>
     `;
 
+    // Add form HTML to shadow DOM
     shadow.innerHTML = formHTML;
 
-    const submitBtn = shadow.querySelector('.custom-submit');
-    if (submitBtn) {
-      submitBtn.addEventListener('click', () => {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'jotformSubmitClick',
-          formId: '251464191705052',
-        });
-      });
-    }
+    // Save form reference
+    formRef.current = shadow.querySelector('form');
 
-    // Load JotForm scripts
+    // Load external JotForm scripts dynamically inside shadow root
     const scriptUrls = [
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/prototype.forms.js',
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/jotform.forms.js',
@@ -117,6 +85,7 @@ const Form = () => {
       shadow.appendChild(script);
     });
 
+    // Add JotForm initialization script
     const jotFormInitScript = document.createElement('script');
     jotFormInitScript.innerHTML = `
       window.enableEventObserver = true;
@@ -140,6 +109,11 @@ const Form = () => {
     shadow.appendChild(jotFormInitScript);
   }, []);
 
+  // Custom handler for the form submission
+  const handleSubmit = () => {
+    if (formRef.current) formRef.current.submit();
+  };
+
   return (
     <section
       sx={{
@@ -150,9 +124,35 @@ const Form = () => {
       }}
       id="form-section"
     >
-      <div ref={shadowHost} style={{ width: '100%' }} />
+      {/* Shadow DOM container */}
+      <div ref={shadowHost} style={{ width: '100%', marginBottom: '1.5rem' , backgroundColor: '#47E4E0'}} />
+
+      {/* Custom Submit Button */}
+      <button
+        type="button"
+        onClick={handleSubmit}
+        sx={{
+          display: 'inline-block',
+          color: '#000000',
+          border: '1px solid #000',
+          backgroundColor: 'transparent',
+          px: '1rem',
+          py: '0.5rem',
+          mt: '1rem',
+          cursor: 'pointer',
+          transition: 'all 0.3s ease',
+          mx: 'auto', // Horizontal centering
+          '&:hover': {
+            color: '#FFFFFF',
+            borderColor: '#FFFFFF',
+          },
+        }}
+      >
+        Submit
+      </button>
     </section>
   );
 };
 
 export default Form;
+
