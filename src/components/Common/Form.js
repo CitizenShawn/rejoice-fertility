@@ -29,10 +29,11 @@ const Form = () => {
           cursor: pointer;
           transition: all 0.3s ease;
           text-align: center;
+          font-family: 'Cormorant Garamond';
         }
         .custom-submit:hover {
-          color: #FFFFFF;
-          border-color: #FFFFFF;
+          color: #47E4E0;
+          border-color: #47E4E0;
         }
         .form-submit-container {
           text-align: center;
