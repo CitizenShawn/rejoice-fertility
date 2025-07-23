@@ -32,11 +32,14 @@ const Form = () => {
           font-family: 'Cormorant Garamond';
         }
         .custom-submit:hover {
-          color: #47E4E0;
-          border-color: #47E4E0;
+          color: #000000;
+          border-color: #000000;
         }
         .form-submit-container {
           text-align: center;
+        }
+        .form-all {
+          background-color: #47E4E0 !important;
         }
       </style>
 
@@ -135,6 +138,7 @@ const Form = () => {
         py: '4rem',
         scrollMarginTop: 100,
         textAlign: 'center',
+        padding: 0;
       }}
       id="form-section"
     >
