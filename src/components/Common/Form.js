@@ -5,20 +5,25 @@ import { useEffect, useRef } from 'react';
 
 const Form = () => {
   const shadowHost = useRef(null);
-  const formRef = useRef(null);
+  const formRef = useRef(null); // Reference to the shadow form
 
   useEffect(() => {
     if (!shadowHost.current) return;
 
-    // Attach shadow root
     const shadow = shadowHost.current.attachShadow({ mode: 'open' });
 
-    // JotForm HTML without default submit button
+    // JotForm HTML without submit button
     const formHTML = `
       <link rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160" />
+      <style>
+        .form-all {
+          padding-bottom: 0; /* Remove default spacing for external button */
+          background-color: #47E4E0;
+        }
+      </style>
 
       <form
         class="jotform-form"
@@ -30,7 +35,7 @@ const Form = () => {
         autocomplete="on"
       >
         <input type="hidden" name="formID" value="251464191705052" />
-        <div role="main" class="form-all" style="background-color: #47E4E0;">
+        <div role="main" class="form-all">
           <ul class="form-section page-section" role="presentation">
             <li class="form-line" data-type="control_fullname">
               <label class="form-label form-label-top">Name</label>
@@ -62,13 +67,10 @@ const Form = () => {
       </form>
     `;
 
-    // Add form HTML to shadow DOM
     shadow.innerHTML = formHTML;
-
-    // Save form reference
     formRef.current = shadow.querySelector('form');
 
-    // Load external JotForm scripts dynamically inside shadow root
+    // Load JotForm scripts
     const scriptUrls = [
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/prototype.forms.js',
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/jotform.forms.js',
@@ -77,7 +79,6 @@ const Form = () => {
       'https://cdn.jotfor.ms/s/static/87d70767e6b/js/vendor/smoothscroll.min.js',
       'https://cdn.jotfor.ms/s/static/87d70767e6b/js/errorNavigation.js',
     ];
-
     scriptUrls.forEach((src) => {
       const script = document.createElement('script');
       script.src = src;
@@ -85,7 +86,6 @@ const Form = () => {
       shadow.appendChild(script);
     });
 
-    // Add JotForm initialization script
     const jotFormInitScript = document.createElement('script');
     jotFormInitScript.innerHTML = `
       window.enableEventObserver = true;
@@ -109,9 +109,21 @@ const Form = () => {
     shadow.appendChild(jotFormInitScript);
   }, []);
 
-  // Custom handler for the form submission
   const handleSubmit = () => {
-    if (formRef.current) formRef.current.submit();
+    if (formRef.current) {
+      if (formRef.current.requestSubmit) {
+        formRef.current.requestSubmit(); // Modern browsers
+      } else {
+        formRef.current.submit(); // Fallback
+      }
+
+      // Send GTM event
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'jotformSubmitClick',
+        formId: '251464191705052',
+      });
+    }
   };
 
   return (
@@ -124,10 +136,10 @@ const Form = () => {
       }}
       id="form-section"
     >
-      {/* Shadow DOM container */}
-      <div ref={shadowHost} style={{ width: '100%', marginBottom: '1.5rem' , backgroundColor: '#47E4E0'}} />
+      {/* Shadow DOM Form */}
+      <div ref={shadowHost} style={{ width: '100%', marginBottom: '1rem' }} />
 
-      {/* Custom Submit Button */}
+      {/* External Submit Button */}
       <button
         type="button"
         onClick={handleSubmit}
@@ -141,7 +153,6 @@ const Form = () => {
           mt: '1rem',
           cursor: 'pointer',
           transition: 'all 0.3s ease',
-          mx: 'auto', // Horizontal centering
           '&:hover': {
             color: '#FFFFFF',
             borderColor: '#FFFFFF',
@@ -155,4 +166,3 @@ const Form = () => {
 };
 
 export default Form;
-
