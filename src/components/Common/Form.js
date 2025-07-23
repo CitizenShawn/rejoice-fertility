@@ -8,10 +8,9 @@ const Form = () => {
 
   useEffect(() => {
     if (!shadowHost.current) return;
-
     const shadow = shadowHost.current.attachShadow({ mode: 'open' });
 
-    // JotForm HTML with a custom styled submit button
+    // JotForm HTML with custom submit button
     const formHTML = `
       <link rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160" />
@@ -90,7 +89,18 @@ const Form = () => {
 
     shadow.innerHTML = formHTML;
 
-    // Load external JotForm scripts dynamically inside shadow root
+    const submitBtn = shadow.querySelector('.custom-submit');
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'jotformSubmitClick',
+          formId: '251464191705052',
+        });
+      });
+    }
+
+    // Load JotForm scripts
     const scriptUrls = [
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/prototype.forms.js',
       'https://cdn.jotfor.ms/s/static/87d70767e6b/static/jotform.forms.js',
@@ -107,7 +117,6 @@ const Form = () => {
       shadow.appendChild(script);
     });
 
-    // Add JotForm initialization script
     const jotFormInitScript = document.createElement('script');
     jotFormInitScript.innerHTML = `
       window.enableEventObserver = true;
@@ -138,7 +147,6 @@ const Form = () => {
         py: '4rem',
         scrollMarginTop: 100,
         textAlign: 'center',
-        padding: 20,
       }}
       id="form-section"
     >
