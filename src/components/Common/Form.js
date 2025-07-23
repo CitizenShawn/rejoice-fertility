@@ -5,20 +5,39 @@ import { useEffect, useRef } from 'react';
 
 const Form = () => {
   const shadowHost = useRef(null);
-  const formRef = useRef(null);
 
   useEffect(() => {
     if (!shadowHost.current) return;
 
-    // Attach shadow root
     const shadow = shadowHost.current.attachShadow({ mode: 'open' });
 
-    // JotForm HTML without default submit button
+    // JotForm HTML with a custom styled submit button
     const formHTML = `
       <link rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160" />
+      <style>
+        /* Custom button styling */
+        .custom-submit {
+          display: inline-block;
+          color: #000000;
+          border: 1px solid #000;
+          background-color: transparent;
+          padding: 0.5rem 1rem;
+          margin-top: 1.5rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          text-align: center;
+        }
+        .custom-submit:hover {
+          color: #FFFFFF;
+          border-color: #FFFFFF;
+        }
+        .form-submit-container {
+          text-align: center;
+        }
+      </style>
 
       <form
         class="jotform-form"
@@ -58,15 +77,14 @@ const Form = () => {
               </div>
             </li>
           </ul>
+          <div class="form-submit-container">
+            <button type="submit" class="custom-submit">Submit</button>
+          </div>
         </div>
       </form>
     `;
 
-    // Add form HTML to shadow DOM
     shadow.innerHTML = formHTML;
-
-    // Save form reference
-    formRef.current = shadow.querySelector('form');
 
     // Load external JotForm scripts dynamically inside shadow root
     const scriptUrls = [
@@ -109,47 +127,17 @@ const Form = () => {
     shadow.appendChild(jotFormInitScript);
   }, []);
 
-  // Custom handler for the form submission
-  const handleSubmit = () => {
-    if (formRef.current) formRef.current.submit();
-  };
-
   return (
     <section
       sx={{
         bg: '#47E4E0',
         py: '4rem',
         scrollMarginTop: 100,
+        textAlign: 'center',
       }}
       id="form-section"
     >
-      {/* Shadow DOM container */}
       <div ref={shadowHost} style={{ width: '100%' }} />
-
-      {/* Custom Submit Button */}
-      <button
-        type="button"
-        onClick={handleSubmit}
-        sx={{
-          display: 'block',
-          color: '#000000',
-          border: '1px solid #000',
-          backgroundColor: 'transparent',
-          px: '1rem',
-          py: '0.5rem',
-          mt: '1.5rem',
-          cursor: 'pointer',
-          transition: 'all 0.3s ease',
-          alignContent: 'center',
-          margin: 'auto',
-          '&:hover': {
-            color: '#FFFFFF',
-            borderColor: '#FFFFFF',
-          },
-        }}
-      >
-        Submit
-      </button>
     </section>
   );
 };
