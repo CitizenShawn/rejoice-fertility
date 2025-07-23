@@ -30,7 +30,7 @@ const Form = () => {
         autocomplete="on"
       >
         <input type="hidden" name="formID" value="251464191705052" />
-        <div role="main" class="form-all">
+        <div role="main" class="form-all" style="background-color: #47E4E0;">
           <ul class="form-section page-section" role="presentation">
             <li class="form-line" data-type="control_fullname">
               <label class="form-label form-label-top">Name</label>
