@@ -138,7 +138,7 @@ const Form = () => {
         py: '4rem',
         scrollMarginTop: 100,
         textAlign: 'center',
-        padding: 0,
+        padding: 20,
       }}
       id="form-section"
     >
