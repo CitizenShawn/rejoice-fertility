@@ -18,7 +18,7 @@ const Form = () => {
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64217" />
       <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64217" />
       <style>
-        .form-all { padding-bottom: 0; }
+        .form-all { padding-bottom: 0; background-color: #47E4E0 !important;}
       </style>
 
       <form
