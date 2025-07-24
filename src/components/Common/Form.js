@@ -12,17 +12,13 @@ const Form = () => {
 
     const shadow = shadowHost.current.attachShadow({ mode: 'open' });
 
-    // JotForm HTML without submit button
-    const formHTML = `
+        const formHTML = `
       <link rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=87bd99f" />
-      <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64160" />
-      <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64160" />
-      <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64160" />
+      <link rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64217" />
+      <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64217" />
+      <link rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64217" />
       <style>
-        .form-all {
-          padding-bottom: 0; /* Remove default spacing for external button */
-          background-color: #47E4E0;
-        }
+        .form-all { padding-bottom: 0; }
       </style>
 
       <form
@@ -37,29 +33,40 @@ const Form = () => {
         <input type="hidden" name="formID" value="251464191705052" />
         <div role="main" class="form-all">
           <ul class="form-section page-section" role="presentation">
-            <li class="form-line" data-type="control_fullname">
-              <label class="form-label form-label-top">Name</label>
-              <div class="form-input-wide">
+            <li class="form-line" data-type="control_fullname" id="id_4">
+              <label class="form-label form-label-top" id="label_4">Name</label>
+              <div class="form-input-wide" id="cid_4">
                 <input type="text" name="q4_name[first]" placeholder="First Name" />
                 <input type="text" name="q4_name[last]" placeholder="Last Name" />
               </div>
             </li>
-            <li class="form-line" data-type="control_email">
-              <label class="form-label form-label-top">Email</label>
-              <div class="form-input-wide">
+            <li class="form-line" data-type="control_email" id="id_5">
+              <label class="form-label form-label-top" id="label_5">Email</label>
+              <div class="form-input-wide" id="cid_5">
                 <input type="email" name="q5_email" placeholder="example@example.com" />
               </div>
             </li>
-            <li class="form-line" data-type="control_phone">
-              <label class="form-label form-label-top">Phone Number</label>
-              <div class="form-input-wide">
+            <li class="form-line" data-type="control_phone" id="id_6">
+              <label class="form-label form-label-top" id="label_6">Phone Number</label>
+              <div class="form-input-wide" id="cid_6">
                 <input type="tel" name="q6_phoneNumber[full]" placeholder="(000) 000-0000" />
               </div>
             </li>
-            <li class="form-line" data-type="control_textarea">
-              <label class="form-label form-label-top">Comments / Questions</label>
-              <div class="form-input-wide">
-                <textarea name="q8_comments"></textarea>
+            <li class="form-line" data-type="control_dropdown" id="id_7">
+              <label class="form-label form-label-top" id="label_7">How can we help you?</label>
+              <div class="form-input-wide" id="cid_7">
+                <select name="q7_howCan" style="width: 310px;">
+                  <option value="">Please Select</option>
+                  <option value="I want to make an appointment">I want to make an appointment</option>
+                  <option value="I want a question for Dr. Gordon">I want a question for Dr. Gordon</option>
+                  <option value="I need something else">I need something else</option>
+                </select>
+              </div>
+            </li>
+            <li class="form-line" data-type="control_textarea" id="id_8">
+              <label class="form-label form-label-top" id="label_8">Comments / Questions</label>
+              <div class="form-input-wide" id="cid_8">
+                <textarea name="q8_comments" style="width: 648px; height: 163px;"></textarea>
               </div>
             </li>
           </ul>
