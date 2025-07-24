@@ -21,10 +21,9 @@ const Form = () => {
       return link;
     };
 
-    // Load JotForm CSS styles
+    // Load JotForm CSS styles (but we'll override fonts)
     const styles = [
       loadCSS('https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=a9a303c'),
-      loadCSS('https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64223'),
       loadCSS('https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.64223'),
       loadCSS('https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64223')
     ];
@@ -48,45 +47,6 @@ const Form = () => {
       JotForm.extendsNewTheme = false;
       JotForm.singleProduct = false;
       JotForm.newPaymentUIForNewCreatedForms = true;
-      JotForm.texts = ${JSON.stringify({
-        confirmEmail: "E-mail does not match",
-        pleaseWait: "Please wait...",
-        validateEmail: "You need to validate this e-mail",
-        confirmClearForm: "Are you sure you want to clear the form",
-        lessThan: "Your score should be less than or equal to",
-        incompleteFields: "There are incomplete required fields. Please complete them.",
-        required: "This field is required.",
-        requireOne: "At least one field required.",
-        requireEveryRow: "Every row is required.",
-        requireEveryCell: "Every cell is required.",
-        email: "Enter a valid e-mail address",
-        alphabetic: "This field can only contain letters",
-        numeric: "This field can only contain numeric values",
-        alphanumeric: "This field can only contain letters and numbers.",
-        cyrillic: "This field can only contain cyrillic characters",
-        url: "This field can only contain a valid URL",
-        currency: "This field can only contain currency values.",
-        fillMask: "Field value must fill mask.",
-        uploadExtensions: "You can only upload following files:",
-        noUploadExtensions: "File has no extension file type (e.g. .txt, .png, .jpeg)",
-        uploadFilesize: "File size cannot be bigger than:",
-        uploadFilesizemin: "File size cannot be smaller than:",
-        gradingScoreError: "Score total should only be less than or equal to",
-        inputCarretErrorA: "Input should not be less than the minimum value:",
-        inputCarretErrorB: "Input should not be greater than the maximum value:",
-        maxDigitsError: "The maximum digits allowed is",
-        minCharactersError: "The number of characters should not be less than the minimum value:",
-        maxCharactersError: "The number of characters should not be more than the maximum value:",
-        freeEmailError: "Free email accounts are not allowed",
-        minSelectionsError: "The minimum required number of selections is ",
-        maxSelectionsError: "The maximum number of selections allowed is ",
-        pastDatesDisallowed: "Date must not be in the past.",
-        dateLimited: "This date is unavailable.",
-        dateInvalid: "This date is not valid. The date format is {format}",
-        dateInvalidSeparate: "This date is not valid. Enter a valid {element}.",
-        ageVerificationError: "You must be older than {minAge} years old to submit this form.",
-        error: "Error"
-      })};
       JotForm.newPaymentUI = true;
       JotForm.originalLanguage = "en";
       JotForm.isFormViewTrackingAllowed = true;
@@ -100,10 +60,20 @@ const Form = () => {
     `;
     document.body.appendChild(inlineScript);
 
+    // Inject custom font override
+    const customFont = document.createElement('style');
+    customFont.innerHTML = `
+      .jotform-form, .jotform-form * {
+        font-family: 'Cormorant Garamond', Georgia, serif !important;
+      }
+    `;
+    document.head.appendChild(customFont);
+
     return () => {
       styles.forEach((s) => document.head.removeChild(s));
       scripts.forEach((s) => document.body.removeChild(s));
       document.body.removeChild(inlineScript);
+      document.head.removeChild(customFont);
     };
   }, []);
 
@@ -166,3 +136,4 @@ const Form = () => {
 };
 
 export default Form;
+
