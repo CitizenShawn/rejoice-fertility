@@ -97,6 +97,13 @@ const Form = () => {
       JotForm.submitError = "jumpToFirstError";
       JotForm.isFullSource = true;
       JotForm.init();
+
+      // Add GTM dataLayer push on successful submission
+      JotForm.setOnSubmit(function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'jotformSubmit' });
+        return true; // Allow form to continue submitting
+      });
     `;
     document.body.appendChild(inlineScript);
 
@@ -166,5 +173,3 @@ const Form = () => {
 };
 
 export default Form;
-
-
