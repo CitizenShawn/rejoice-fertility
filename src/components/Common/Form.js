@@ -101,7 +101,7 @@ const Form = () => {
       // Add GTM dataLayer push on successful submission
       JotForm.setOnSubmit(function() {
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'jotformSubmit' });
+        window.dataLayer.push({ event: 'contactFormSubmit' });
         return true; // Allow form to continue submitting
       });
     `;
