@@ -33,79 +33,34 @@ const Form = () => {
     // Load prototype.forms.js first
     loadScript("https://cdn.jotfor.ms/s/static/3d5d7d50e1a/static/prototype.forms.js");
 
-    // Then load jotform.forms.js and initialize JotForm once it's ready
+    // Load jotform.forms.js and attach GTM event after it’s ready
     const jotFormScript = loadScript(
       "https://cdn.jotfor.ms/s/static/3d5d7d50e1a/static/jotform.forms.js",
       false,
       () => {
-        // Run JotForm initialization after script has loaded
         if (window.JotForm) {
           window.enableEventObserver = true;
           JotForm.newDefaultTheme = true;
           JotForm.extendsNewTheme = false;
           JotForm.singleProduct = false;
           JotForm.newPaymentUIForNewCreatedForms = true;
-          JotForm.texts = {
-            confirmEmail: "E-mail does not match",
-            pleaseWait: "Please wait...",
-            validateEmail: "You need to validate this e-mail",
-            confirmClearForm: "Are you sure you want to clear the form",
-            lessThan: "Your score should be less than or equal to",
-            incompleteFields: "There are incomplete required fields. Please complete them.",
-            required: "This field is required.",
-            requireOne: "At least one field required.",
-            requireEveryRow: "Every row is required.",
-            requireEveryCell: "Every cell is required.",
-            email: "Enter a valid e-mail address",
-            alphabetic: "This field can only contain letters",
-            numeric: "This field can only contain numeric values",
-            alphanumeric: "This field can only contain letters and numbers.",
-            cyrillic: "This field can only contain cyrillic characters",
-            url: "This field can only contain a valid URL",
-            currency: "This field can only contain currency values.",
-            fillMask: "Field value must fill mask.",
-            uploadExtensions: "You can only upload following files:",
-            noUploadExtensions: "File has no extension file type (e.g. .txt, .png, .jpeg)",
-            uploadFilesize: "File size cannot be bigger than:",
-            uploadFilesizemin: "File size cannot be smaller than:",
-            gradingScoreError: "Score total should only be less than or equal to",
-            inputCarretErrorA: "Input should not be less than the minimum value:",
-            inputCarretErrorB: "Input should not be greater than the maximum value:",
-            maxDigitsError: "The maximum digits allowed is",
-            minCharactersError: "The number of characters should not be less than the minimum value:",
-            maxCharactersError: "The number of characters should not be more than the maximum value:",
-            freeEmailError: "Free email accounts are not allowed",
-            minSelectionsError: "The minimum required number of selections is ",
-            maxSelectionsError: "The maximum number of selections allowed is ",
-            pastDatesDisallowed: "Date must not be in the past.",
-            dateLimited: "This date is unavailable.",
-            dateInvalid: "This date is not valid. The date format is {format}",
-            dateInvalidSeparate: "This date is not valid. Enter a valid {element}.",
-            ageVerificationError: "You must be older than {minAge} years old to submit this form.",
-            error: "Error"
-          };
+          JotForm.texts = { required: "This field is required." };
           JotForm.newPaymentUI = true;
-          JotForm.originalLanguage = "en";
-          JotForm.isFormViewTrackingAllowed = true;
-          JotForm.replaceTagTest = true;
-          JotForm.activeRedirect = "thanktext";
-          JotForm.uploadServerURL = "https://upload.jotform.com/upload";
-          JotForm.clearFieldOnHide = "disable";
-          JotForm.submitError = "jumpToFirstError";
-          JotForm.isFullSource = true;
           JotForm.init();
 
-          // Push GTM event on successful submission
-          JotForm.setOnSubmit(() => {
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'contactFormSubmit' });
-            return true;
-          });
+          // Attach a native submit event listener
+          const form = document.getElementById('251464191705052');
+          if (form) {
+            form.addEventListener('submit', () => {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({ event: 'contactFormSubmit' });
+            });
+          }
         }
       }
     );
 
-    // Load the rest of the JotForm scripts
+    // Load additional scripts
     const otherScripts = [
       loadScript("https://cdn.jotfor.ms/s/static/3d5d7d50e1a/js/punycode-1.4.1.min.js", true),
       loadScript("https://cdn.jotfor.ms/s/static/3d5d7d50e1a/js/vendor/maskedinput_5.0.9.min.js"),
@@ -179,4 +134,5 @@ const Form = () => {
 };
 
 export default Form;
+
 
