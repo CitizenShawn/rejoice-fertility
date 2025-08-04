@@ -36,7 +36,6 @@ const Staff = () => {
       <h4>BOARD CERTIFICATION:</h4>
       <p>Certified, American Board of Obstetrics and Gynecology</p>
       <p>Certified, Reproductive Endocrinology and Infertility.</p>
-      <p>Clinical Laboratory Director (HCLD), December 1996.</p>
       
       <h4>SOCIETY MEMBERSHIPS:</h4>
       <p>American Society for Reproductive Medicine</p>
