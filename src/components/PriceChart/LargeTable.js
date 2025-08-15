@@ -31,7 +31,7 @@ const LargeTable = () => {
             <span class="pricing-table-plan-name">Embryo Adoption</span>{' '}
           </th>
           <th class="pricing-table-sticky-header starter">
-            <span class="pricing-table-plan-name">Embryo Adoption (Former NEDC Patient)</span>{' '}
+            <span class="pricing-table-plan-name">Embryo Adoption (Former NEDC Patient using NEDC Embryos)</span>{' '}
           </th>
         </tr>
       </thead>{' '}
