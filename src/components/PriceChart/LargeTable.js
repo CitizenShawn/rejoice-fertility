@@ -30,6 +30,9 @@ const LargeTable = () => {
           <th class="pricing-table-sticky-header starter">
             <span class="pricing-table-plan-name">Embryo Adoption</span>{' '}
           </th>
+          <th class="pricing-table-sticky-header starter">
+            <span class="pricing-table-plan-name">Embryo Adoption (Former NEDC Patient)</span>{' '}
+          </th>
         </tr>
       </thead>{' '}
       <tbody>
@@ -71,6 +74,7 @@ const LargeTable = () => {
           <td>Normal Uterus Good Ovarian Reserve BMI &lt; 38</td>
           <td>Normal Uterus Good Ovarian Reserve BMI &lt; 38</td>
           <td>Normal Uterus BMI &lt; 38</td>
+          <td>Normal Uterus BMI &lt; 38 Husband/wife combined ages &lt; 100 years</td>
           <td>Normal Uterus BMI &lt; 38 Husband/wife combined ages &lt; 100 years</td>
         </tr>
         <tr id="rejoice-fertility-fees">
@@ -116,13 +120,16 @@ const LargeTable = () => {
           <td>
             <div>$2,920.00</div>
           </td>
+          <td>
+            <div>$1,640.00</div>
+          </td>
         </tr>
         <tr id="rejoice-ivf-lab-fees">
           <td width="30%">
             <details>
               <summary>
                 <div class="rejoice-ivf-lab-fees-heading">
-                  <div>Rejoice Fertility Fees </div>{' '}
+                  <div>Rejoice IVF Lab Fees </div>{' '}
                   <svg
                     width="10"
                     height="14"
@@ -159,6 +166,56 @@ const LargeTable = () => {
           </td>
           <td>
             <div>$2,500.00</div>
+          </td>
+          <td>
+            <div>$2,500.00</div>
+          </td>
+        </tr>
+        <tr id="rejoice-ivf-lab-fees">
+          <td width="30%">
+            <details>
+              <summary>
+                <div class="rejoice-ivf-lab-fees-heading">
+                  <div>Rejoice Embryo Rescue Cycle Coordination Fee </div>{' '}
+                  <svg
+                    width="10"
+                    height="14"
+                    viewBox="0 0 10 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    focusable="false"
+                    aria-hidden="true"
+                  >
+                    <path d="M8.99023 7.59375C9.14648 7.46875 9.24023 7.28125 9.24023 7.0625C9.24023 6.875 9.14648 6.6875 8.99023 6.53125L2.92773 0.46875C2.77148 0.34375 2.58398 0.25 2.39648 0.25C2.17773 0.25 1.99023 0.34375 1.86523 0.46875L1.17773 1.15625C1.02148 1.3125 0.927734 1.5 0.927734 1.6875C0.927734 1.90625 0.990234 2.09375 1.14648 2.21875L5.99023 7.0625L1.14648 11.9062C0.990234 12.0625 0.927734 12.25 0.927734 12.4375C0.927734 12.6562 1.02148 12.8438 1.17773 12.9688L1.86523 13.6562C1.99023 13.8125 2.17773 13.875 2.39648 13.875C2.58398 13.875 2.77148 13.8125 2.92773 13.6562L8.99023 7.59375Z"></path>
+                  </svg>
+                </div>
+              </summary>{' '}
+              <p class="paragraph type-b type-b-0"></p>
+            </details>
+          </td>{' '}
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>N/A</div>
+          </td>
+          <td>
+            <div>$1,500.00</div>
+          </td>
+          <td>
+            <div>Waived</div>
           </td>
         </tr>
         <tr id="features-reviewers">
@@ -202,7 +259,10 @@ const LargeTable = () => {
             <div>$5,420.00</div>
           </td>
           <td>
-            <div>$5,420.00</div>
+            <div>$6,920.00</div>
+          </td>
+          <td>
+            <div>$4,140.00</div>
           </td>
         </tr>
         <tr id="features-concurrent-builds">
@@ -248,6 +308,9 @@ const LargeTable = () => {
           <td>
             <div>$1000.00</div>
           </td>
+          <td>
+            <div>$1000.00</div>
+          </td>
         </tr>
         <tr id="features-bandwidth">
           <td width="30%">Anesthesia for egg collection</td>{' '}
@@ -265,6 +328,9 @@ const LargeTable = () => {
           </td>
           <td>
             <div>Included</div>
+          </td>
+          <td>
+            <div>N/A</div>
           </td>
           <td>
             <div>N/A</div>
@@ -318,6 +384,9 @@ const LargeTable = () => {
           <td>
             <div>N/A</div>
           </td>
+          <td>
+            <div>N/A</div>
+          </td>
         </tr>
         <tr id="features-websites">
           <td width="30%">
@@ -364,6 +433,9 @@ const LargeTable = () => {
           <td>
             <div>Included</div>
           </td>
+          <td>
+            <div>Included</div>
+          </td>
         </tr>
         <tr id="features-serverless-functions">
           <td width="30%">
@@ -389,6 +461,9 @@ const LargeTable = () => {
           </td>
           <td>
             <div>$750.00</div>
+          </td>
+          <td>
+            <div>N/A</div>
           </td>
           <td>
             <div>N/A</div>
