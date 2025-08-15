@@ -503,6 +503,9 @@ const LargeTable = () => {
           <td>
             <div>N/A</div>
           </td>
+          <td>
+            <div>N/A</div>
+          </td>
         </tr>
         <tr id="features-edge-functions">
           <td width="30%">
@@ -545,9 +548,10 @@ const LargeTable = () => {
             <div>N/A</div>
           </td>
           <td>
-            <div>
-              $500.00 <span>(Reserve sibling embryos)</span>
-            </div>
+            <div>$750.00</div>
+          </td>
+          <td>
+            <div>$500.00</div>
           </td>
         </tr>
         <tr id="features-forms">
@@ -577,6 +581,9 @@ const LargeTable = () => {
           </td>
           <td>
             <div>Depends on age at time of freezing (25-50%)</div>
+          </td>
+          <td>
+            <div>Depends on age at time of freezing (45-50%)</div>
           </td>
           <td>
             <div>Depends on age at time of freezing (45-50%)</div>
