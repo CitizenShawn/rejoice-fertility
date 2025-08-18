@@ -111,6 +111,17 @@ const EmbryoAdoptionTestPage = () => {
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
       <Header title={'Embryo Adoption'} image={'/images/embryo-adoption-crop.jpg'}/>
+      <Header
+          title={'Learn How A Record Breaking Baby Was Born'}
+          description={
+            'Article by MIT Technology Review, Video by WVLT'
+          }
+          image={'/images/record-breaking.png'}
+          ctaPrimary={'Read the Article Here'}
+          ctaPrimaryLink={'https://www.technologyreview.com/2025/07/29/1120769/exclusive-record-breaking-baby-born-embryo-over-30-years-old/'}
+          ctaSecondary={'Watch the Video'}
+          ctaSecondaryLink={'https://www.wvlt.tv/video/2025/08/04/knoxville-clinic-helps-couple-welcome-baby-nearly-31-year-old-frozen-embryo/'}
+        />
       <section
         sx={{
           display: 'flex',
