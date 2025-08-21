@@ -123,9 +123,41 @@ const Form = () => {
               <label className="form-label" htmlFor="input_8">Comments / Questions</label>
               <textarea id="input_8" name="q8_comments" className="form-textarea" />
             </li>
-            <li className="form-line" id="id_2">
-              <button id="input_2" type="submit" className="form-submit-button">Submit</button>
-            </li>
+                  <li class="form-line jf-required" data-type="control_captcha" id="id_9"><label class="form-label form-label-top form-label-auto" id="label_9" for="input_9" aria-hidden="false"> Please verify that you are human<span class="form-required">*</span> </label>
+        <div id="cid_9" class="form-input-wide jf-required" data-layout="full">
+          <section data-wrapper-react="true">
+            <div id="hcaptcha_input_9" class="h-captcha" data-siteKey="772f4a50-7161-425e-8cd5-4d7e361ab765" data-callback="hcaptchaCallbackinput_9" data-expired-callback="hcaptchaExpiredCallbackinput_9"></div><input type="hidden" id="input_9" class="hidden validate[required]" name="hcaptcha_visible" required="" />
+            <script type="text/javascript" src="https://hcaptcha.com/1/api.js"></script>
+            <script type="text/javascript">
+              var hcaptchaCallbackinput_9 = function(token)
+              {
+                var hiddenInput = $("input_9");
+                hiddenInput.setValue(1);
+                if (hiddenInput.validateInput)
+                {
+                  hiddenInput.validateInput();
+                }
+              }
+
+              var hcaptchaExpiredCallbackinput_9 = function()
+              {
+                var hiddenInput = $("input_9");
+                hiddenInput.writeAttribute("value", false);
+                if (hiddenInput.validateInput)
+                {
+                  hiddenInput.validateInput();
+                }
+              }
+            </script>
+          </section>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
           </ul>
         </div>
       </form>
