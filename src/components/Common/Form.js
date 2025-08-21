@@ -8,6 +8,7 @@ const Form = () => {
       const script = document.createElement('script');
       script.src = src;
       script.async = isAsync;
+      script.defer = true;
       if (onLoad) script.onload = onLoad;
       document.body.appendChild(script);
       return script;
@@ -22,7 +23,10 @@ const Form = () => {
       return link;
     };
 
-    // Load JotForm CSS styles
+    // Load hCaptcha script
+    const hcaptchaScript = loadScript('https://hcaptcha.com/1/api.js', true);
+
+    // Load JotForm styles
     const styles = [
       loadCSS('https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=a9a303c'),
       loadCSS('https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.64223'),
@@ -30,10 +34,9 @@ const Form = () => {
       loadCSS('https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.64223')
     ];
 
-    // Load prototype.forms.js first
+    // Load JotForm scripts
     loadScript("https://cdn.jotfor.ms/s/static/3d5d7d50e1a/static/prototype.forms.js");
 
-    // Load jotform.forms.js and attach GTM event after it’s ready
     const jotFormScript = loadScript(
       "https://cdn.jotfor.ms/s/static/3d5d7d50e1a/static/jotform.forms.js",
       false,
@@ -48,7 +51,6 @@ const Form = () => {
           JotForm.newPaymentUI = true;
           JotForm.init();
 
-          // Attach a native submit event listener
           const form = document.getElementById('251464191705052');
           if (form) {
             form.addEventListener('submit', () => {
@@ -60,7 +62,6 @@ const Form = () => {
       }
     );
 
-    // Load additional scripts
     const otherScripts = [
       loadScript("https://cdn.jotfor.ms/s/static/3d5d7d50e1a/js/punycode-1.4.1.min.js", true),
       loadScript("https://cdn.jotfor.ms/s/static/3d5d7d50e1a/js/vendor/maskedinput_5.0.9.min.js"),
@@ -68,10 +69,26 @@ const Form = () => {
       loadScript("https://cdn.jotfor.ms/s/static/3d5d7d50e1a/js/errorNavigation.js")
     ];
 
+    // hCaptcha callback handlers
+    window.hcaptchaCallback = function (token) {
+      const hiddenInput = document.getElementById('input_9');
+      if (hiddenInput) {
+        hiddenInput.value = '1';
+      }
+    };
+
+    window.hcaptchaExpiredCallback = function () {
+      const hiddenInput = document.getElementById('input_9');
+      if (hiddenInput) {
+        hiddenInput.value = '';
+      }
+    };
+
     return () => {
       styles.forEach((s) => document.head.removeChild(s));
       if (jotFormScript) document.body.removeChild(jotFormScript);
       otherScripts.forEach((s) => document.body.removeChild(s));
+      if (hcaptchaScript) document.body.removeChild(hcaptchaScript);
     };
   }, []);
 
@@ -123,41 +140,46 @@ const Form = () => {
               <label className="form-label" htmlFor="input_8">Comments / Questions</label>
               <textarea id="input_8" name="q8_comments" className="form-textarea" />
             </li>
-                  <li class="form-line jf-required" data-type="control_captcha" id="id_9"><label class="form-label form-label-top form-label-auto" id="label_9" for="input_9" aria-hidden="false"> Please verify that you are human<span class="form-required">*</span> </label>
-        <div id="cid_9" class="form-input-wide jf-required" data-layout="full">
-          <section data-wrapper-react="true">
-            <div id="hcaptcha_input_9" class="h-captcha" data-siteKey="772f4a50-7161-425e-8cd5-4d7e361ab765" data-callback="hcaptchaCallbackinput_9" data-expired-callback="hcaptchaExpiredCallbackinput_9"></div><input type="hidden" id="input_9" class="hidden validate[required]" name="hcaptcha_visible" required="" />
-            <script type="text/javascript" src="https://hcaptcha.com/1/api.js"></script>
-            <script type="text/javascript">
-              var hcaptchaCallbackinput_9 = function(token)
-              {
-                var hiddenInput = $("input_9");
-                hiddenInput.setValue(1);
-                if (hiddenInput.validateInput)
-                {
-                  hiddenInput.validateInput();
-                }
-              }
 
-              var hcaptchaExpiredCallbackinput_9 = function()
-              {
-                var hiddenInput = $("input_9");
-                hiddenInput.writeAttribute("value", false);
-                if (hiddenInput.validateInput)
-                {
-                  hiddenInput.validateInput();
-                }
-              }
-            </script>
-          </section>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_button" id="id_2">
-        <div id="cid_2" class="form-input-wide" data-layout="full">
-          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit" data-component="button" data-content="">Submit</button></div>
-        </div>
-      </li>
-      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+            {/* hCaptcha Field */}
+            <li className="form-line jf-required" id="id_9">
+              <label className="form-label" htmlFor="input_9">
+                Please verify that you are human<span className="form-required">*</span>
+              </label>
+              <div className="form-input-wide jf-required">
+                <div
+                  className="h-captcha"
+                  data-sitekey="772f4a50-7161-425e-8cd5-4d7e361ab765"
+                  data-callback="hcaptchaCallback"
+                  data-expired-callback="hcaptchaExpiredCallback"
+                ></div>
+                <input
+                  type="hidden"
+                  id="input_9"
+                  name="hcaptcha_visible"
+                  required
+                  className="hidden validate[required]"
+                />
+              </div>
+            </li>
+
+            <li className="form-line" id="id_2">
+              <div className="form-input-wide">
+                <div className="form-buttons-wrapper">
+                  <button
+                    id="input_2"
+                    type="submit"
+                    className="form-submit-button"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li style={{ display: 'none' }}>
+              Should be Empty: <input type="text" name="website" value="" hidden />
+            </li>
           </ul>
         </div>
       </form>
@@ -166,5 +188,6 @@ const Form = () => {
 };
 
 export default Form;
+
 
 
