@@ -39,7 +39,7 @@ const Location = () => {
               mb: '1rem',
             }}
           >
-            Our Doctor
+            Our Location - <a href='https://www.google.com/maps/place/11132+Kingston+Pike,+Farragut,+TN+37934/@35.8858771,-84.1520417,17z/data=!3m1!4b1!4m6!3m5!1s0x885c2f6ec7e3bf6d:0x8f4567ff95a2e5be!8m2!3d35.8858728!4d-84.1494668!16s%2Fg%2F11vr9xg416?entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D'>11132 Kingston Pike Knoxville, TN 37934</a>
           </h3>
           <p
             sx={{
@@ -47,7 +47,7 @@ const Location = () => {
               variant: 'text.normal',
             }}
           >
-            Dr. John Gordon leads our caring, committed team.
+            Rejoice Fertility is located in a brand-new state-of-the-art nearly 10,000 square feet facility in Farragut, TN that provides a warm and welcoming atmosphere for all our patients. The office was designed and built by Dr. Gordon drawing on inspiration from the natural beauty found here in East Tennessee. We can handle a large volume of fertility procedures and with the safety of our patients in mind (including the frozen embryos under our care), the new IVF laboratory at Rejoice has an advanced monitoring system for our cryostorage tanks. This novel system (Cryo-Sentinel) uses infrared imaging to detect early temperature changes in the embryo storage tanks alerting the staff to an issue before it is too late to correct an issue and save the embryos from a catastrophic event.
           </p>
         </div>
         <div
@@ -98,12 +98,11 @@ const Location = () => {
           }}
         >
           <div className="doctor-container">
-            <img src="/images/gordon.jpg" alt="" />
+            <img src="/images/Rejoice Outside.jpg" alt="" />
             <div className="member-info-container">
               <h4>
-                Dr. John Gordon
+                Our Location
               </h4>
-              <p>M.D.</p>
             </div>
           </div>
         </div>
