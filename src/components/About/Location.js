@@ -47,7 +47,7 @@ const Location = () => {
               variant: 'text.normal',
             }}
           >
-            Rejoice Fertility is located in a brand-new state-of-the-art nearly 10,000 square feet facility in Farragut, TN that provides a warm and welcoming atmosphere for all our patients. The office was designed and built by Dr. Gordon drawing on inspiration from the natural beauty found here in East Tennessee. We can handle a large volume of fertility procedures and with the safety of our patients in mind (including the frozen embryos under our care), the new IVF laboratory at Rejoice has an advanced monitoring system for our cryostorage tanks. This novel system (Cryo-Sentinel) uses infrared imaging to detect early temperature changes in the embryo storage tanks alerting the staff to an issue before it is too late to correct an issue and save the embryos from a catastrophic event.
+            Rejoice Fertility is located in a brand-new state-of-the-art nearly 10,000 square feet facility in Farragut, TN that provides a warm and welcoming atmosphere for all our patients. The office was designed by the entire team here Rejoice, drawing inspiration from the natural beauty found here in East Tennessee. We can handle a large volume of fertility procedures and with the safety of our patients in mind (including the frozen embryos under our care), the new IVF laboratory at Rejoice has an advanced monitoring system for our cryostorage tanks. This novel system (Cryo-Sentinel) uses infrared imaging to detect early temperature changes in the embryo storage tanks alerting the staff to an issue before it is too late to correct an issue and save the embryos from a catastrophic event.
           </p>
         </div>
         <div
