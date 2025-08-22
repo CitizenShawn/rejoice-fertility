@@ -87,7 +87,7 @@ const ContactForm = () => {
             >
               Office
             </h3>
-            <img src='/images/RejoiceOutside.jpg'>
+            <img src='/images/RejoiceOutside.jpg' />
             <p>Come say hello at our office.</p>
             <p>11132 Kingston Pike Knoxville, TN 37934</p>
           </div>
