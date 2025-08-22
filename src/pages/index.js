@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from '../components/Common/Header';
+import Location from '../components/About/Location';
 import FeaturedSection from '../components/Home/FeaturedSection';
 import QuoteSection from '../components/Home/QuoteSection';
 import Doctors from '../components/Home/Doctors';
@@ -35,6 +36,7 @@ const Homepage = () => {
           ctaSecondary={'Watch the Video'}
           ctaSecondaryLink={'https://www.wvlt.tv/video/2025/08/04/knoxville-clinic-helps-couple-welcome-baby-nearly-31-year-old-frozen-embryo/'}
         />
+        <Location />
         <FeaturedSection />
         <QuoteSection />
         <Services />
