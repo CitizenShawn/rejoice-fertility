@@ -98,7 +98,7 @@ const Location = () => {
           }}
         >
           <div className="doctor-container">
-            <img src="/images/Rejoice Outside.jpg" alt="" />
+            <img src="/images/RejoiceOutside.jpg" alt="" />
             <div className="member-info-container">
               <h4>
                 Our Location
