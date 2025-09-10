@@ -476,7 +476,7 @@ const SmallTable = () => {
               <p class="paragraph type-b type-b-0">see individual price sheets for more detail</p>
             </details>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$5,870.00</div>
+              <div>$8,094.00</div>
             </span>
           </td>
         </tr>
@@ -510,7 +510,7 @@ const SmallTable = () => {
           <td>
             <span class="pricing-table-small-feature-title">Anesthesia for egg collection</span>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$450.00</div>
+              <div>Included</div>
             </span>
           </td>
         </tr>
@@ -681,7 +681,7 @@ const SmallTable = () => {
               <p class="paragraph type-b type-b-0">see individual price sheets for more detail</p>
             </details>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$7,640.00</div>
+              <div>$10,699.00</div>
             </span>
           </td>
         </tr>
@@ -707,7 +707,7 @@ const SmallTable = () => {
               <p class="paragraph type-b type-b-0">Not included in cycle fee</p>
             </details>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$1,000.00</div>
+              <div>$1,800.00</div>
             </span>
           </td>
         </tr>
@@ -715,7 +715,7 @@ const SmallTable = () => {
           <td>
             <span class="pricing-table-small-feature-title">Anesthesia for egg collection</span>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$450.00</div>
+              <div>Included</div>
             </span>
           </td>
         </tr>
@@ -886,7 +886,7 @@ const SmallTable = () => {
               <p class="paragraph type-b type-b-0">see individual price sheets for more detail</p>
             </details>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$13,445.00</div>
+              <div>$15,659.00</div>
             </span>
           </td>
         </tr>
@@ -920,7 +920,7 @@ const SmallTable = () => {
           <td>
             <span class="pricing-table-small-feature-title">Anesthesia for egg collection</span>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$450.00</div>
+              <div>Included</div>
             </span>
           </td>
         </tr>
@@ -1091,7 +1091,7 @@ const SmallTable = () => {
               <p class="paragraph type-b type-b-0">see individual price sheets for more detail</p>
             </details>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$3,935</div>
+              <div>$6,920</div>
             </span>
           </td>
         </tr>
@@ -1221,7 +1221,7 @@ const SmallTable = () => {
               <p class="paragraph type-b type-b-0">beyond 1st year</p>
             </details>{' '}
             <span class="pricing-table-small-feature-value">
-              <div>$500.00(Reserve sibling embryos)</div>
+              <div>$750.00(Reserve sibling embryos)</div>
             </span>
           </td>
         </tr>
