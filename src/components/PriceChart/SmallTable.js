@@ -1271,7 +1271,7 @@ const SmallTable = () => {
             </details>{' '}
             <span class="pricing-table-small-feature-value">
               <div>
-                Normal Uterus BMI < 38
+                Normal Uterus BMI &lt; 38
               </div>
             </span>
           </td>
@@ -1478,7 +1478,7 @@ const SmallTable = () => {
             </details>{' '}
             <span class="pricing-table-small-feature-value">
               <div>
-                Normal Uterus BMI < 38 Husband/wife combined ages < 100
+                Normal Uterus BMI &lt; 38 Husband/wife combined ages &lt; 100
               </div>
             </span>
           </td>
