@@ -149,7 +149,7 @@ const Form = () => {
               <div className="form-input-wide jf-required">
                 <div
                   className="h-captcha"
-                  data-sitekey="772f4a50-7161-425e-8cd5-4d7e361ab765"
+                  data-sitekey="1bf45f84-6c94-4142-8e66-c6f26d8ca210"
                   data-callback="hcaptchaCallback"
                   data-expired-callback="hcaptchaExpiredCallback"
                 ></div>
