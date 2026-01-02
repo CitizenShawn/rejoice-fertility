@@ -129,7 +129,7 @@ const Footer = () => {
             color: '#FFFFFF',
           }}
         >
-          © 2025 Rejoice Fertility. All rights reserved.
+          © 2026 Rejoice Fertility. All rights reserved.
         </p>
         <div
           sx={{
