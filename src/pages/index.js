@@ -40,6 +40,8 @@ const Homepage = () => {
         <FeaturedSection />
         <QuoteSection />
         <Services />
+        <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-timezone="America/New_York" data-textcolor="#343753" data-date="2026-09-01 11:32" data-background="#343753" data-digitscolor="#FFFFFF" data-unitscolor="#343753"></a>
         <Doctors />
         <Help />
       </div>
