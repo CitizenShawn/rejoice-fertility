@@ -10,7 +10,7 @@ export default function Countdown() {
 
   return (
     <a
-      href="https://logwork.com/countdown-timer"
+      href=""
       className="countdown-timer"
       data-timezone="America/New_York"
       data-textcolor="#343753"
