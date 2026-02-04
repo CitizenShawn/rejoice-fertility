@@ -74,7 +74,7 @@ const NightlightPage = () => {
         title="Knoxville Embryo Adoption | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://nightlight.org'} ctaSecondary={''} ctaSecondaryLink={'#'} />
+      <Header title={'Flourish Adoption Ministries'} description={''} image={'/images/flourish-logo.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'https://flourishadoptions.com/embryo-adoption'} ctaSecondary={''} ctaSecondaryLink={'#'} />
       <section
         sx={{
           display: 'flex',
@@ -87,45 +87,29 @@ const NightlightPage = () => {
         className="content"
       >
         <p>
-        In 1997 Nightlight Christian Adoptions pioneered embryo adoption to assist families with remaining embryos in frozen storage in selecting an adopting family to attempt pregnancy with them.
+        Flourish Adoption Ministries was founded to support families and children through ethical, faith-centered adoption practices that honor life, family, and long-term relational well-being.
         </p>
         <p>
-          They named their new program <a href='https://nightlight.org/snowflakes-embryo-adoption-donation/'>"Snowflakes Embryo Adoption Program,"</a> likening each embryo to a
-          unique, frozen snowflake. Snowflakes Embryo Adoption has since become the largest embryo adoption
-          agency in the world.
+          Through its embryo adoption ministry, Flourish provides families with an opportunity to welcome children into their homes while offering hope and purpose for embryos remaining in frozen storage. Each embryo is treated with dignity and care, recognizing the profound responsibility entrusted to both the placing and adopting families.
           </p>
         <p>
-          Embryo adoption follows adoption best practices, transferring remaining embryos from donors to
-          recipients -- the adopting families -- who then undergo frozen embryo transfers (FETs) with the
-          family receiving their embryos and give birth to their adopted child.
+          Flourish’s embryo adoption process follows established adoption best practices, emphasizing education, transparency, and compassionate support. Embryos are placed with carefully screened adoptive families who then undergo frozen embryo transfers (FETs) and have the opportunity to experience pregnancy and birth.
             </p>
         <p>
-          To ensure the well-being of all parties involved, an <a href='https://nightlight.org/snowflakes-embryo-adoption-donation/snowflakes-family-evaluation/'>adoption home study</a> is required. This process
-          educates the adopting family and provides peace of mind to the embryo donors, knowing that the
-          family receiving their embryos has been thoroughly vetted by the agency.
+          To safeguard the well-being of everyone involved—children, placing families, and adopting families alike—Flourish requires an adoption home study. This process equips adopting parents for the journey ahead and offers reassurance to placing families that their embryos are being entrusted to a loving, prepared home.
             </p>
         <p>
-          Embryo adoption programs differ from <a href='https://en.wikipedia.org/wiki/Embryo_donation'>embryo donation</a> programs run out of fertility clinics. While
-          the latter primarily focus on medical treatment, adoption agencies consider <a href='adoption.org/what-is-the-adoption-triad'>social and emotional
-          aspects</a> for all involved in the adoption process.
+          Unlike embryo donation programs typically facilitated through fertility clinics, Flourish approaches embryo adoption as a relational and lifelong commitment. While medical care is essential, equal attention is given to the emotional, social, and spiritual aspects of adoption.
             </p>
         <p>
-          Encouraging open relationships is a key aspect of embryo adoption, allowing children born from this
-          process to maintain connections with both their <a href='https://lavenderluz.com/cover-story-embryo-adoption/'>biological background</a> and their adoptive family's
-          experiences. In contrast, embryo donation programs often priortize anonymity, providing little to no
-          information to either the donor nor receipient and encouraging <a href='https://embryoadoption.org/2018/10/secrecy-privacy/'>privacy rather than secrecy</a>.
+          Flourish encourages openness and connection whenever possible, believing that children benefit from access to their biological history and the story of how they came to be part of their adoptive family. This commitment to transparency stands in contrast to anonymous donation models that often limit information and ongoing connection.
             </p>
-        <h3><strong>TOP REASONS TO CHOOSE SNOWFLAKES FOR EMBRYO ADOPTION</strong></h3>
+        <h3><strong>TOP REASONS TO CHOOSE FLOURISH ADOPTION MINISTRIES</strong></h3>
         <ul>
-        <li>Snowflakes was established by Nightlight Christian Adoptions in 1997.</li>
-        <li>Over 2,000 have donated their remaining embryos through Snowflakes -- sometimes referred to as leftover
-          embryos or unused embryos -- allowing them to choose the adoptive family of their embryos.</li>
-        <li>More than 120 babies are expected to be born through the program in 2024, making a total number of
-          over 1,300 Snowflakes Babies born!</li>
-        <li>Embryo adoption is a low-cost adoption option, allowing you to experience pregnancy and give birth
-          to your adopted child.</li>
-        <li>Snowflakes has no waiting lists for adoptive families to be matched with embryos.</li>
-        <li>Here are <a href='https://nightlight.org/wp-content/uploads/2024/10/50-Benefits.pdf'>50 more benefits you recieve</a> when you choose Snowflakes Embryo Adoption.</li>
+        <li>Flourish Adoption Ministries was established in 2017 with a mission to provide "frozen" babies a chance at life.</li>
+        <li>Embryo adoption through Flourish offers a more affordable adoption option while allowing families to experience pregnancy and birth.</li>
+        <li>Flourish provides personalized guidance and support throughout every stage of the embryo adoption journey.</li>
+        <li>Adoptive families benefit from education, counseling, and faith-based resources designed to support lifelong adoption relationships.</li>
             </ul>
       </section>
       <Help />
