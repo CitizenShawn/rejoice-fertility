@@ -110,7 +110,7 @@ const EmbryoAdoptionTestPage = () => {
         title="Rejoice Embryo Rescue | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Rejoice Embryo Rescue'} image={'/images/embryo-adoption-crop.jpg'} ctaPrimary={'Embryo Adoption'} ctaPrimaryLink={'/services/embryo-adoption'} ctaSecondary={'Donation Services'} ctaSecondaryLink={'/services/donate-embryos'} />
+      <Header title={'Rejoice Embryo Rescue'} image={'/images/RER-logo-slide.jpg'} ctaPrimary={'Embryo Adoption'} ctaPrimaryLink={'/services/embryo-adoption'} ctaSecondary={'Donation Services'} ctaSecondaryLink={'/services/donate-embryos'} />
       <section
         sx={{
           display: 'flex',
@@ -135,6 +135,7 @@ const EmbryoAdoptionTestPage = () => {
           in a loving home or hoping to build your family, you are joining a movement that values every life. 
           Explore the pathways below to see how you can be part of this rescue story.
         </p>
+        <p></p>
         
       </section>
       <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
