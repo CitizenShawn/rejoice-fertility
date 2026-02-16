@@ -209,7 +209,7 @@ const EmbryoAdoptionTestPage = () => {
         className="content"
       >
         <p>
-        Rejoice ended its affiliation with the National Embryo Donation Center in September 2024. A number of patients who adopted embryos through the NEDC remained with Dr. Gordon / Rejoice Fertility through a Mediation Agreement. 
+        Rejoice ended its affiliation with the National Embryo Donation Center in September 2024. A number of patients who adopted embryos through the NEDC remained with Dr. Gordon / Rejoice Fertility through a Mediation Agreement. Thank you. 
         </p>
       </section>
       <Help />
