@@ -40,14 +40,19 @@ const Navbar = () => {
           name: 'IVF',
           slug: '/services/ivf',
         },
+
         {
+          name: 'Rejoice Embryo Rescue',
+          slug: '/services/rejoice-embryo-rescue',
+        },
+        /**{
           name: 'Embryo Adoption',
           slug: '/services/embryo-adoption',
         },
         {
           name: 'Donate Embryos',
           slug: '/services/donate-embryos',
-        },
+        }, */
       ],
     },
     {
