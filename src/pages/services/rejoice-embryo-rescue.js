@@ -98,7 +98,7 @@ const EmbryoAdoptionTestPage = () => {
       </section>
       <Faqs data={data} />
       
-      /** <Questions q={q} /> */
+
       <Help />
     </Layout>
   );
