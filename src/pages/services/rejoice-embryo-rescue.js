@@ -10,64 +10,22 @@ import { Seo } from '../../components/Seo';
 
 const EmbryoAdoptionTestPage = () => {
   const data = [
+    
     {
-      question: 'Why are there embryos available for adoption?',
+      question: 'What is the mission of RER?',
       answer:
-        'Stimulated Cycle IVF can result in the production of 12-30 eggs or more in some patients. One of the unanticipated issues associated with traditional IVF has been the question of what to do with the extra embryos that are left stored frozen in liquid nitrogen once a couple believes that their family is complete. Some couples are willing to allow others to adopt these embryos.',
+        "Rejoice Embryo Rescue (RER) is a Tennessee LLC that was created to coordinate the receipt and secure storage of human embryos awaiting adoption by couples pursuing a future frozen embryo transfer with these donated embryos. RER works collaboratively with its affiliated faith-based Embryo Adoption agencies to facilitate frozen embryo transfers of donated embryos either at Rejoice Fertility in Knoxville, TN or at the clinic of the recipient couple’s choosing.",
     },
     {
-      question: 'How common is Embryo Adoption?',
+      question: 'Does RER match donors and recipients?',
       answer:
-        'Although many IVF clinics offer Embryo Adoption / Embryo Donation, none has the depth of experience found at Rejoice Fertility. Although there are over 200,000 IVF procedures performed in the United States every year there are fewer than 2000 cycles of Embryo Adoption performed yearly.',
+        'No. RER is not an Embryo Adoption agency and does not match donors and recipients. RER works collaboratively with Embryo Adoption agencies which include Snowflakes, Embryo Adoption Services of Cedar Park and Flourish Adoption Services. All matching is performed by these agencies.',
     },
     {
-      question: 'Who are the best candidates for Embryo Adoption?',
+      question: 'Does RER store embryos?',
       answer:
-        'The best candidates for EA are those couples where the wife has a normal uterus and no medical reason which could result in a lower chance of success such as the presence of a dilated, fluid-filled fallopian tube (hydrosalpinx).',
-    },
-    {
-      question: 'How successful is EA?',
-      answer: 'Success rates with Embryo Donation/Adoption are close to 50% per cycle',
-    },
-    {
-      question: 'What about couples with male factor?',
-      answer:
-        'Some couples feel more comfortable with EA as opposed to the use of donor egg or donor sperm.',
-    },
-    {
-      question: 'Can couples without a fertility problem adopt embryos?',
-      answer: 'Absolutely. Some patients have pursued EA because they feel called to adopt.',
-    },
-    {
-      question: 'How expensive is this treatment?',
-      answer:
-        'The treatment cost per cycle is less than $4,000 but that does not include pre-screening and the costs associated with the matching process through Snowflake Embryo Adoption or the National Embryo Donation Center.',
-    },
-    {
-      question: 'I have been matched with embryos now what do I do?',
-      answer:
-        'You can schedule an in-person or virtual consult with Dr. Gordon and then based upon that consultation you will need to have a few basic tests performed: A vaginal ultrasound, a saline sonogram to check the inside of the cavity, and a trial embryo transfer (also called a mock transfer).',
-    },
-    {
-      question: 'Do I need to travel to Knoxville for those tests?',
-      answer:
-        'No. You can have those tests performed by a fertility clinic in your geographic region if that is more convenient. However, many patients prefer to have these tests done by Dr. Gordon in Knoxville.',
-    },
-    {
-      question: 'Do I need to undergo a "sham" cycle with hormones?',
-      answer:
-        'No. The vast majority of patients respond predictably to estrogen pills (estrace). If you are in the samll group of patients who require an atypical protocol then this can easily be employed in a future cycle.',
-    },
-    {
-      question: 'Do I need to take Lupron?',
-      answer:
-        'Some patients do need to take Lupron but most do not and their cycles can be controlled by the use of oral contraceptives as needed.',
-    },
-    {
-      question: 'Can I have a Natural Cycle FET?',
-      answer:
-        'Yes. BUT you need to have regular cycles and be willing to have closer monitoring during your cycle to ensure we do not miss ovulation.',
-    },
+        'The embryology staff of Rejoice IVF Lab, LLC provide all needed embryology services such as receiving, shipping and continued storage of embryos. Rejoice IVF Lab, LLC is accredited by The Joint Commission, and was the FIRST accredited IVF Laboratory in the Greater Knoxville area.',
+    }
   ];
   const q = [
     {
@@ -138,47 +96,9 @@ const EmbryoAdoptionTestPage = () => {
         <p></p>
         
       </section>
-      <Header title={'Nightlight Christian Adoptions'} description={'Snowflakes Embryo Adoption Program'} image={'/images/nightlight-christian-adoptions-header.jpeg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/nightlight'} ctaSecondary={''} ctaSecondaryLink={''} />
-      <Header title={'Embryo Adoption Services of Cedar Park'} description={''} image={'/images/cedar-park.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/eas-cedar-park'} ctaSecondary={''} ctaSecondaryLink={''} />
-      <Header title={'Christian Adoption Consultants'} description={''} image={'/images/CAC-cropped.jpg'} ctaPrimary={'Learn More'} ctaPrimaryLink={'/services/embryo-adoption-organizations/cac'} ctaSecondary={''} ctaSecondaryLink={''} />
       <Faqs data={data} />
-      <section
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '16px',
-          px: ['1rem', null, null, '2rem'],
-          py: ['2rem', null, null, '4rem'],
-          variant: 'text.normal',
-        }}
-        className="content"
-        id="NEDC"
-      ></section>
-      <Header title={'NEDC and Rejoice Fertility'} description={''} image={'/images/pexels-pixabay-51953.jpg'} ctaPrimary={''} ctaPrimaryLink={''} ctaSecondary={''} ctaSecondaryLink={''} />
-      <section
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '16px',
-          px: ['1rem', null, null, '2rem'],
-          py: ['2rem', null, null, '4rem'],
-          variant: 'text.normal',
-        }}
-        className="content"
-      >
-        <p>
-        There were previous issues between Rejoice and the NEDC; however, those issues were worked out in Mediation
-        on August 23, 2024 to the mutual benefit of all parties, and most importantly, all patients
-        </p>
-        <p>
-        The parties agreed that all Rejoice patients (both Dr. Keenan’s and Dr. Gordon’s) who were matched with NEDC
-        donated embryos or had NEDC embryos on reserve as of 8/1/24 could choose to keep these embryos at Rejoice
-        and have their future care with Dr. Gordon and the nursing and embryology team at Rejoice, OR choose to have
-        future embryo transfers with Dr. Keenan in Powell, TN, OR choose to have their care with another NEDC affiliated
-        clinic.
-        </p>
-      </section>
-      <Questions q={q} />
+      
+      /** <Questions q={q} /> */
       <Help />
     </Layout>
   );
