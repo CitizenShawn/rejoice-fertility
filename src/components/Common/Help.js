@@ -81,7 +81,7 @@ const Help = () => {
               },
             }}
           >
-            Request Appointment
+            Contact RER Program Coordinator
           </Link>
           <Link
             to="/free-consultations"
