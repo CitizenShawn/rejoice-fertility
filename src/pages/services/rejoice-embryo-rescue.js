@@ -49,10 +49,6 @@ const EmbryoAdoptionTestPage = () => {
       answer: "RER is not an Embryo Adoption organization and does not match donors and recipients. Instead, RER works collaboratively with Embryo Adoption organizations which currently includes Nightlight’s Snowflakes Embryo Adoption Program, Embryo Adoption Services of Cedar Park, Flourish Adoption Ministries, Embryos Alive, Christian Adoption Consultants and Lauren Wilson LMSW (Flourish Consulting Services). All matching is coordinated by one of these organizations.",
     },
 
-    {
-      question: '',
-      answer: "",
-    },
 
     {
       question: 'Does RER store embryos?',
