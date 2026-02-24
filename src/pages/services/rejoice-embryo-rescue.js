@@ -16,7 +16,7 @@ const EmbryoAdoptionTestPage = () => {
     {
       question: 'What is the mission of RER?',
       answer:
-        "Rejoice Embryo Rescue (RER) was created to coordinate the receipt and secure storage of human embryos awaiting ‘adoption’ by couples pursuing a future frozen embryo transfer with these donated embryos. RER works collaboratively with its affiliated faith-based <a href="https://rejoicefertility.com/services/embryo-adoption">Embryo Adoption organizations</a> to facilitate frozen embryo transfers of donated embryos either at Rejoice Fertility in Knoxville, TN (where we have significantly higher live birth rates from donated embryos per transfer than the rest of the nation) or at the clinic of your choice.",
+        "Rejoice Embryo Rescue (RER) was created to coordinate the receipt and secure storage of human embryos awaiting ‘adoption’ by couples pursuing a future frozen embryo transfer with these donated embryos. RER works collaboratively with its affiliated faith-based <a href="https://rejoicefertility.com/services/embryo-adoption/>Embryo Adoption organizations</a> to facilitate frozen embryo transfers of donated embryos either at Rejoice Fertility in Knoxville, TN (where we have significantly higher live birth rates from donated embryos per transfer than the rest of the nation) or at the clinic of your choice.",
     },
     {
       question: 'What is Embryo Adoption and where do the embryos come from?',
