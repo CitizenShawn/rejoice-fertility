@@ -26,12 +26,12 @@ const EmbryoAdoptionTestPage = () => {
     {
       question: 'Does RER match donors and recipients?',
       answer:
-        'No. RER is not an Embryo Adoption ORGANIZATION and does not match donors and recipients. RER collaborates with Embryo Adoption organizations, including Snowflakes Embryo Adoptions, Embryo Adoption Services of Cedar Park, Christian Adoption Consultants, and Flourish Adoption Services. All matching is performed by these organizations.',
+        'No. RER is not an Embryo Adoption organization and does not match donors and recipients. RER collaborates with Embryo Adoption organizations, including Snowflakes Embryo Adoptions, Embryo Adoption Services of Cedar Park, Christian Adoption Consultants, and Flourish Adoption Services. All matching is performed by these organizations.',
     },
     {
       question: 'Who are the approved adoption agency affiliates?',
       answer:
-        '<ul> <li><a href="https://www.flourishconsultingservicesllc.com/about">Lauren Wilson LMSW (Flourish Consulting Services)</a></li>   <li><a href="https://nightlight.org/snowflakes-embryo-adoption-donation/">Nightlight’s Snowflakes Embryo Adoption Program </a></li>   <li><a href="https://www.christianadoptionconsultants.com/">Christian Adoption Consultants</a></li>  <li><a href="https://www.embryosolution.com/embryo-reception">Embryo Adoption Services of Cedar Park</a></li>  <li><a href="https://flourishadoptions.com">Flourish Adoption Ministries</a></li>   <li><a href="https://www.embryosalive.com">Embryos Alive</a></li>  </ul>',
+        '<ul> <li><a href="https://nightlight.org/snowflakes-embryo-adoption-donation/">Nightlight’s Snowflakes Embryo Adoption Program </a></li>   <li><a href="https://www.christianadoptionconsultants.com/">Christian Adoption Consultants</a></li>  <li><a href="https://adoptembryos.org/">Embryo Adoption Services of Cedar Park</a></li>  <li><a href="https://flourishadoptions.com">Flourish Adoption Ministries</a></li>   <li><a href="https://www.embryosalive.com">Embryos Alive</a></li>  </ul>',
     },
     {
       question: 'Why do you call it adoption? Is it really a legal adoption?',
