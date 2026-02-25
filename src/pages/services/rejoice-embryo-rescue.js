@@ -44,11 +44,6 @@ const EmbryoAdoptionTestPage = () => {
       answer: "Rejoice Embryo Rescue (RER) is a Tennessee LLC that was created to coordinate the receipt and secure storage of human embryos awaiting adoption by couples pursuing a future frozen embryo transfer with these donated embryos. RER works collaboratively with its affiliated faith-based Embryo Adoption organizations to facilitate frozen embryo transfers of donated embryos either at Rejoice Fertility in Knoxville, TN or at the clinic of the recipient couple’s choosing.",
     },
 
-    {
-      question: 'Does RER match donors and recipients?',
-      answer: "RER is not an Embryo Adoption organization and does not match donors and recipients. Instead, RER works collaboratively with Embryo Adoption organizations which currently includes Nightlight’s Snowflakes Embryo Adoption Program, Embryo Adoption Services of Cedar Park, Flourish Adoption Ministries, Embryos Alive, Christian Adoption Consultants and Lauren Wilson LMSW (Flourish Consulting Services). All matching is coordinated by one of these organizations.",
-    },
-
 
     {
       question: 'Does RER store embryos?',
@@ -111,7 +106,7 @@ const EmbryoAdoptionTestPage = () => {
         title="Rejoice Embryo Rescue | Rejoice Fertility Center"
         description="Knoxville Full Service Fertility, IVF, and Reproductive Surgery Center. Specializing in Infertility, Testing, and Embryo Adoption. Serving East Tennessee."
       />
-      <Header title={'Rejoice Embryo Rescue'} image={'/images/RER-logo-slide.jpg'} ctaPrimary={'Find out more here'} ctaPrimaryLink={'/services/embryo-adoption'} ctaSecondary={'Find out more here'} ctaSecondaryLink={'/services/donate-embryos'} />
+      <Header title={'Rejoice Embryo Rescue'} image={'/images/RER-logo-slide.jpg'} ctaPrimary={'Adopt Embryos'} ctaPrimaryLink={'/services/embryo-adoption'} ctaSecondary={'Donate Embryos'} ctaSecondaryLink={'/services/donate-embryos'} />
       <section
         sx={{
           display: 'flex',
