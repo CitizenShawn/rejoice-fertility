@@ -5,7 +5,7 @@ import Questions from '../../components/Common/Questions';
 import Header from '../../components/Common/Header';
 import Banner from '../../components/Common/Banner';
 import Layout from '../../components/Layout';
-import Help from '../../components/Common/Help';
+import Help-RER from '../../components/Common/Help-RER';
 import { Seo } from '../../components/Seo';
 
 // FAQ SECTION
