@@ -5,7 +5,7 @@ import Questions from '../../components/Common/Questions';
 import Header from '../../components/Common/Header';
 import Banner from '../../components/Common/Banner';
 import Layout from '../../components/Layout';
-import Help-RER from '../../components/Common/Help-RER';
+import Helprer from '../../components/Common/Helprer';
 import { Seo } from '../../components/Seo';
 
 // FAQ SECTION
@@ -148,7 +148,7 @@ const EmbryoAdoptionTestPage = () => {
 
       
 
-       <Help-RER />
+       <Helprer />
     </Layout>
   );
 };
