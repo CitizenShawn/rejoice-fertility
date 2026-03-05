@@ -82,7 +82,7 @@ const Help = () => {
               },
             }}
           >
-            Contact RER Program Coordinator
+            Contact Us
           </Link>
           <Link
             to="/free-consultations"
