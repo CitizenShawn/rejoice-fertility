@@ -64,7 +64,7 @@ const Help = () => {
           }}
         >
           <Link
-            to="/contact-us" 
+            to="mailto:rer@rejoiceivf.com?subject=RER%20Information&body=Hello%2C%20%0A%0AI%20would%20like%20to%20know%20more%20about%20Rejoice%20Embryo%20Rescue.%0A%0AThank%20you%2C%20%0A%0A"
             
             sx={{
               color: '#343754',
